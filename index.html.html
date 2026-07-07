@@ -1,0 +1,3117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ŞADİ — Menü</title>
+<style>
+:root{--lacivert:#0B2239;--derin:#081A2C;--panel:#102E4A;--kart:#123350;--deniz:#2E86AB;--acik:#7FC8E8;--kum:#F2E9DC;--altin:#E8C67A}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--lacivert);color:var(--kum);min-height:100vh}
+.dalga{background:var(--derin);text-align:center;padding:34px 16px 26px;border-bottom:1px solid #1E4A6E}
+.dalga .balik{font-size:40px}
+.dalga h1{font-size:34px;letter-spacing:10px;margin-top:6px}
+.dalga .alt{font-family:system-ui,sans-serif;font-size:12px;color:var(--acik);letter-spacing:3px;text-transform:uppercase;margin-top:6px}
+main{max-width:640px;margin:0 auto;padding:16px 14px 60px}
+.kat{border:1px solid #1E4A6E;border-radius:14px;margin-bottom:12px;overflow:hidden;background:var(--kart)}
+.kat-bas{width:100%;display:flex;justify-content:space-between;align-items:center;padding:17px 18px;background:transparent;border:none;color:var(--kum);font-family:Georgia,serif;font-size:19px;letter-spacing:1px;cursor:pointer}
+.kat-bas .ok{color:var(--acik);font-size:14px;transition:transform .25s;font-family:system-ui}
+.kat.acik .kat-bas .ok{transform:rotate(180deg)}
+.kat-ic{display:none;padding:0 18px 14px}
+.kat.acik .kat-ic{display:block}
+.urun{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dotted #23507A}
+.urun:last-child{border-bottom:none}
+.urun .ad{font-size:16px}
+.urun .cizgi{flex:1;border-bottom:1px dotted #2E5F86;transform:translateY(-4px)}
+.urun .fiyat{font-family:system-ui,sans-serif;font-size:15px;font-weight:600;color:var(--altin);white-space:nowrap}
+.aciklama{font-family:system-ui,sans-serif;font-size:12.5px;color:var(--acik);padding:0 0 8px;margin-top:-4px;line-height:1.5;border-bottom:1px dotted #23507A}
+.aciklama.son{border-bottom:none}
+.boy-liste{font-family:system-ui,sans-serif;font-size:13.5px;color:var(--kum);padding:2px 0 8px;margin-top:-4px;border-bottom:1px dotted #23507A;display:flex;flex-wrap:wrap;gap:6px 16px}
+.boy-liste.son{border-bottom:none}
+.boy-liste span b{color:var(--altin);font-weight:600}
+.dil-btn{font-family:system-ui,sans-serif;background:transparent;border:1px solid var(--deniz);color:var(--acik);padding:7px 16px;border-radius:16px;font-size:13px;font-weight:700;cursor:pointer}
+.dil-btn.aktif{background:var(--deniz);color:#fff}
+.u-foto{width:52px;height:52px;object-fit:cover;border-radius:10px;flex-shrink:0}
+footer{text-align:center;font-family:system-ui,sans-serif;font-size:11px;color:#4A7396;padding:20px}
+</style>
+</head>
+<body>
+<div class="dalga">
+  <div class="balik">🐟</div>
+  <h1>ŞADİ</h1>
+  <div class="alt">Balık Restoranı · Menü</div>
+  <div style="margin-top:12px;display:flex;gap:6px;justify-content:center">
+    <button class="dil-btn aktif" data-d="tr" onclick="dilSec('tr')">TR</button>
+    <button class="dil-btn" data-d="en" onclick="dilSec('en')">EN</button>
+    <button class="dil-btn" data-d="de" onclick="dilSec('de')">DE</button>
+    <button class="dil-btn" data-d="fr" onclick="dilSec('fr')">FR</button>
+  </div>
+</div>
+<main id="liste"></main>
+<footer>Fiyatlarımız TL'dir · Günlük balık fiyatları için personelimize danışınız</footer>
+
+<script>
+
+const DIL={aktif:'tr'};
+const UI={
+ tr:{alt:'Balık Restoranı · Menü',dip:"Fiyatlarımız TL'dir · Günlük balık fiyatları için personelimize danışınız",gunluk:'Günlük'},
+ en:{alt:'Fish Restaurant · Menu',dip:'Prices in TL · Please ask our staff for daily fish prices',gunluk:'Daily'},
+ de:{alt:'Fischrestaurant · Speisekarte',dip:'Preise in TL · Tagespreise für Fisch beim Personal erfragen',gunluk:'Tagespreis'},
+ fr:{alt:'Restaurant de poisson · Menu',dip:'Prix en TL · Demandez au personnel les prix du poisson du jour',gunluk:'Prix du jour'}};
+const KAT_CEV={kahvalti:{en:'Breakfast',de:'Frühstück',fr:'Petit-déjeuner'},balik:{en:'Fish',de:'Fisch',fr:'Poissons'},arasicak:{en:'Hot Starters',de:'Warme Vorspeisen',fr:'Entrées chaudes'},meze:{en:'Meze',de:'Meze',fr:'Mezzés'},etler:{en:'Grilled Meats',de:'Grillgerichte',fr:'Viandes grillées'},salata:{en:'Salads',de:'Salate',fr:'Salades'},yanci:{en:'Nuts & Snacks',de:'Nüsse & Snacks',fr:'Fruits secs'},icecek:{en:'Beverages',de:'Getränke',fr:'Boissons'},bira:{en:'Beer',de:'Bier',fr:'Bières'},sarap:{en:'Wine',de:'Wein',fr:'Vins'},raki:{en:'Rakı',de:'Rakı',fr:'Rakı'}};
+const BOY_CEV={'Küçük':{en:'Small',de:'Klein',fr:'Petit'},'Büyük':{en:'Large',de:'Groß',fr:'Grand'},'Kadeh':{en:'Glass',de:'Glas',fr:'Verre'},'Yarım':{en:'Half',de:'Halb',fr:'Demi'},'Üç Çeyrek':{en:'3/4',de:'3/4',fr:'3/4'},'Tam':{en:'Full',de:'Ganz',fr:'Entier'}};
+const CEV={
+kahvalti:{en:'Breakfast (per person)',de:'Frühstück (pro Person)',fr:'Petit-déjeuner (par pers.)'},
+fark:{en:'Extra Person',de:'Zusatzperson',fr:'Personne supplémentaire'},
+sogus:{en:'Fresh Vegetables',de:'Frisches Gemüse',fr:'Crudités'},
+'peynir-kahvalti':{en:'Cheese Plate',de:'Käseteller',fr:'Assiette de fromages'},
+'bal-kaymak':{en:'Honey & Clotted Cream',de:'Honig & Kaymak',fr:'Miel et crème kaymak'},
+recel:{en:'Jams (4 kinds)',de:'Marmeladen (4 Sorten)',fr:'Confitures (4 sortes)'},
+'suzme-yogurt-k':{en:'Strained Yogurt',de:'Abgetropfter Joghurt',fr:'Yaourt égoutté'},
+salca:{en:'Tomato Paste',de:'Tomatenmark',fr:'Concentré de tomate'},
+yag:{en:'Butter',de:'Butter',fr:'Beurre'},
+zeytin:{en:'Olives (3 kinds)',de:'Oliven (3 Sorten)',fr:'Olives (3 sortes)'},
+'termos-cay':{en:'Tea Pot',de:'Teekanne',fr:'Théière'},
+'tortulu-yumurta':{en:'Eggs with Tortu',de:'Eier mit Tortu',fr:'Œufs au tortu'},
+'sucuklu-yumurta':{en:'Eggs with Sucuk',de:'Eier mit Sucuk',fr:'Œufs au sucuk'},
+'pastirmali-yumurta':{en:'Eggs with Pastirma',de:'Eier mit Pastirma',fr:'Œufs au pastirma'},
+'peynirli-yumurta':{en:'Eggs with Cheese',de:'Eier mit Käse',fr:'Œufs au fromage'},
+'sade-yumurta':{en:'Plain Eggs',de:'Spiegeleier',fr:'Œufs nature'},
+menemen:{en:'Menemen (Turkish scrambled eggs)',de:'Menemen (türk. Rührei)',fr:'Menemen (œufs brouillés turcs)'},
+'sigara-boregi':{en:'Crispy Cheese Rolls',de:'Knusprige Käseröllchen',fr:'Cigares croustillants au fromage'},
+gozleme:{en:'Gözleme (stuffed flatbread)',de:'Gözleme (gefülltes Fladenbrot)',fr:'Gözleme (galette farcie)'},
+'kiymali-gozleme':{en:'Gözleme with Minced Meat',de:'Gözleme mit Hackfleisch',fr:'Gözleme à la viande hachée'},
+cupra:{en:'Sea Bream',de:'Dorade',fr:'Daurade'},
+levrek:{en:'Sea Bass',de:'Wolfsbarsch',fr:'Bar'},
+dil:{en:'Sole',de:'Seezunge',fr:'Sole'},
+barbun:{en:'Red Mullet',de:'Rotbarbe',fr:'Rouget'},
+tekir:{en:'Striped Red Mullet',de:'Streifenbarbe',fr:'Rouget barbet'},
+cinekop:{en:'Young Bluefish',de:'Junger Blaufisch',fr:'Jeune tassergal'},
+palamut:{en:'Bonito',de:'Bonito',fr:'Bonite'},
+lufer:{en:'Bluefish',de:'Blaufisch',fr:'Tassergal'},
+kefal:{en:'Grey Mullet',de:'Meeräsche',fr:'Mulet'},
+'cipura-kultur':{en:'Farmed Sea Bream',de:'Zucht-Dorade',fr:"Daurade d'élevage"},
+sardalya:{en:'Sardines',de:'Sardinen',fr:'Sardines'},
+'yaprak-sardalya':{en:'Sardines in Vine Leaves',de:'Sardinen in Weinblättern',fr:'Sardines en feuilles de vigne'},
+'sardalya-ekmek':{en:'Sardine Sandwich',de:'Sardinen-Sandwich',fr:'Sandwich aux sardines'},
+pisirme:{en:'Cooking Service (your own fish)',de:'Zubereitung (mitgebrachter Fisch)',fr:'Cuisson (votre poisson)'},
+kalamar:{en:'Calamari',de:'Calamari',fr:'Calamars'},
+karides:{en:'Shrimp',de:'Garnelen',fr:'Crevettes'},
+subye:{en:'Cuttlefish',de:'Sepia',fr:'Seiche'},
+cimcim:{en:'Çimçim Shrimp',de:'Çimçim-Garnelen',fr:'Crevettes çimçim'},
+'mantar-guvec':{en:'Mushroom Casserole',de:'Pilz-Cassolette',fr:'Cassolette de champignons'},
+'patlican-guvec':{en:'Eggplant Casserole',de:'Auberginen-Cassolette',fr:"Cassolette d'aubergines"},
+'ahtapot-guvec':{en:'Octopus Casserole',de:'Oktopus-Cassolette',fr:'Cassolette de poulpe'},
+midye:{en:'Mussels',de:'Muscheln',fr:'Moules'},
+patates:{en:'French Fries',de:'Pommes Frites',fr:'Frites'},
+'ev-patatesi':{en:'Home-style Potatoes',de:'Hausgemachte Kartoffeln',fr:'Pommes de terre maison'},
+helva:{en:'Halva',de:'Halva',fr:'Halva'},
+kunefe:{en:'Künefe',de:'Künefe',fr:'Künefe'},
+'yogurtlu-patlican':{en:'Eggplant with Yogurt',de:'Aubergine mit Joghurt',fr:'Aubergine au yaourt'},
+'tursulu-haydari':{en:'Haydari with Pickles',de:'Haydari mit Essiggemüse',fr:'Haydari aux pickles'},
+fava:{en:'Fava (broad bean purée)',de:'Fava (Bohnenpüree)',fr:'Fava (purée de fèves)'},
+tarator:{en:'Tarator',de:'Tarator',fr:'Tarator'},
+saksuka:{en:'Şakşuka (fried veg. in tomato)',de:'Şakşuka (Gemüse in Tomate)',fr:'Şakşuka (légumes à la tomate)'},
+atom:{en:'Atom (spicy yogurt dip)',de:'Atom (scharfer Joghurt-Dip)',fr:'Atom (yaourt épicé)'},
+'peynir-meze':{en:'Cheese',de:'Käse',fr:'Fromage'},
+kavun:{en:'Melon',de:'Melone',fr:'Melon'},
+karpuz:{en:'Watermelon',de:'Wassermelone',fr:'Pastèque'},
+antep:{en:'Antep (pistachio dip)',de:'Antep',fr:'Antep'},
+bamya:{en:'Okra',de:'Okra',fr:'Gombo'},
+'pancar-tursusu':{en:'Pickled Beets',de:'Eingelegte Rote Bete',fr:'Betteraves marinées'},
+'biber-tursusu':{en:'Pickled Peppers',de:'Eingelegte Paprika',fr:'Piments marinés'},
+'deniz-borulcesi':{en:'Samphire',de:'Queller',fr:'Salicorne'},
+'tarla-borulcesi':{en:'Black-eyed Peas',de:'Augenbohnen',fr:'Haricots cornille'},
+'sade-haydari':{en:'Haydari (yogurt dip)',de:'Haydari (Joghurt-Dip)',fr:'Haydari (yaourt aux herbes)'},
+'kuru-cacik':{en:'Thick Tzatziki',de:'Fester Tsatsiki',fr:'Tzatziki épais'},
+'patlican-salatasi':{en:'Eggplant Salad',de:'Auberginensalat',fr:"Salade d'aubergines"},
+'kabak-siyirma':{en:'Zucchini Spread',de:'Zucchini-Aufstrich',fr:'Tartinade de courgettes'},
+girit:{en:'Girit (herbed cheese dip)',de:'Girit (Kräuterkäse)',fr:'Girit (fromage aux herbes)'},
+'eksili-girit-kabak':{en:'Sour Girit Zucchini',de:'Saure Girit-Zucchini',fr:'Courgette girit aigre'},
+'koz-patlican':{en:'Roasted Eggplant',de:'Geröstete Aubergine',fr:'Aubergine grillée'},
+halepeno:{en:'Jalapeño',de:'Jalapeño',fr:'Jalapeño'},
+'sogan-ruyasi':{en:'Onion Dream',de:'Zwiebeltraum',fr:"Rêve d'oignon"},
+humus:{en:'Hummus',de:'Hummus',fr:'Houmous'},
+'yogurtlu-patlican-atom':{en:'Eggplant-Yogurt with Atom',de:'Aubergine-Joghurt mit Atom',fr:'Aubergine-yaourt et atom'},
+'ot-tabagi':{en:'Wild Herb Plate',de:'Wildkräuterteller',fr:'Assiette d herbes sauvages'},
+'suzme-yogurt':{en:'Strained Yogurt',de:'Abgetropfter Joghurt',fr:'Yaourt égoutté'},
+meyve:{en:'Fruit Plate',de:'Obstteller',fr:'Assiette de fruits'},
+pirzola:{en:'Lamb Chops',de:'Lammkoteletts',fr:"Côtelettes d'agneau"},
+'kuzu-sis':{en:'Lamb Skewer',de:'Lammspieß',fr:"Brochette d'agneau"},
+'tavuk-sis':{en:'Chicken Skewer',de:'Hähnchenspieß',fr:'Brochette de poulet'},
+kofte:{en:'Meatballs',de:'Frikadellen',fr:'Boulettes de viande'},
+kanat:{en:'Chicken Wings',de:'Hähnchenflügel',fr:'Ailes de poulet'},
+'kofte-tavuk-karisik':{en:'Meatball-Chicken Mix',de:'Frikadellen-Hähnchen-Mix',fr:'Mixte boulettes-poulet'},
+'full-karisik':{en:'Full Mixed Grill',de:'Großer Grillteller',fr:'Grillades mixtes complètes'},
+'sac-kavurma':{en:'Sautéed Lamb (sac)',de:'Lamm-Sautée (Sac)',fr:"Sauté d'agneau (sac)"},
+'ekmek-arasi-tavuk':{en:'Chicken Sandwich',de:'Hähnchen-Sandwich',fr:'Sandwich au poulet'},
+'ekmek-arasi-kofte':{en:'Meatball Sandwich',de:'Frikadellen-Sandwich',fr:'Sandwich aux boulettes'},
+salata:{en:'Salad',de:'Salat',fr:'Salade'},
+'kasik-salata':{en:'Chopped Salad',de:'Gehackter Salat',fr:'Salade hachée'},
+'coban-salata':{en:"Shepherd's Salad",de:'Hirtensalat',fr:'Salade du berger'},
+'gavurdagi-salata':{en:'Gavurdağı Salad',de:'Gavurdağı-Salat',fr:'Salade gavurdağı'},
+tursu:{en:'Pickles',de:'Essiggemüse',fr:'Pickles'},
+'karisik-kuruyemis':{en:'Mixed Nuts',de:'Gemischte Nüsse',fr:'Mélange de fruits secs'},
+fistik:{en:'Peanuts',de:'Erdnüsse',fr:'Cacahuètes'},
+badem:{en:'Almonds',de:'Mandeln',fr:'Amandes'},
+kaju:{en:'Cashews',de:'Cashews',fr:'Noix de cajou'},
+'antep-yanci':{en:'Pistachios',de:'Pistazien',fr:'Pistaches'},
+findik:{en:'Hazelnuts',de:'Haselnüsse',fr:'Noisettes'},
+leblebi:{en:'Roasted Chickpeas',de:'Geröstete Kichererbsen',fr:'Pois chiches grillés'},
+cay:{en:'Tea',de:'Tee',fr:'Thé'},
+kahve:{en:'Turkish Coffee',de:'Türkischer Kaffee',fr:'Café turc'},
+churchill:{en:'Churchill',de:'Churchill',fr:'Churchill'},
+ayran:{en:'Ayran',de:'Ayran',fr:'Ayran'},
+soda:{en:'Sparkling Mineral Water',de:'Mineralwasser',fr:'Eau gazeuse'},
+'elmali-soda':{en:'Apple Soda',de:'Apfel-Soda',fr:'Soda à la pomme'},
+'limonlu-soda':{en:'Lemon Soda',de:'Zitronen-Soda',fr:'Soda au citron'},
+'limonlu-icetea':{en:'Lemon Ice Tea',de:'Zitronen-Eistee',fr:'Thé glacé citron'},
+'seftalili-icetea':{en:'Peach Ice Tea',de:'Pfirsich-Eistee',fr:'Thé glacé pêche'},
+karpuzlu:{en:'Watermelon Drink',de:'Wassermelonen-Getränk',fr:'Boisson pastèque'},
+mangolu:{en:'Mango Drink',de:'Mango-Getränk',fr:'Boisson mangue'},
+cilekli:{en:'Strawberry Drink',de:'Erdbeer-Getränk',fr:'Boisson fraise'},
+ahududulu:{en:'Raspberry Drink',de:'Himbeer-Getränk',fr:'Boisson framboise'},
+'zero-cola':{en:'Zero Cola',de:'Cola Zero',fr:'Cola zéro'},
+'uludag-gazoz':{en:'Uludağ Soda',de:'Uludağ Limonade',fr:'Limonade Uludağ'},
+'karisik-meyve-suyu':{en:'Mixed Fruit Juice',de:'Multivitaminsaft',fr:'Jus multifruits'},
+visneli:{en:'Sour Cherry Juice',de:'Sauerkirschsaft',fr:'Jus de griotte'},
+seftali:{en:'Peach Juice',de:'Pfirsichsaft',fr:'Jus de pêche'},
+kayisi:{en:'Apricot Juice',de:'Aprikosensaft',fr:"Jus d'abricot"},
+'kucuk-salgam':{en:'Şalgam (small)',de:'Şalgam (klein)',fr:'Şalgam (petit)'},
+'buyuk-salgam':{en:'Şalgam (large)',de:'Şalgam (groß)',fr:'Şalgam (grand)'},
+'kucuk-su':{en:'Water (small)',de:'Wasser (klein)',fr:'Eau (petite)'},
+'buyuk-su':{en:'Water (large)',de:'Wasser (groß)',fr:'Eau (grande)'},
+'raki-servisi':{en:'Rakı Service (per person)',de:'Rakı-Service (p.P.)',fr:'Service rakı (par pers.)'},
+'duble-raki':{en:'Double Rakı',de:'Doppelter Rakı',fr:'Rakı double'},
+'tek-raki':{en:'Single Rakı',de:'Einfacher Rakı',fr:'Rakı simple'},
+'karar-raki':{en:'Medium Rakı',de:'Mittlerer Rakı',fr:'Rakı moyen'}
+};
+function cevir(u){if(DIL.aktif==='tr')return u.ad;const c=CEV[u.id];return c&&c[DIL.aktif]?c[DIL.aktif]:u.ad;}
+function katCevir(k){if(DIL.aktif==='tr')return k.ad;const c=KAT_CEV[k.id];return c&&c[DIL.aktif]?c[DIL.aktif]:k.ad;}
+function boyCevir(b){if(DIL.aktif==='tr')return b;const c=BOY_CEV[b];return c&&c[DIL.aktif]?c[DIL.aktif]:b;}
+function dilSec(d){DIL.aktif=d;document.querySelectorAll('.dil-btn').forEach(x=>x.classList.toggle('aktif',x.dataset.d===d));
+  document.querySelector('.dalga .alt').textContent=UI[d].alt;
+  document.querySelector('footer').textContent=UI[d].dip;
+  document.getElementById('liste').innerHTML='';ciz();}
+
+const tl=n=>n.toLocaleString('tr-TR');
+
+let VERIM=null;
+async function yukle(){ VERIM={
+  "kategoriler": [
+    {
+      "id": "kahvalti",
+      "ad": "Kahvaltı"
+    },
+    {
+      "id": "balik",
+      "ad": "Balık"
+    },
+    {
+      "id": "arasicak",
+      "ad": "Ara Sıcak"
+    },
+    {
+      "id": "meze",
+      "ad": "Meze"
+    },
+    {
+      "id": "etler",
+      "ad": "Etler"
+    },
+    {
+      "id": "salata",
+      "ad": "Salatalar"
+    },
+    {
+      "id": "yanci",
+      "ad": "Yancılar"
+    },
+    {
+      "id": "icecek",
+      "ad": "İçecekler"
+    },
+    {
+      "id": "bira",
+      "ad": "Bira",
+      "ust": "alkol"
+    },
+    {
+      "id": "sarap",
+      "ad": "Şarap",
+      "ust": "alkol"
+    },
+    {
+      "id": "raki",
+      "ad": "Rakı",
+      "ust": "alkol"
+    }
+  ],
+  "urunler": [
+    {
+      "id": "kahvalti",
+      "kat": "kahvalti",
+      "ad": "Kahvaltı",
+      "fiyat": 650,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "fark",
+      "kat": "kahvalti",
+      "ad": "Fark",
+      "fiyat": 150,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "sogus",
+      "kat": "kahvalti",
+      "ad": "Söğüş",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "peynir-kahvalti",
+      "kat": "kahvalti",
+      "ad": "Peynir (Tulum+Beyaz)",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "bal-kaymak",
+      "kat": "kahvalti",
+      "ad": "Bal Kaymak",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "recel",
+      "kat": "kahvalti",
+      "ad": "Reçel (4 Çeşit)",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "suzme-yogurt-k",
+      "kat": "kahvalti",
+      "ad": "Süzme Yoğurt",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "tortu-k",
+      "kat": "kahvalti",
+      "ad": "Tortu",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "salca",
+      "kat": "kahvalti",
+      "ad": "Salça",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "yag",
+      "kat": "kahvalti",
+      "ad": "Yağ",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "zeytin",
+      "kat": "kahvalti",
+      "ad": "Zeytin (3 Çeşit)",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "termos-cay",
+      "kat": "kahvalti",
+      "ad": "Termos Çay",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tortulu-yumurta",
+      "kat": "kahvalti",
+      "ad": "Tortulu Yumurta",
+      "fiyat": 400,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "sucuklu-yumurta",
+      "kat": "kahvalti",
+      "ad": "Sucuklu Yumurta",
+      "fiyat": 350,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "pastirmali-yumurta",
+      "kat": "kahvalti",
+      "ad": "Pastırmalı Yumurta",
+      "fiyat": 350,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "peynirli-yumurta",
+      "kat": "kahvalti",
+      "ad": "Peynirli Yumurta",
+      "fiyat": 270,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "sade-yumurta",
+      "kat": "kahvalti",
+      "ad": "Sade Yumurta",
+      "fiyat": 150,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "menemen",
+      "kat": "kahvalti",
+      "ad": "Menemen",
+      "fiyat": 270,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Seçenekler",
+          "tip": "cok",
+          "opsiyonlar": [
+            "Domatessiz",
+            "Yumurtasız",
+            "Soğansız",
+            "Göz Yumurtalı"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sigara-boregi",
+      "kat": "kahvalti",
+      "ad": "Sigara Böreği",
+      "fiyat": 200,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "gozleme",
+      "kat": "kahvalti",
+      "ad": "Gözleme",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "İçerik Ekle",
+          "tip": "cok",
+          "opsiyonlar": [
+            "Kıyma",
+            "Patlıcan",
+            "Kaşar",
+            "Tulum Peyniri",
+            "Otlu Peynir",
+            "Sucuk"
+          ],
+          "ekFiyatlar": {
+            "Kıyma": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "cupra",
+      "kat": "balik",
+      "ad": "Çupra",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "levrek",
+      "kat": "balik",
+      "ad": "Levrek",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "dil",
+      "kat": "balik",
+      "ad": "Dil",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "barbun",
+      "kat": "balik",
+      "ad": "Barbun",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "tekir",
+      "kat": "balik",
+      "ad": "Tekir",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "cinekop",
+      "kat": "balik",
+      "ad": "Çinekop",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "palamut",
+      "kat": "balik",
+      "ad": "Palamut",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "lufer",
+      "kat": "balik",
+      "ad": "Lüfer",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "kefal",
+      "kat": "balik",
+      "ad": "Kefal",
+      "tip": "gram",
+      "kgFiyat": 0,
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "cipura-kultur",
+      "kat": "balik",
+      "ad": "Çipura Kültür",
+      "fiyat": 700,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "sardalya",
+      "kat": "balik",
+      "ad": "Sardalya",
+      "fiyat": 350,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Pişirme",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Izgarada",
+            "Yağda"
+          ],
+          "varsayilan": "Izgarada"
+        },
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "yaprak-sardalya",
+      "kat": "balik",
+      "ad": "Yaprak Sardalya (Sarma)",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Pişirme",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Izgarada",
+            "Yağda"
+          ],
+          "varsayilan": "Izgarada"
+        },
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "sardalya-ekmek",
+      "kat": "balik",
+      "ad": "Sardalya Ekmek",
+      "fiyat": 260,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "pisirme",
+      "kat": "balik",
+      "ad": "Pişirme (Dışarıdan Balık)",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Pişirme",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Izgarada",
+            "Yağda"
+          ],
+          "varsayilan": "Izgarada"
+        },
+        {
+          "ad": "Ateş",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Marş",
+            "Bekle"
+          ],
+          "varsayilan": "Marş"
+        }
+      ]
+    },
+    {
+      "id": "kalamar",
+      "kat": "arasicak",
+      "ad": "Kalamar",
+      "fiyat": 850,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "karides",
+      "kat": "arasicak",
+      "ad": "Karides",
+      "fiyat": 900,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "subye",
+      "kat": "arasicak",
+      "ad": "Sübye",
+      "fiyat": 700,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "cimcim",
+      "kat": "arasicak",
+      "ad": "Çimçim",
+      "fiyat": 700,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "mantar-guvec",
+      "kat": "arasicak",
+      "ad": "Mantar Güveç",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "patlican-guvec",
+      "kat": "arasicak",
+      "ad": "Patlıcan Güveç",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "ahtapot-guvec",
+      "kat": "arasicak",
+      "ad": "Ahtapot Güveç",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "midye",
+      "kat": "arasicak",
+      "ad": "Midye",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "patates",
+      "kat": "arasicak",
+      "ad": "Patates",
+      "fiyat": 250,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "ev-patatesi",
+      "kat": "arasicak",
+      "ad": "Ev Patatesi",
+      "fiyat": 250,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "helva",
+      "kat": "arasicak",
+      "ad": "Helva",
+      "fiyat": 150,
+      "tip": "porsiyon",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "kunefe",
+      "kat": "arasicak",
+      "ad": "Künefe",
+      "fiyat": 200,
+      "tip": "adet",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "yogurtlu-patlican",
+      "kat": "meze",
+      "ad": "Yoğurtlu Patlıcan",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "tursulu-haydari",
+      "kat": "meze",
+      "ad": "Turşulu Haydari",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "fava",
+      "kat": "meze",
+      "ad": "Fava",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Çeşit",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Normal",
+            "Tekmil"
+          ],
+          "varsayilan": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "tarator",
+      "kat": "meze",
+      "ad": "Tarator",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "saksuka",
+      "kat": "meze",
+      "ad": "Şakşuka",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "atom",
+      "kat": "meze",
+      "ad": "Atom",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "gelincik",
+      "kat": "meze",
+      "ad": "Gelincik",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "peynir-meze",
+      "kat": "meze",
+      "ad": "Peynir",
+      "fiyat": 150,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "kavun",
+      "kat": "meze",
+      "ad": "Kavun",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "karpuz",
+      "kat": "meze",
+      "ad": "Karpuz",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "antep",
+      "kat": "meze",
+      "ad": "Antep",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "bamya",
+      "kat": "meze",
+      "ad": "Bamya",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "pancar-tursusu",
+      "kat": "meze",
+      "ad": "Pancar Turşusu",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "biber-tursusu",
+      "kat": "meze",
+      "ad": "Biber Turşusu",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "deniz-borulcesi",
+      "kat": "meze",
+      "ad": "Deniz Börülcesi",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "tarla-borulcesi",
+      "kat": "meze",
+      "ad": "Tarla Börülcesi",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "sade-haydari",
+      "kat": "meze",
+      "ad": "Sade Haydari",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "kuru-cacik",
+      "kat": "meze",
+      "ad": "Kuru Cacık",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "sultan",
+      "kat": "meze",
+      "ad": "Sultan",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "patlican-salatasi",
+      "kat": "meze",
+      "ad": "Patlıcan Salatası",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "kabak-siyirma",
+      "kat": "meze",
+      "ad": "Kabak Sıyırma",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "girit",
+      "kat": "meze",
+      "ad": "Girit",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "eksili-girit-kabak",
+      "kat": "meze",
+      "ad": "Ekşili Girit Kabak",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "koz-patlican",
+      "kat": "meze",
+      "ad": "Köz Patlıcan",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "halepeno",
+      "kat": "meze",
+      "ad": "Halepeno",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "sogan-ruyasi",
+      "kat": "meze",
+      "ad": "Soğan Rüyası",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "humus",
+      "kat": "meze",
+      "ad": "Humus",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "yogurtlu-patlican-atom",
+      "kat": "meze",
+      "ad": "Yoğurtlu Patlıcan Üstü Atom",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "ot-tabagi",
+      "kat": "meze",
+      "ad": "Ot Tabağı",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "suzme-yogurt",
+      "kat": "meze",
+      "ad": "Süzme Yoğurt",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "tortu",
+      "kat": "meze",
+      "ad": "Tortu",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Küçük",
+          "fiyat": 0
+        },
+        {
+          "ad": "Büyük",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "meyve",
+      "kat": "meze",
+      "ad": "Meyve",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ]
+    },
+    {
+      "id": "pirzola",
+      "kat": "etler",
+      "ad": "Pirzola",
+      "fiyat": 900,
+      "adetFiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ]
+    },
+    {
+      "id": "kuzu-sis",
+      "kat": "etler",
+      "ad": "Kuzu Şiş",
+      "fiyat": 750,
+      "adetFiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ]
+    },
+    {
+      "id": "tavuk-sis",
+      "kat": "etler",
+      "ad": "Tavuk Şiş",
+      "fiyat": 500,
+      "adetFiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ]
+    },
+    {
+      "id": "kofte",
+      "kat": "etler",
+      "ad": "Köfte",
+      "fiyat": 550,
+      "adetFiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ]
+    },
+    {
+      "id": "kanat",
+      "kat": "etler",
+      "ad": "Kanat",
+      "fiyat": 500,
+      "adetFiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ]
+    },
+    {
+      "id": "kofte-tavuk-karisik",
+      "kat": "etler",
+      "ad": "Köfte-Tavuk Karışık",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ]
+    },
+    {
+      "id": "full-karisik",
+      "kat": "etler",
+      "ad": "Full Karışık",
+      "fiyat": 0,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ],
+      "aciklama": "1 Pirzola + 1 Tavuk Şiş + 1 Kuzu Şiş + 2 Köfte"
+    },
+    {
+      "id": "sac-kavurma",
+      "kat": "etler",
+      "ad": "Saç Kavurma",
+      "fiyat": 850,
+      "tip": "porsiyon",
+      "rota": [
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Seçenekler",
+          "tip": "cok",
+          "opsiyonlar": [
+            "Acılı",
+            "Domatesli",
+            "Soğanlı"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ekmek-arasi-tavuk",
+      "kat": "etler",
+      "ad": "Ekmek Arası Tavuk",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Yarım",
+          "fiyat": 0
+        },
+        {
+          "ad": "Üç Çeyrek",
+          "fiyat": 0
+        },
+        {
+          "ad": "Tam",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Seçenekler",
+          "tip": "cok",
+          "opsiyonlar": [
+            "Soğansız",
+            "Domatessiz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ekmek-arasi-kofte",
+      "kat": "etler",
+      "ad": "Ekmek Arası Köfte",
+      "tip": "boy",
+      "boylar": [
+        {
+          "ad": "Yarım",
+          "fiyat": 0
+        },
+        {
+          "ad": "Üç Çeyrek",
+          "fiyat": 0
+        },
+        {
+          "ad": "Tam",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "mutfak",
+        "izgara",
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Seçenekler",
+          "tip": "cok",
+          "opsiyonlar": [
+            "Soğansız",
+            "Domatessiz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salata",
+      "kat": "salata",
+      "ad": "Salata",
+      "fiyat": 160,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "icerikler": [
+        "Roka",
+        "Maydanoz",
+        "Soğan",
+        "Domates",
+        "Mor Lahana",
+        "Salatalık",
+        "Nar Ekşisi",
+        "Zeytinyağı",
+        "Tulum Peyniri",
+        "Beyaz Peynir"
+      ]
+    },
+    {
+      "id": "kasik-salata",
+      "kat": "salata",
+      "ad": "Kaşık Salata",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "icerikler": [
+        "Roka",
+        "Maydanoz",
+        "Soğan",
+        "Domates",
+        "Mor Lahana",
+        "Salatalık",
+        "Nar Ekşisi",
+        "Zeytinyağı",
+        "Tulum Peyniri",
+        "Beyaz Peynir"
+      ]
+    },
+    {
+      "id": "coban-salata",
+      "kat": "salata",
+      "ad": "Çoban Salata",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "icerikler": [
+        "Roka",
+        "Maydanoz",
+        "Soğan",
+        "Domates",
+        "Mor Lahana",
+        "Salatalık",
+        "Nar Ekşisi",
+        "Zeytinyağı",
+        "Tulum Peyniri",
+        "Beyaz Peynir"
+      ]
+    },
+    {
+      "id": "gavurdagi-salata",
+      "kat": "salata",
+      "ad": "Gavurdağı Salata",
+      "fiyat": 0,
+      "tip": "kisi",
+      "rota": [
+        "mutfak",
+        "salon"
+      ],
+      "icerikler": [
+        "Roka",
+        "Maydanoz",
+        "Soğan",
+        "Domates",
+        "Mor Lahana",
+        "Salatalık",
+        "Nar Ekşisi",
+        "Zeytinyağı",
+        "Tulum Peyniri",
+        "Beyaz Peynir"
+      ]
+    },
+    {
+      "id": "tursu",
+      "kat": "yanci",
+      "ad": "Turşu",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "karisik-kuruyemis",
+      "kat": "yanci",
+      "ad": "Karışık Kuruyemiş",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "fistik",
+      "kat": "yanci",
+      "ad": "Fıstık",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "badem",
+      "kat": "yanci",
+      "ad": "Badem",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kaju",
+      "kat": "yanci",
+      "ad": "Kaju",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "antep-yanci",
+      "kat": "yanci",
+      "ad": "Antep",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "findik",
+      "kat": "yanci",
+      "ad": "Fındık",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "leblebi",
+      "kat": "yanci",
+      "ad": "Leblebi",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "cay",
+      "kat": "icecek",
+      "ad": "Çay",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kahve",
+      "kat": "icecek",
+      "ad": "Kahve",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ],
+      "secGruplari": [
+        {
+          "ad": "Şeker",
+          "tip": "tek",
+          "opsiyonlar": [
+            "Sade",
+            "Az Şekerli",
+            "Orta",
+            "Şekerli"
+          ],
+          "varsayilan": "Orta"
+        }
+      ]
+    },
+    {
+      "id": "churchill",
+      "kat": "icecek",
+      "ad": "Churchill",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "ayran",
+      "kat": "icecek",
+      "ad": "Ayran",
+      "fiyat": 60,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "soda",
+      "kat": "icecek",
+      "ad": "Soda",
+      "fiyat": 50,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "elmali-soda",
+      "kat": "icecek",
+      "ad": "Elmalı Soda",
+      "fiyat": 60,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "limonlu-soda",
+      "kat": "icecek",
+      "ad": "Limonlu Soda",
+      "fiyat": 60,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "limonlu-icetea",
+      "kat": "icecek",
+      "ad": "Limonlu Ice Tea",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "seftalili-icetea",
+      "kat": "icecek",
+      "ad": "Şeftalili Ice Tea",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "karpuzlu",
+      "kat": "icecek",
+      "ad": "Karpuzlu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "mangolu",
+      "kat": "icecek",
+      "ad": "Mangolu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "cilekli",
+      "kat": "icecek",
+      "ad": "Çilekli",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "ahududulu",
+      "kat": "icecek",
+      "ad": "Ahududulu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "cola",
+      "kat": "icecek",
+      "ad": "Cola",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "zero-cola",
+      "kat": "icecek",
+      "ad": "Zero Cola",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "fanta",
+      "kat": "icecek",
+      "ad": "Fanta",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "sprite",
+      "kat": "icecek",
+      "ad": "Sprite",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "uludag-gazoz",
+      "kat": "icecek",
+      "ad": "Uludağ Gazoz",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "karisik-meyve-suyu",
+      "kat": "icecek",
+      "ad": "Karışık Meyve Suyu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "visneli",
+      "kat": "icecek",
+      "ad": "Vişneli Meyve Suyu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "seftali",
+      "kat": "icecek",
+      "ad": "Şeftalili Meyve Suyu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kayisi",
+      "kat": "icecek",
+      "ad": "Kayısılı Meyve Suyu",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kucuk-salgam",
+      "kat": "icecek",
+      "ad": "Küçük Şalgam",
+      "fiyat": 120,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "buyuk-salgam",
+      "kat": "icecek",
+      "ad": "Büyük Şalgam",
+      "fiyat": 230,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kucuk-su",
+      "kat": "icecek",
+      "ad": "Küçük Su",
+      "fiyat": 50,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "buyuk-su",
+      "kat": "icecek",
+      "ad": "Büyük Su",
+      "fiyat": 100,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tuborg",
+      "kat": "bira",
+      "ad": "Tuborg",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "carlsberg",
+      "kat": "bira",
+      "ad": "Carlsberg",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "carlsberg-luna",
+      "kat": "bira",
+      "ad": "Carlsberg Luna",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efes-malt",
+      "kat": "bira",
+      "ad": "Efes Malt",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "bud",
+      "kat": "bira",
+      "ad": "Bud",
+      "fiyat": 270,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "corona",
+      "kat": "bira",
+      "ad": "Corona",
+      "fiyat": 290,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "miller",
+      "kat": "bira",
+      "ad": "Miller",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "stella",
+      "kat": "bira",
+      "ad": "Stella",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "becks",
+      "kat": "bira",
+      "ad": "Becks",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "bomonti",
+      "kat": "bira",
+      "ad": "Bomonti",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efes-tombul",
+      "kat": "bira",
+      "ad": "Efes Tombul",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "serce",
+      "kat": "bira",
+      "ad": "Serçe (Efes Ufak)",
+      "fiyat": 200,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "blanc",
+      "kat": "bira",
+      "ad": "Blanc",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "desperados",
+      "kat": "bira",
+      "ad": "Desperados",
+      "fiyat": 330,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "sol",
+      "kat": "bira",
+      "ad": "Sol",
+      "fiyat": 280,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tuborg-smooth",
+      "kat": "bira",
+      "ad": "Tuborg Smooth",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tuborg-ice",
+      "kat": "bira",
+      "ad": "Tuborg Ice",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "weihenstephaner",
+      "kat": "bira",
+      "ad": "Weihenstephaner",
+      "fiyat": 290,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "vitus",
+      "kat": "bira",
+      "ad": "Vitus",
+      "fiyat": 350,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "budweiser",
+      "kat": "bira",
+      "ad": "Budweiser",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "daura-glutensiz",
+      "kat": "bira",
+      "ad": "Daura Glutensiz",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efes-glutensiz",
+      "kat": "bira",
+      "ad": "Efes Glutensiz",
+      "fiyat": 290,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "blue-moon",
+      "kat": "bira",
+      "ad": "Blue Moon",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "bitburger-alkolsuz",
+      "kat": "bira",
+      "ad": "Bitburger Alkolsüz",
+      "fiyat": 0,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efes-arti1",
+      "kat": "bira",
+      "ad": "Efes +1",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efes-ozel-seri",
+      "kat": "bira",
+      "ad": "Efes Özel Seri",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "belfast",
+      "kat": "bira",
+      "ad": "Belfast",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "amber",
+      "kat": "bira",
+      "ad": "Amber",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tuborg-gold",
+      "kat": "bira",
+      "ad": "Tuborg Gold",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tuborg-filtresiz",
+      "kat": "bira",
+      "ad": "Tuborg Filtresiz",
+      "fiyat": 250,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "selection-kirmizi",
+      "kat": "sarap",
+      "ad": "Selection Kırmızı",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "50cl",
+          "fiyat": 1800
+        },
+        {
+          "ad": "75cl",
+          "fiyat": 2550
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "selection-beyaz",
+      "kat": "sarap",
+      "ad": "Selection Beyaz",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "50cl",
+          "fiyat": 1750
+        },
+        {
+          "ad": "75cl",
+          "fiyat": 2350
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "buzbag",
+      "kat": "sarap",
+      "ad": "Buzbağ Kırmızı-Beyaz",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "37.5cl",
+          "fiyat": 800
+        },
+        {
+          "ad": "75cl",
+          "fiyat": 1150
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "cankaya",
+      "kat": "sarap",
+      "ad": "Çankaya",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "37.5cl",
+          "fiyat": 900
+        },
+        {
+          "ad": "75cl",
+          "fiyat": 1400
+        },
+        {
+          "ad": "Kadeh",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "yakut",
+      "kat": "sarap",
+      "ad": "Yakut",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "37.5cl",
+          "fiyat": 950
+        },
+        {
+          "ad": "Kadeh",
+          "fiyat": 500
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "raki-servisi",
+      "kat": "raki",
+      "ad": "Rakı Servisi",
+      "fiyat": 250,
+      "tip": "kisi",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "duble-raki",
+      "kat": "raki",
+      "ad": "Duble Rakı",
+      "fiyat": 450,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tek-raki",
+      "kat": "raki",
+      "ad": "Tek Rakı",
+      "fiyat": 300,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "karar-raki",
+      "kat": "raki",
+      "ad": "Karar Rakı",
+      "fiyat": 350,
+      "tip": "adet",
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "yeni-raki",
+      "kat": "raki",
+      "ad": "Yeni Rakı",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 900
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1250
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 1700
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2150
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 2800
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "yeni-seri",
+      "kat": "raki",
+      "ad": "Yeni Rakı Yeni Seri",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1050
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1350
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 1850
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2400
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 3100
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "altin-seri",
+      "kat": "raki",
+      "ad": "Yeni Rakı Altın Seri",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1150
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1550
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 2130
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2700
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 3400
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kulup-deluxe",
+      "kat": "raki",
+      "ad": "Kulüp Deluxe",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "35cl",
+          "fiyat": 1600
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2700
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "kulup",
+      "kat": "raki",
+      "ad": "Kulüp",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "35cl",
+          "fiyat": 0
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2800
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tekirdag-gobek",
+      "kat": "raki",
+      "ad": "Tekirdağ Göbek",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "35cl",
+          "fiyat": 1300
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2300
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "tekirdag-rezerve",
+      "kat": "raki",
+      "ad": "Tekirdağ Rezerve",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "35cl",
+          "fiyat": 1800
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2700
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "beylerbeyi-gobek",
+      "kat": "raki",
+      "ad": "Beylerbeyi Göbek",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1300
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1900
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 2550
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 3350
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 4300
+        },
+        {
+          "ad": "150cl",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "mavi-gobek",
+      "kat": "raki",
+      "ad": "Mavi Göbek",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1100
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1500
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 2000
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2700
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 3400
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efe-yas-uzum",
+      "kat": "raki",
+      "ad": "Efe Yaş Üzüm",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1050
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1350
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 1850
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2400
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 3100
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "efe-gold",
+      "kat": "raki",
+      "ad": "Efe Gold",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1150
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1550
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 2130
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 2700
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 3400
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "sari-zeybek",
+      "kat": "raki",
+      "ad": "Sarı Zeybek 3 Meşe",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1300
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1950
+        },
+        {
+          "ad": "50cl",
+          "fiyat": 2750
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 3500
+        },
+        {
+          "ad": "100cl",
+          "fiyat": 4300
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "barbayanni",
+      "kat": "raki",
+      "ad": "Barbayanni",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1200
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "ouzo",
+      "kat": "raki",
+      "ad": "Ouzo",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "70cl",
+          "fiyat": 3300
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "protatip",
+      "kat": "raki",
+      "ad": "Protatip",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "35cl",
+          "fiyat": 0
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 0
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "ala",
+      "kat": "raki",
+      "ad": "Ala",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "20cl",
+          "fiyat": 1250
+        },
+        {
+          "ad": "35cl",
+          "fiyat": 1700
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 3060
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    },
+    {
+      "id": "incirden",
+      "kat": "raki",
+      "ad": "İncirden",
+      "tip": "sise",
+      "boylar": [
+        {
+          "ad": "35cl",
+          "fiyat": 2100
+        },
+        {
+          "ad": "70cl",
+          "fiyat": 3550
+        }
+      ],
+      "rota": [
+        "salon"
+      ]
+    }
+  ]
+}; ciz(); }
+function ciz(){
+  const MENU=VERIM;
+  const kap=document.getElementById('liste'); kap.innerHTML='';
+  MENU.kategoriler.forEach((k,idx)=>{
+    const urunler=MENU.urunler.filter(u=>u.kat===k.id);
+    if(!urunler.length)return;
+    const kat=document.createElement('div');
+    kat.className='kat'+(idx===0?' acik':'');
+    let ic='';
+    urunler.forEach((u,i)=>{
+      const son=i===urunler.length-1;
+      let fiyatHtml='';
+      if(u.tip==='gram'){
+        fiyatHtml=u.kgFiyat>0?tl(u.kgFiyat)+' /kg':UI[DIL.aktif].gunluk;
+      } else if((u.boylar||[]).length){
+        fiyatHtml='';
+      } else {
+        fiyatHtml=u.fiyat>0?tl(u.fiyat):'—';
+      }
+      ic+='<div class="urun"><img class="u-foto" loading="lazy" src="foto/'+u.id+'.jpg" onerror="this.remove()"><span class="ad">'+cevir(u)+'</span><span class="cizgi"></span>'+
+          '<span class="fiyat">'+fiyatHtml+'</span></div>';
+      if((u.boylar||[]).length){
+        ic+='<div class="boy-liste'+(son?' son':'')+'">'+
+          u.boylar.map(b=>'<span>'+boyCevir(b.ad)+' <b>'+(b.fiyat>0?tl(b.fiyat):'—')+'</b></span>').join('')+'</div>';
+      }
+      let acikMetin=u.aciklama||(u.icerikler?u.icerikler.join(', '):null);
+      const ekler=[];for(const g of(u.secGruplari||[]))if(g.ekFiyatlar)for(const[op,ek]of Object.entries(g.ekFiyatlar))ekler.push(op+' +'+ek);
+      if(ekler.length)acikMetin=(acikMetin?acikMetin+' · ':'')+ekler.join(' · ');
+      if(acikMetin&&DIL.aktif==='tr')ic+='<div class="aciklama'+(son&&!(u.boylar||[]).length?' son':'')+'">'+acikMetin+'</div>';
+    });
+    kat.innerHTML='<button class="kat-bas">'+katCevir(k)+'<span class="ok">▼</span></button><div class="kat-ic">'+ic+'</div>';
+    kat.querySelector('.kat-bas').onclick=()=>kat.classList.toggle('acik');
+    kap.appendChild(kat);
+  });
+}
+yukle();
+</script>
+</body>
+</html>
