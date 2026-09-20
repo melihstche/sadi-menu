@@ -1,5 +1,5 @@
 {
- "guncellendi": 1789935727989,
+ "guncellendi": 1789935782150,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -119,8 +119,7 @@
     "en": "Breakfast (per person)",
     "de": "Frühstück (pro Person)",
     "fr": "Petit-déjeuner (par pers.)"
-   },
-   "yok": true
+   }
   },
   {
    "id": "fark",
@@ -132,8 +131,7 @@
     "en": "Extra Person",
     "de": "Zusatzperson",
     "fr": "Personne supplémentaire"
-   },
-   "yok": true
+   }
   },
   {
    "id": "sogus",
