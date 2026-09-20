@@ -1,5 +1,5 @@
 {
- "guncellendi": 1789935281646,
+ "guncellendi": 1789935338064,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -398,8 +398,7 @@
     "en": "Sardine Sandwich",
     "de": "Sardinen-Sandwich",
     "fr": "Sandwich aux sardines"
-   },
-   "yok": true
+   }
   },
   {
    "id": "kalamar",
@@ -2512,8 +2511,7 @@
     "en": "This is half of one sea bass (approx. 750-800 g).",
     "de": "Dies ist die Hälfte eines Wolfsbarschs (ca. 750-800 g).",
     "fr": "C'est la moitié d'un bar (env. 750-800 g)."
-   },
-   "yok": true
+   }
   },
   {
    "id": "cupra",
