@@ -1,1 +1,3496 @@
-{"guncellendi":1789933134342,"kategoriler":[{"id":"kahvalti","ad":"Kahvaltı","cev":{"en":"Breakfast","de":"Frühstück","fr":"Petit-déjeuner"}},{"id":"balik","ad":"Balık","cev":{"en":"Fish","de":"Fisch","fr":"Poissons"}},{"id":"arasicak","ad":"Ara Sıcak","cev":{"en":"Hot Starters","de":"Warme Vorspeisen","fr":"Entrées chaudes"}},{"id":"meze","ad":"Meze","cev":{"en":"Meze","de":"Meze","fr":"Mezzés"}},{"id":"etler","ad":"Etler","cev":{"en":"Grilled Meats","de":"Grillgerichte","fr":"Viandes grillées"}},{"id":"salata","ad":"Salatalar","cev":{"en":"Salads","de":"Salate","fr":"Salades"}},{"id":"yanci","ad":"Yancılar","cev":{"en":"Nuts & Snacks","de":"Nüsse & Snacks","fr":"Fruits secs"}},{"id":"icecek","ad":"İçecekler","cev":{"en":"Beverages","de":"Getränke","fr":"Boissons"}},{"id":"bira","ad":"Bira","ust":"alkol","cev":{"en":"Beer","de":"Bier","fr":"Bières"}},{"id":"sarap","ad":"Şarap","ust":"alkol","cev":{"en":"Wine","de":"Wein","fr":"Vins"}},{"id":"raki","ad":"Rakı","ust":"alkol","cev":{"en":"Rakı","de":"Rakı","fr":"Rakı"}},{"id":"tatli","ad":"Tatlılar"}],"urunler":[{"id":"kahvalti","kat":"kahvalti","ad":"Kahvaltı","tip":"kisi","fiyat":650,"cev":{"en":"Breakfast (per person)","de":"Frühstück (pro Person)","fr":"Petit-déjeuner (par pers.)"}},{"id":"fark","kat":"kahvalti","ad":"Fark","tip":"kisi","fiyat":150,"cev":{"en":"Extra Person","de":"Zusatzperson","fr":"Personne supplémentaire"}},{"id":"sogus","kat":"kahvalti","ad":"Söğüş","tip":"kisi","fiyat":100,"cev":{"en":"Fresh Vegetables","de":"Frisches Gemüse","fr":"Crudités"}},{"id":"peynir-kahvalti","kat":"kahvalti","ad":"Peynir (Tulum+Beyaz)","tip":"kisi","fiyat":150,"cev":{"en":"Cheese Plate","de":"Käseteller","fr":"Assiette de fromages"}},{"id":"bal-kaymak","kat":"kahvalti","ad":"Bal Kaymak","tip":"adet","fiyat":150,"cev":{"en":"Honey & Clotted Cream","de":"Honig & Kaymak","fr":"Miel et crème kaymak"}},{"id":"recel","kat":"kahvalti","ad":"Reçel (4 Çeşit)","tip":"adet","fiyat":150,"cev":{"en":"Jams (4 kinds)","de":"Marmeladen (4 Sorten)","fr":"Confitures (4 sortes)"}},{"id":"suzme-yogurt-k","kat":"kahvalti","ad":"Süzme Yoğurt","tip":"adet","fiyat":50,"cev":{"en":"Strained Yogurt","de":"Abgetropfter Joghurt","fr":"Yaourt égoutté"}},{"id":"tortu-k","kat":"kahvalti","ad":"Tortu","tip":"adet","fiyat":150,"aciklamaCev":{"en":"Made only by slow-cooking milk cream over a wood fire.","de":"Entsteht ausschließlich durch das langsame Kochen von Milchrahm auf Holzfeuer.","fr":"Obtenue uniquement en cuisant la crème du lait au feu de bois."}},{"id":"salca","kat":"kahvalti","ad":"Salça","tip":"adet","fiyat":50,"cev":{"en":"Tomato Paste","de":"Tomatenmark","fr":"Concentré de tomate"}},{"id":"yag","kat":"kahvalti","ad":"tereyağ","tip":"adet","fiyat":50,"cev":{"en":"Butter","de":"Butter","fr":"Beurre"}},{"id":"zeytin","kat":"kahvalti","ad":"Zeytin (3 Çeşit)","tip":"adet","fiyat":150,"cev":{"en":"Olives (3 kinds)","de":"Oliven (3 Sorten)","fr":"Olives (3 sortes)"}},{"id":"termos-cay","kat":"kahvalti","ad":"Termos Çay","tip":"adet","fiyat":150,"cev":{"en":"Tea Pot","de":"Teekanne","fr":"Théière"}},{"id":"tortulu-yumurta","kat":"kahvalti","ad":"Tortulu Yumurta","tip":"porsiyon","fiyat":400,"cev":{"en":"Eggs with Tortu","de":"Eier mit Tortu","fr":"Œufs au tortu"}},{"id":"sucuklu-yumurta","kat":"kahvalti","ad":"Sucuklu Yumurta","tip":"porsiyon","fiyat":350,"cev":{"en":"Eggs with Sucuk","de":"Eier mit Sucuk","fr":"Œufs au sucuk"}},{"id":"pastirmali-yumurta","kat":"kahvalti","ad":"Pastırmalı Yumurta","tip":"porsiyon","fiyat":350,"cev":{"en":"Eggs with Pastirma","de":"Eier mit Pastirma","fr":"Œufs au pastirma"}},{"id":"peynirli-yumurta","kat":"kahvalti","ad":"Peynirli Yumurta","tip":"porsiyon","fiyat":270,"cev":{"en":"Eggs with Cheese","de":"Eier mit Käse","fr":"Œufs au fromage"}},{"id":"sade-yumurta","kat":"kahvalti","ad":"Sade Yumurta","tip":"porsiyon","fiyat":150,"cev":{"en":"Plain Eggs","de":"Spiegeleier","fr":"Œufs nature"}},{"id":"menemen","kat":"kahvalti","ad":"Menemen","tip":"porsiyon","fiyat":300,"cev":{"en":"Menemen (Turkish scrambled eggs)","de":"Menemen (türk. Rührei)","fr":"Menemen (œufs brouillés turcs)"}},{"id":"sigara-boregi","kat":"kahvalti","ad":"Sigara Böreği","tip":"porsiyon","fiyat":200,"cev":{"en":"Crispy Cheese Rolls","de":"Knusprige Käseröllchen","fr":"Cigares croustillants au fromage"}},{"id":"gozleme","kat":"kahvalti","ad":"Gözleme","tip":"adet","fiyat":250,"cev":{"en":"Gözleme (stuffed flatbread)","de":"Gözleme (gefülltes Fladenbrot)","fr":"Gözleme (galette farcie)"}},{"id":"dil","kat":"balik","ad":"büyük dil","tip":"gram","kgFiyat":3000,"cev":{"en":"Sole","de":"Seezunge","fr":"Sole"}},{"id":"sardalya","kat":"balik","ad":"Sardalya","tip":"porsiyon","fiyat":400,"cev":{"en":"Sardines","de":"Sardinen","fr":"Sardines"}},{"id":"yaprak-sardalya","kat":"balik","ad":"Yaprak Sardalya (Sarma)","tip":"porsiyon","fiyat":450,"cev":{"en":"Sardines in Vine Leaves","de":"Sardinen in Weinblättern","fr":"Sardines en feuilles de vigne"}},{"id":"sardalya-ekmek","kat":"balik","ad":"Sardalya Ekmek","tip":"adet","fiyat":300,"cev":{"en":"Sardine Sandwich","de":"Sardinen-Sandwich","fr":"Sandwich aux sardines"}},{"id":"kalamar","kat":"arasicak","ad":"Kalamar","tip":"porsiyon","fiyat":850,"cev":{"en":"Calamari","de":"Calamari","fr":"Calamars"}},{"id":"karides","kat":"arasicak","ad":"Karides","tip":"porsiyon","fiyat":900,"icerikler":["Kaşarlı","Acılı"],"cev":{"en":"Shrimp","de":"Garnelen","fr":"Crevettes"}},{"id":"subye","kat":"arasicak","ad":"Sübye","tip":"porsiyon","fiyat":700,"cev":{"en":"Cuttlefish","de":"Sepia","fr":"Seiche"}},{"id":"cimcim","kat":"arasicak","ad":"Çimçim","tip":"porsiyon","fiyat":700,"icerikler":["Kaşarlı","Acılı"],"cev":{"en":"Çimçim Shrimp","de":"Çimçim-Garnelen","fr":"Crevettes çimçim"}},{"id":"mantar-guvec","kat":"arasicak","ad":"Mantar Güveç","tip":"porsiyon","fiyat":400,"cev":{"en":"Mushroom Casserole","de":"Pilz-Cassolette","fr":"Cassolette de champignons"},"yok":true},{"id":"patlican-guvec","kat":"arasicak","ad":"kaşarlı Patlıcan Güveç","tip":"porsiyon","fiyat":400,"cev":{"en":"Eggplant Casserole","de":"Auberginen-Cassolette","fr":"Cassolette d'aubergines"}},{"id":"ahtapot-guvec","kat":"arasicak","ad":"Ahtapot Güveç","tip":"porsiyon","fiyat":900,"cev":{"en":"Octopus Casserole","de":"Oktopus-Cassolette","fr":"Cassolette de poulpe"}},{"id":"patates","kat":"arasicak","ad":"Patates","tip":"porsiyon","fiyat":250,"cev":{"en":"French Fries","de":"Pommes Frites","fr":"Frites"}},{"id":"ev-patatesi","kat":"arasicak","ad":"Ev Patatesi","tip":"porsiyon","fiyat":250,"cev":{"en":"Home-style Potatoes","de":"Hausgemachte Kartoffeln","fr":"Pommes de terre maison"}},{"id":"kunefe","kat":"tatli","ad":"Künefe","tip":"adet","fiyat":250,"cev":{"en":"Künefe","de":"Künefe","fr":"Künefe"}},{"id":"yogurtlu-patlican","kat":"meze","ad":"Yoğurtlu Patlıcan","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Eggplant with Yogurt","de":"Aubergine mit Joghurt","fr":"Aubergine au yaourt"}},{"id":"tursulu-haydari","kat":"meze","ad":"Turşulu Haydari","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Haydari with Pickles","de":"Haydari mit Essiggemüse","fr":"Haydari aux légumes marinés"}},{"id":"fava","kat":"meze","ad":"Fava","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Fava (broad bean purée)","de":"Fava (Bohnenpüree)","fr":"Fava (purée de fèves)"}},{"id":"tarator","kat":"meze","ad":"Tarator","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Tarator","de":"Tarator","fr":"Tarator"}},{"id":"saksuka","kat":"meze","ad":"Şakşuka","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Şakşuka (fried veg. in tomato)","de":"Şakşuka (Gemüse in Tomate)","fr":"Şakşuka (légumes à la tomate)"}},{"id":"atom","kat":"meze","ad":"Atom","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Atom (spicy yogurt dip)","de":"Atom (scharfer Joghurt-Dip)","fr":"Atom (yaourt épicé)"}},{"id":"gelincik","kat":"meze","ad":"Gelincik","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}]},{"id":"peynir-meze","kat":"meze","ad":"Peynir","tip":"kisi","fiyat":150,"cev":{"en":"Cheese","de":"Käse","fr":"Fromage"}},{"id":"kavun","kat":"meze","ad":"Kavun","tip":"kisi","fiyat":75,"cev":{"en":"Melon","de":"Melone","fr":"Melon"}},{"id":"karpuz","kat":"meze","ad":"Karpuz","tip":"kisi","fiyat":75,"cev":{"en":"Watermelon","de":"Wassermelone","fr":"Pastèque"}},{"id":"antep","kat":"meze","ad":"Antep","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Antep (pistachio dip)","de":"Antep (Pistazien-Creme)","fr":"Antep (crème de pistache)"}},{"id":"bamya","kat":"meze","ad":"Bamya","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Okra","de":"Okra","fr":"Gombo"}},{"id":"pancar-tursusu","kat":"meze","ad":"Pancar Turşusu","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Pickled Beets","de":"Eingelegte Rote Bete","fr":"Betteraves marinées"}},{"id":"biber-tursusu","kat":"meze","ad":"Biber Turşusu","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Pickled Peppers","de":"Eingelegte Paprika","fr":"Piments marinés"}},{"id":"deniz-borulcesi","kat":"meze","ad":"Deniz Börülcesi","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Samphire","de":"Queller","fr":"Salicorne"},"yok":true},{"id":"tarla-borulcesi","kat":"meze","ad":"Tarla Börülcesi","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Black-eyed Peas","de":"Augenbohnen","fr":"Haricots cornille"}},{"id":"sade-haydari","kat":"meze","ad":"Sade Haydari","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Haydari (yogurt dip)","de":"Haydari (Joghurt-Dip)","fr":"Haydari (yaourt aux herbes)"}},{"id":"kuru-cacik","kat":"meze","ad":"Kuru Cacık","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Thick Tzatziki","de":"Fester Tsatsiki","fr":"Tzatziki épais"}},{"id":"sultan","kat":"meze","ad":"Sultan","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"yok":true},{"id":"patlican-salatasi","kat":"meze","ad":"Patlıcan Salatası","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Eggplant Salad","de":"Auberginensalat","fr":"Salade d'aubergines"}},{"id":"kabak-siyirma","kat":"meze","ad":"Kabak Sıyırma","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Zucchini Spread","de":"Zucchini-Aufstrich","fr":"Tartinade de courgettes"}},{"id":"girit","kat":"meze","ad":"Girit","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Girit (herbed cheese dip)","de":"Girit (Kräuterkäse)","fr":"Girit (fromage aux herbes)"},"yok":true},{"id":"eksili-girit-kabak","kat":"meze","ad":"Ekşili Girit Kabak","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Sour Girit Zucchini","de":"Saure Girit-Zucchini","fr":"Courgette girit aigre"}},{"id":"koz-patlican","kat":"meze","ad":"Köz Patlıcan","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Roasted Eggplant","de":"Geröstete Aubergine","fr":"Aubergine grillée"}},{"id":"halepeno","kat":"meze","ad":"Halepeno","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Jalapeño","de":"Jalapeño","fr":"Jalapeño"},"yok":true},{"id":"sogan-ruyasi","kat":"meze","ad":"Soğan Rüyası","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Onion Dream","de":"Zwiebeltraum","fr":"Rêve d'oignon"}},{"id":"humus","kat":"meze","ad":"Humus","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Hummus","de":"Hummus","fr":"Houmous"},"yok":true},{"id":"yogurtlu-patlican-atom","kat":"meze","ad":"Yoğurtlu Patlıcan Üstü Atom","tip":"boy","boylar":[{"ad":"Küçük","fiyat":160},{"ad":"Büyük","fiyat":320}],"cev":{"en":"Eggplant-Yogurt with Atom","de":"Aubergine-Joghurt mit Atom","fr":"Aubergine-yaourt et atom"}},{"id":"ot-tabagi","kat":"meze","ad":"Ot Tabağı","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Wild Herb Plate","de":"Wildkräuterteller","fr":"Assiette d'herbes sauvages"},"yok":true},{"id":"suzme-yogurt","kat":"meze","ad":"Süzme Yoğurt","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Strained Yogurt","de":"Abgetropfter Joghurt","fr":"Yaourt égoutté"}},{"id":"tortu","kat":"meze","ad":"Tortu","tip":"boy","boylar":[{"ad":"Küçük","fiyat":170},{"ad":"Büyük","fiyat":340}],"aciklamaCev":{"en":"Made only by slow-cooking milk cream over a wood fire.","de":"Entsteht ausschließlich durch das langsame Kochen von Milchrahm auf Holzfeuer.","fr":"Obtenue uniquement en cuisant la crème du lait au feu de bois."}},{"id":"meyve","kat":"tatli","ad":"Meyve","tip":"kisi","fiyat":100,"cev":{"en":"Fruit Plate","de":"Obstteller","fr":"Assiette de fruits"}},{"id":"pirzola","kat":"etler","ad":"Pirzola","tip":"porsiyon","fiyat":950,"adetFiyat":230,"cev":{"en":"Lamb Chops","de":"Lammkoteletts","fr":"Côtelettes d'agneau"}},{"id":"kuzu-sis","kat":"etler","ad":"Kuzu Şiş","tip":"porsiyon","fiyat":750,"adetFiyat":190,"cev":{"en":"Lamb Skewer","de":"Lammspieß","fr":"Brochette d'agneau"}},{"id":"tavuk-sis","kat":"etler","ad":"Tavuk Şiş","tip":"porsiyon","fiyat":500,"adetFiyat":125,"cev":{"en":"Chicken Skewer","de":"Hähnchenspieß","fr":"Brochette de poulet"}},{"id":"kofte","kat":"etler","ad":"Köfte","tip":"porsiyon","fiyat":550,"adetFiyat":80,"cev":{"en":"Meatballs","de":"Frikadellen","fr":"Boulettes de viande"}},{"id":"kanat","kat":"etler","ad":"Kanat","tip":"porsiyon","fiyat":500,"adetFiyat":65,"cev":{"en":"Chicken Wings","de":"Hähnchenflügel","fr":"Ailes de poulet"}},{"id":"kofte-tavuk-karisik","kat":"etler","ad":"Köfte-Tavuk Karışık","tip":"porsiyon","fiyat":550,"cev":{"en":"Meatball-Chicken Mix","de":"Frikadellen-Hähnchen-Mix","fr":"Mixte boulettes-poulet"}},{"id":"full-karisik","kat":"etler","ad":"Full Karışık","tip":"porsiyon","fiyat":850,"aciklama":"1 Pirzola + 1 Tavuk Şiş + 1 Kuzu Şiş + 2 Köfte","cev":{"en":"Full Mixed Grill","de":"Großer Grillteller","fr":"Grillades mixtes complètes"}},{"id":"ekmek-arasi-tavuk","kat":"etler","ad":"Ekmek Arası Tavuk","tip":"boy","boylar":[{"ad":"Yarım","fiyat":400},{"ad":"Üç Çeyrek","fiyat":550},{"ad":"Tam","fiyat":0}],"cev":{"en":"Chicken Sandwich","de":"Hähnchen-Sandwich","fr":"Sandwich au poulet"}},{"id":"ekmek-arasi-kofte","kat":"etler","ad":"Ekmek Arası Köfte","tip":"boy","boylar":[{"ad":"Yarım","fiyat":450},{"ad":"Üç Çeyrek","fiyat":550},{"ad":"Tam","fiyat":0}],"cev":{"en":"Meatball Sandwich","de":"Frikadellen-Sandwich","fr":"Sandwich aux boulettes"}},{"id":"salata","kat":"salata","ad":"Salata","tip":"kisi","fiyat":160,"icerikler":["Roka","Maydanoz","Soğan","Domates","Mor Lahana","Salatalık","Nar Ekşisi","Zeytinyağı"],"cev":{"en":"Salad","de":"Salat","fr":"Salade"}},{"id":"kasik-salata","kat":"salata","ad":"Kaşık Salata","tip":"kisi","fiyat":160,"icerikler":["Roka","Maydanoz","Soğan","Domates","Mor Lahana","Salatalık","Nar Ekşisi","Zeytinyağı"],"cev":{"en":"Chopped Salad","de":"Gehackter Salat","fr":"Salade hachée"}},{"id":"coban-salata","kat":"salata","ad":"Çoban Salata","tip":"kisi","fiyat":160,"icerikler":["Roka","Maydanoz","Soğan","Domates","Mor Lahana","Salatalık","Nar Ekşisi","Zeytinyağı"],"cev":{"en":"Shepherd's Salad","de":"Hirtensalat","fr":"Salade du berger"}},{"id":"gavurdagi-salata","kat":"salata","ad":"Gavurdağı Salata","tip":"kisi","fiyat":200,"icerikler":["Roka","Maydanoz","Soğan","Domates","Mor Lahana","Salatalık","Nar Ekşisi","Zeytinyağı"],"cev":{"en":"Gavurdağı Salad","de":"Gavurdağı-Salat","fr":"Salade gavurdağı"}},{"id":"tursu","kat":"yanci","ad":"Turşu","tip":"adet","fiyat":150,"cev":{"en":"Pickles","de":"Essiggemüse","fr":"Légumes marinés"}},{"id":"karisik-kuruyemis","kat":"yanci","ad":"Karışık Kuruyemiş","tip":"adet","fiyat":250,"cev":{"en":"Mixed Nuts","de":"Gemischte Nüsse","fr":"Mélange de fruits secs"}},{"id":"fistik","kat":"yanci","ad":"Fıstık","tip":"adet","fiyat":150,"cev":{"en":"Peanuts","de":"Erdnüsse","fr":"Cacahuètes"}},{"id":"badem","kat":"yanci","ad":"Badem","tip":"adet","fiyat":250,"cev":{"en":"Almonds","de":"Mandeln","fr":"Amandes"}},{"id":"kaju","kat":"yanci","ad":"Kaju","tip":"adet","fiyat":250,"cev":{"en":"Cashews","de":"Cashews","fr":"Noix de cajou"}},{"id":"antep-yanci","kat":"yanci","ad":"Antep","tip":"adet","fiyat":350,"cev":{"en":"Pistachios","de":"Pistazien","fr":"Pistaches"}},{"id":"findik","kat":"yanci","ad":"Fındık","tip":"adet","fiyat":200,"cev":{"en":"Hazelnuts","de":"Haselnüsse","fr":"Noisettes"}},{"id":"leblebi","kat":"yanci","ad":"Leblebi","tip":"adet","fiyat":0,"cev":{"en":"Roasted Chickpeas","de":"Geröstete Kichererbsen","fr":"Pois chiches grillés"}},{"id":"cay","kat":"icecek","ad":"Çay","tip":"adet","fiyat":25,"cev":{"en":"Tea","de":"Tee","fr":"Thé"}},{"id":"kahve","kat":"icecek","ad":"Kahve","tip":"adet","fiyat":100,"cev":{"en":"Turkish Coffee","de":"Türkischer Kaffee","fr":"Café turc"}},{"id":"churchill","kat":"icecek","ad":"Churchill","tip":"adet","fiyat":100,"cev":{"en":"Churchill","de":"Churchill","fr":"Churchill"}},{"id":"ayran","kat":"icecek","ad":"Ayran","tip":"adet","fiyat":60,"cev":{"en":"Ayran","de":"Ayran","fr":"Ayran"}},{"id":"soda","kat":"icecek","ad":"Soda","tip":"adet","fiyat":50,"cev":{"en":"Sparkling Mineral Water","de":"Mineralwasser","fr":"Eau gazeuse"}},{"id":"elmali-soda","kat":"icecek","ad":"Elmalı Soda","tip":"adet","fiyat":60,"cev":{"en":"Apple Soda","de":"Apfel-Soda","fr":"Soda à la pomme"}},{"id":"limonlu-soda","kat":"icecek","ad":"Limonlu Soda","tip":"adet","fiyat":60,"cev":{"en":"Lemon Soda","de":"Zitronen-Soda","fr":"Soda au citron"}},{"id":"limonlu-icetea","kat":"icecek","ad":"Limonlu Ice Tea","tip":"adet","fiyat":120,"cev":{"en":"Lemon Ice Tea","de":"Zitronen-Eistee","fr":"Thé glacé citron"}},{"id":"seftalili-icetea","kat":"icecek","ad":"Şeftalili Ice Tea","tip":"adet","fiyat":120,"cev":{"en":"Peach Ice Tea","de":"Pfirsich-Eistee","fr":"Thé glacé pêche"}},{"id":"karpuzlu","kat":"icecek","ad":"Karpuzlu Ice Tea","tip":"adet","fiyat":120,"cev":{"en":"Watermelon Drink","de":"Wassermelonen-Getränk","fr":"Boisson pastèque"}},{"id":"mangolu","kat":"icecek","ad":"Mangolu Ice Tea","tip":"adet","fiyat":120,"cev":{"en":"Mango Drink","de":"Mango-Getränk","fr":"Boisson mangue"}},{"id":"cilekli","kat":"icecek","ad":"Çilekli Ice Tea","tip":"adet","fiyat":120,"cev":{"en":"Strawberry Drink","de":"Erdbeer-Getränk","fr":"Boisson fraise"}},{"id":"ahududulu","kat":"icecek","ad":"Ahududulu Ice Tea","tip":"adet","fiyat":120,"cev":{"en":"Raspberry Drink","de":"Himbeer-Getränk","fr":"Boisson framboise"}},{"id":"cola","kat":"icecek","ad":"Cola","tip":"adet","fiyat":120},{"id":"zero-cola","kat":"icecek","ad":"Zero Cola","tip":"adet","fiyat":120,"cev":{"en":"Zero Cola","de":"Cola Zero","fr":"Cola zéro"}},{"id":"fanta","kat":"icecek","ad":"Fanta","tip":"adet","fiyat":120},{"id":"sprite","kat":"icecek","ad":"Sprite","tip":"adet","fiyat":120},{"id":"uludag-gazoz","kat":"icecek","ad":"Uludağ Gazoz","tip":"adet","fiyat":120,"cev":{"en":"Uludağ Soda","de":"Uludağ Limonade","fr":"Limonade Uludağ"}},{"id":"karisik-meyve-suyu","kat":"icecek","ad":"Karışık Meyve Suyu","tip":"adet","fiyat":120,"cev":{"en":"Mixed Fruit Juice","de":"Multivitaminsaft","fr":"Jus multifruits"}},{"id":"visneli","kat":"icecek","ad":"Vişneli Meyve Suyu","tip":"adet","fiyat":120,"cev":{"en":"Sour Cherry Juice","de":"Sauerkirschsaft","fr":"Jus de griotte"}},{"id":"seftali","kat":"icecek","ad":"Şeftalili Meyve Suyu","tip":"adet","fiyat":120,"cev":{"en":"Peach Juice","de":"Pfirsichsaft","fr":"Jus de pêche"}},{"id":"kayisi","kat":"icecek","ad":"Kayısılı Meyve Suyu","tip":"adet","fiyat":120,"cev":{"en":"Apricot Juice","de":"Aprikosensaft","fr":"Jus d'abricot"}},{"id":"kucuk-salgam","kat":"icecek","ad":"Küçük Şalgam","tip":"adet","fiyat":120,"cev":{"en":"Şalgam (small)","de":"Şalgam (klein)","fr":"Şalgam (petit)"}},{"id":"buyuk-salgam","kat":"icecek","ad":"Büyük Şalgam","tip":"adet","fiyat":230,"cev":{"en":"Şalgam (large)","de":"Şalgam (groß)","fr":"Şalgam (grand)"}},{"id":"kucuk-su","kat":"icecek","ad":"Küçük Su","tip":"adet","fiyat":50,"cev":{"en":"Water (small)","de":"Wasser (klein)","fr":"Eau (petite)"}},{"id":"buyuk-su","kat":"icecek","ad":"Büyük Su","tip":"adet","fiyat":100,"cev":{"en":"Water (large)","de":"Wasser (groß)","fr":"Eau (grande)"}},{"id":"tuborg","kat":"bira","ad":"Tuborg","tip":"adet","fiyat":275},{"id":"carlsberg","kat":"bira","ad":"Carlsberg","tip":"adet","fiyat":275},{"id":"carlsberg-luna","kat":"bira","ad":"Carlsberg Luna","tip":"adet","fiyat":275},{"id":"efes-malt","kat":"bira","ad":"Efes Malt","tip":"adet","fiyat":275},{"id":"bud","kat":"bira","ad":"Bud","tip":"adet","fiyat":300},{"id":"corona","kat":"bira","ad":"Corona","tip":"adet","fiyat":320},{"id":"miller","kat":"bira","ad":"Miller","tip":"adet","fiyat":275},{"id":"stella","kat":"bira","ad":"Stella","tip":"adet","fiyat":290},{"id":"becks","kat":"bira","ad":"Becks","tip":"adet","fiyat":290},{"id":"bomonti","kat":"bira","ad":"Bomonti","tip":"adet","fiyat":280},{"id":"efes-tombul","kat":"bira","ad":"Efes Tombul","tip":"adet","fiyat":275},{"id":"serce","kat":"bira","ad":"Serçe (Efes Ufak)","tip":"adet","fiyat":220},{"id":"blanc","kat":"bira","ad":"Blanc","tip":"adet","fiyat":275},{"id":"desperados","kat":"bira","ad":"Desperados","tip":"adet","fiyat":350},{"id":"sol","kat":"bira","ad":"Sol","tip":"adet","fiyat":310},{"id":"tuborg-smooth","kat":"bira","ad":"Tuborg Smooth","tip":"adet","fiyat":275},{"id":"tuborg-ice","kat":"bira","ad":"Tuborg Ice","tip":"adet","fiyat":275},{"id":"weihenstephaner","kat":"bira","ad":"Weihenstephaner","tip":"adet","fiyat":320},{"id":"vitus","kat":"bira","ad":"Vitus","tip":"adet","fiyat":380},{"id":"budweiser","kat":"bira","ad":"Budweiser","tip":"adet","fiyat":300},{"id":"daura-glutensiz","kat":"bira","ad":"Daura Glutensiz","tip":"adet","fiyat":320},{"id":"efes-glutensiz","kat":"bira","ad":"Efes Glutensiz","tip":"adet","fiyat":320},{"id":"blue-moon","kat":"bira","ad":"Blue Moon","tip":"adet","fiyat":310},{"id":"bitburger-alkolsuz","kat":"bira","ad":"Bitburger Alkolsüz","tip":"adet","fiyat":230},{"id":"efes-arti1","kat":"bira","ad":"Efes +1","tip":"adet","fiyat":275},{"id":"efes-ozel-seri","kat":"bira","ad":"Efes Özel Seri","tip":"adet","fiyat":275},{"id":"belfast","kat":"bira","ad":"Belfast","tip":"adet","fiyat":275},{"id":"amber","kat":"bira","ad":"Amber","tip":"adet","fiyat":275},{"id":"tuborg-gold","kat":"bira","ad":"Tuborg Gold","tip":"adet","fiyat":275},{"id":"tuborg-filtresiz","kat":"bira","ad":"Tuborg Filtresiz","tip":"adet","fiyat":275},{"id":"selection-kirmizi","kat":"sarap","ad":"Selection Kırmızı","tip":"sise","boylar":[{"ad":"50cl","fiyat":1800},{"ad":"75cl","fiyat":2700}]},{"id":"selection-beyaz","kat":"sarap","ad":"Selection Beyaz","tip":"sise","boylar":[{"ad":"50cl","fiyat":1750},{"ad":"75cl","fiyat":2500}]},{"id":"buzbag","kat":"sarap","ad":"Buzbağ Kırmızı-Beyaz","tip":"sise","boylar":[{"ad":"37.5cl","fiyat":800},{"ad":"75cl","fiyat":1150}]},{"id":"cankaya","kat":"sarap","ad":"Çankaya","tip":"sise","boylar":[{"ad":"37.5cl","fiyat":900},{"ad":"75cl","fiyat":1550},{"ad":"Kadeh","fiyat":450}]},{"id":"yakut","kat":"sarap","ad":"Yakut","tip":"sise","boylar":[{"ad":"37.5cl","fiyat":1000},{"ad":"Kadeh","fiyat":500}]},{"id":"raki-servisi","kat":"raki","ad":"Rakı Servisi","tip":"kisi","fiyat":250,"cev":{"en":"Rakı Service (per person)","de":"Rakı-Service (p.P.)","fr":"Service rakı (par pers.)"}},{"id":"duble-raki","kat":"raki","ad":"Duble Rakı","tip":"adet","fiyat":450,"cev":{"en":"Double Rakı","de":"Doppelter Rakı","fr":"Rakı double"}},{"id":"tek-raki","kat":"raki","ad":"Tek Rakı","tip":"adet","fiyat":300,"cev":{"en":"Single Rakı","de":"Einfacher Rakı","fr":"Rakı simple"}},{"id":"karar-raki","kat":"raki","ad":"Karar Rakı","tip":"adet","fiyat":350,"cev":{"en":"Medium Rakı","de":"Mittlerer Rakı","fr":"Rakı moyen"}},{"id":"yeni-raki","kat":"raki","ad":"Yeni Rakı","tip":"sise","boylar":[{"ad":"20cl","fiyat":1100},{"ad":"35cl","fiyat":1450},{"ad":"50cl","fiyat":1935},{"ad":"70cl","fiyat":2475},{"ad":"100cl","fiyat":3200}]},{"id":"yeni-seri","kat":"raki","ad":"Yeni Rakı Yeni Seri","tip":"sise","boylar":[{"ad":"20cl","fiyat":1200},{"ad":"35cl","fiyat":1550},{"ad":"50cl","fiyat":2150},{"ad":"70cl","fiyat":2750},{"ad":"100cl","fiyat":3575}]},{"id":"altin-seri","kat":"raki","ad":"Tekirdağ Altın Seri","tip":"sise","boylar":[{"ad":"20cl","fiyat":1300},{"ad":"35cl","fiyat":1800},{"ad":"50cl","fiyat":2475},{"ad":"70cl","fiyat":3185},{"ad":"100cl","fiyat":4100}]},{"id":"kulup-deluxe","kat":"raki","ad":"Kulüp Deluxe","tip":"sise","boylar":[{"ad":"35cl","fiyat":1865},{"ad":"70cl","fiyat":3215}]},{"id":"kulup","kat":"raki","ad":"Kulüp","tip":"sise","boylar":[{"ad":"35cl","fiyat":1800},{"ad":"70cl","fiyat":3250}]},{"id":"tekirdag-gobek","kat":"raki","ad":"Tekirdağ Göbek","tip":"sise","boylar":[{"ad":"35cl","fiyat":1935},{"ad":"70cl","fiyat":3410}]},{"id":"tekirdag-rezerve","kat":"raki","ad":"Tekirdağ Rezerve","tip":"sise","boylar":[{"ad":"35cl","fiyat":2060},{"ad":"70cl","fiyat":3650}]},{"id":"beylerbeyi-gobek","kat":"raki","ad":"Beylerbeyi Göbek","tip":"sise","boylar":[{"ad":"20cl","fiyat":1450},{"ad":"35cl","fiyat":2100},{"ad":"50cl","fiyat":2830},{"ad":"70cl","fiyat":3600},{"ad":"100cl","fiyat":4550},{"ad":"150cl","fiyat":0}]},{"id":"mavi-gobek","kat":"raki","ad":"Mavi Göbek","tip":"sise","boylar":[{"ad":"20cl","fiyat":1000},{"ad":"35cl","fiyat":1580},{"ad":"50cl","fiyat":2170},{"ad":"70cl","fiyat":2760},{"ad":"100cl","fiyat":3350}]},{"id":"efe-yas-uzum","kat":"raki","ad":"Efe Yaş Üzüm","tip":"sise","boylar":[{"ad":"20cl","fiyat":1200},{"ad":"35cl","fiyat":1700},{"ad":"50cl","fiyat":2200},{"ad":"70cl","fiyat":2850},{"ad":"100cl","fiyat":3500}]},{"id":"efe-gold","kat":"raki","ad":"Efe Gold","tip":"sise","boylar":[{"ad":"20cl","fiyat":1300},{"ad":"35cl","fiyat":1800},{"ad":"50cl","fiyat":2475},{"ad":"70cl","fiyat":3185},{"ad":"100cl","fiyat":4100}]},{"id":"sari-zeybek","kat":"raki","ad":"Sarı Zeybek 3 Meşe","tip":"sise","boylar":[{"ad":"20cl","fiyat":1500},{"ad":"35cl","fiyat":2500},{"ad":"50cl","fiyat":3465},{"ad":"70cl","fiyat":4455},{"ad":"100cl","fiyat":5750}]},{"id":"barbayanni","kat":"raki","ad":"Barbayanni","tip":"sise","boylar":[{"ad":"20cl","fiyat":1350},{"ad":"70cl","fiyat":0}]},{"id":"ouzo","kat":"raki","ad":"Ouzo","tip":"sise","boylar":[{"ad":"70cl","fiyat":3450}]},{"id":"protatip","kat":"raki","ad":"Protatip","tip":"sise","boylar":[{"ad":"35cl","fiyat":0},{"ad":"70cl","fiyat":0}]},{"id":"ala","kat":"raki","ad":"Ala","tip":"sise","boylar":[{"ad":"20cl","fiyat":1400},{"ad":"35cl","fiyat":1850},{"ad":"70cl","fiyat":3210}]},{"id":"incirden","kat":"raki","ad":"İncirden","tip":"sise","boylar":[{"ad":"35cl","fiyat":2000},{"ad":"70cl","fiyat":4100}]},{"id":"levrek-2","kat":"balik","ad":"parça levrek","tip":"adet","fiyat":700,"cev":{"en":"Sea Bass (Half Portion)","de":"Wolfsbarsch (halbe Portion)","fr":"Bar (demi-portion)"},"aciklamaCev":{"en":"This is half of one sea bass (approx. 750-800 g).","de":"Dies ist die Hälfte eines Wolfsbarschs (ca. 750-800 g).","fr":"C'est la moitié d'un bar (env. 750-800 g)."}},{"id":"cupra","kat":"balik","ad":"çupra","tip":"adet","fiyat":700,"cev":{"en":"Sea Bream","de":"Dorade","fr":"Daurade"}},{"id":"tavada-tortu","kat":"kahvalti","ad":"tavada tortu","tip":"porsiyon","fiyat":350,"cev":{"en":"Tortu (Pan-Fried)","de":"Tortu (in der Pfanne gebraten)","fr":"Tortu poêlé"}},{"id":"pisirme-tava","kat":"balik","ad":"pişirme( tava)","tip":"porsiyon","fiyat":200,"cev":{"en":"Cooking Service (Pan-Fried)","de":"Zubereitung (in der Pfanne)","fr":"Cuisson (à la poêle)"}},{"id":"pisirme-izgara","kat":"balik","ad":"pişirme( ızgara)","tip":"porsiyon","fiyat":150,"cev":{"en":"Cooking Service (Grilled)","de":"Zubereitung (gegrillt)","fr":"Cuisson (grillé)"}},{"id":"urla-chardonnay","kat":"sarap","ad":"urla chardonnay","tip":"adet","fiyat":2700},{"id":"urla-sauvignon-blanc","kat":"sarap","ad":"urla sauvignon blanc","tip":"adet","fiyat":2700},{"id":"urla-tempus","kat":"sarap","ad":"urla tempus","tip":"adet","fiyat":2700},{"id":"urla-bogazkere","kat":"sarap","ad":"urla boğazkere","tip":"adet","fiyat":2700},{"id":"urla-vourla","kat":"sarap","ad":"urla vourla","tip":"adet","fiyat":2700},{"id":"sac-kavurma","kat":"etler","ad":"saç kavurma","tip":"porsiyon","fiyat":850,"icerikler":["soğan","domates"],"cev":{"en":"Sautéed Lamb (sac)","de":"Lamm-Sautée (Sac)","fr":"Sauté d'agneau (sac)"}},{"id":"semiz-otu","kat":"meze","ad":"semiz otu","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Purslane","de":"Portulak","fr":"Pourpier"}},{"id":"kizartma","kat":"arasicak","ad":"kızartma","tip":"porsiyon","fiyat":250,"cev":{"en":"Fried Vegetables (Zucchini & Eggplant)","de":"Frittiertes Gemüse (Zucchini & Aubergine)","fr":"Légumes frits (courgette et aubergine)"}},{"id":"istavrit-2","kat":"balik","ad":"istavrit","tip":"gram","kgFiyat":1400,"cev":{"en":"Horse Mackerel","de":"Bastardmakrele","fr":"Chinchard"}},{"id":"roka-domates-sogan-peynir","kat":"salata","ad":"Greek Salata","tip":"porsiyon","fiyat":200,"icerikler":["roka","domates","soğan","peynir"],"cev":{"en":"Greek Salad","de":"Griechischer Salat","fr":"Salade grecque"}},{"id":"20-lik-teragold","kat":"raki","ad":"Teragold","tip":"sise","boylar":[{"ad":"35cl","fiyat":1800},{"ad":"70cl","fiyat":3200}]},{"id":"35-lik-teragold","kat":"raki","ad":"20 lik teragold","tip":"adet","fiyat":1200},{"id":"50-lik-teragold","kat":"raki","ad":"50 lik teragold","tip":"adet","fiyat":2450},{"id":"70-lik-teragold","kat":"raki","ad":"70 lik teragold","tip":"adet","fiyat":3100},{"id":"100-luk-teragold","kat":"raki","ad":"100 lük teragold","tip":"adet","fiyat":3900},{"id":"ordovr-tabagi","kat":"meze","ad":"Ordövr Tabağı","tip":"boy","boylar":[{"ad":"Küçük","fiyat":300},{"ad":"Büyük","fiyat":600}],"cev":{"en":"Hors d'Oeuvre Platter","de":"Vorspeisenteller","fr":"Assiette d'hors-d'œuvre"}},{"id":"omlet","kat":"kahvalti","ad":"omlet","tip":"porsiyon","fiyat":300,"cev":{"en":"Omelette","de":"Omelett","fr":"Omelette"}},{"id":"kalamar-izgara","kat":"arasicak","ad":"kalamar ızgara","tip":"porsiyon","fiyat":850,"cev":{"en":"Grilled Calamari","de":"Gegrillter Calamari","fr":"Calamars grillés"}},{"id":"levrek-kg","kat":"balik","ad":"Deniz levrek (kg)","tip":"gram","kgFiyat":2200,"cev":{"en":"Sea Bass (per kg)","de":"Wolfsbarsch (pro kg)","fr":"Bar (au kg)"}},{"id":"kopeoglu","kat":"meze","ad":"köpeoğlu","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Köpoğlu (grilled eggplant & pepper with garlic yogurt)","de":"Köpoğlu (gegrillte Aubergine & Paprika mit Knoblauchjoghurt)","fr":"Köpoğlu (aubergine et poivron grillés au yaourt à l'ail)"}},{"id":"ogrenci-raki-servisi","kat":"raki","ad":"öğrenci rakı servisi","tip":"kisi","fiyat":150,"cev":{"en":"Student Rakı Service","de":"Studenten-Rakı-Service","fr":"Service rakı étudiant"}},{"id":"sardalya-pilaki-2","kat":"balik","ad":"sardalya pilaki","tip":"porsiyon","fiyat":425,"cev":{"en":"Sardine Pilaki (cooked in olive oil)","de":"Sardinen-Pilaki (in Olivenöl gegart)","fr":"Sardines pilaki (cuites à l'huile d'olive)"}},{"id":"sardalya-buglama","kat":"balik","ad":"sardalya buğlama","tip":"porsiyon","fiyat":425,"cev":{"en":"Sardines Buğlama (poached with vegetables)","de":"Sardinen Buğlama (mit Gemüse gedünstet)","fr":"Sardines buğlama (mijotées aux légumes)"}},{"id":"barbun","kat":"balik","ad":"Barbun","tip":"gram","kgFiyat":3800,"cev":{"en":"Red Mullet","de":"Rotbarbe","fr":"Rouget"}},{"id":"duble-ev-patatesi","kat":"arasicak","ad":"Duble Ev Patatesi","tip":"porsiyon","fiyat":500,"cev":{"en":"Home-style Potatoes (Double Portion)","de":"Hausgemachte Kartoffeln (doppelte Portion)","fr":"Pommes de terre maison (portion double)"}},{"id":"sade-sucuk","kat":"kahvalti","ad":"sade sucuk","tip":"porsiyon","fiyat":300,"cev":{"en":"Sucuk (Plain)","de":"Sucuk (pur)","fr":"Sucuk nature"}},{"id":"eksili-biber","kat":"meze","ad":"ekşili biber","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Peppers in Sour Sauce","de":"Paprika in saurer Soße","fr":"Poivrons à la sauce aigre"}},{"id":"angora-37-5","kat":"sarap","ad":"angora 37,5","tip":"adet","fiyat":950},{"id":"bamya-kizartma","kat":"meze","ad":"bamya kızartma","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Fried Okra","de":"Frittierte Okra","fr":"Gombo frit"},"yok":true},{"id":"zeytin-yagli-bamya","kat":"meze","ad":"zeytin yağlı bamya","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Okra in Olive Oil","de":"Okra in Olivenöl","fr":"Gombo à l'huile d'olive"}},{"id":"salatalik-bavyera","kat":"meze","ad":"salatalık bavyera","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Bavarian-style Cucumber Salad","de":"Bayerischer Gurkensalat","fr":"Salade de concombre à la bavaroise"},"yok":true},{"id":"lidaki","kat":"balik","ad":"lidaki","tip":"gram","kgFiyat":1400,"cev":{"en":"Lidaki (small local Aegean fish)","de":"Lidaki (kleiner Fisch aus der Ägäis)","fr":"Lidaki (petit poisson égéen)"}},{"id":"levrek-lokum","kat":"balik","ad":"Levrek lokum","tip":"gram","kgFiyat":1700,"cev":{"en":"Sea Bass Bites","de":"Wolfsbarsch-Häppchen","fr":"Bouchées de bar"}},{"id":"duble-kizartma","kat":"arasicak","ad":"Duble kızartma","tip":"porsiyon","fiyat":500,"icerikler":["Yoğurdu sarimsakli"],"cev":{"en":"Fried Vegetables (Double Portion)","de":"Frittiertes Gemüse (doppelte Portion)","fr":"Légumes frits (portion double)"}},{"id":"firin-helva","kat":"tatli","ad":"Fırın helva","tip":"porsiyon","fiyat":100,"cev":{"en":"Oven-Baked Halva","de":"Ofen-Halva","fr":"Halva au four"}},{"id":"dilim-helva","kat":"tatli","ad":"Dilim helva","tip":"porsiyon","fiyat":100,"cev":{"en":"Halva Slice","de":"Halva-Scheibe","fr":"Tranche de halva"}},{"id":"midye-dolma","kat":"meze","ad":"Midye Dolma","tip":"adet","fiyat":50,"cev":{"en":"Stuffed Mussels","de":"Gefüllte Miesmuscheln","fr":"Moules farcies"}},{"id":"mutebbel","kat":"meze","ad":"Mütebbel","tip":"boy","boylar":[{"ad":"Küçük","fiyat":145},{"ad":"Büyük","fiyat":290}],"cev":{"en":"Mutabal (smoky eggplant & yogurt dip)","de":"Mutabal (Auberginen-Joghurt-Dip)","fr":"Moutabal (purée d'aubergine fumée au yaourt)"}},{"id":"mantar-pilaki-2","kat":"meze","ad":"Mantar pilaki","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Mushroom Pilaki (cooked in olive oil)","de":"Pilz-Pilaki (in Olivenöl gegart)","fr":"Champignons pilaki (cuits à l'huile d'olive)"}},{"id":"granyoz","kat":"balik","ad":"Granyoz","tip":"gram","kgFiyat":2300,"icerikler":["Tava pilaki"],"cev":{"en":"Brown Meagre","de":"Adlerfisch","fr":"Corb"}},{"id":"aci-frik-biber","kat":"meze","ad":"acı frik biber","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}],"cev":{"en":"Spicy Peppers","de":"Scharfe Paprika","fr":"Piments épicés"}},{"id":"35-mercan","kat":"raki","ad":"35 lik Mercan","tip":"adet","fiyat":1800},{"id":"haslanmis-yumurta","kat":"kahvalti","ad":"haslanmis yumurta","tip":"adet","fiyat":50,"cev":{"en":"Boiled Egg","de":"Gekochtes Ei","fr":"Œuf dur"}},{"id":"ali-duman-sogusu","kat":"meze","ad":"Ali Duman Söğüşü","tip":"kisi","fiyat":200,"icerikler":["Domates","Salatalık","Zeytin","Peynir"],"cev":{"en":"Ali Duman Fresh Vegetable Platter","de":"Ali Duman Frisches Gemüse","fr":"Crudités Ali Duman"}},{"id":"sardalya-pilaki","kat":"balik","ad":"sardalya pilaki","tip":"porsiyon","fiyat":400,"cev":{"en":"Sardine Pilaki (cooked in olive oil)","de":"Sardinen-Pilaki (in Olivenöl gegart)","fr":"Sardines pilaki (cuites à l'huile d'olive)"}},{"id":"yarim-ekmek-kalamar","kat":"balik","ad":"yarım ekmek kalamar","tip":"adet","fiyat":0,"cev":{"en":"Calamari Half Sandwich","de":"Kalamari im halben Brot","fr":"Sandwich calamars (demi-pain)"}},{"id":"sucuk-ekmek","kat":"etler","ad":"sucuk ekmek","tip":"adet","fiyat":250,"cev":{"en":"Sucuk Sandwich","de":"Sucuk-Sandwich","fr":"Sandwich au sucuk"}},{"id":"kiymali-gozleme","kat":"kahvalti","ad":"Kıymalı gözleme","tip":"adet","fiyat":300,"cev":{"en":"Gözleme with Minced Meat","de":"Gözleme mit Hackfleisch","fr":"Gözleme à la viande hachée"}},{"id":"baliklar-mars","kat":"balik","ad":"balıklar marş","tip":"adet","fiyat":0,"cev":{"en":"Fish – Start Grilling","de":"Fisch – Grillstart","fr":"Poissons – Démarrer la cuisson"}},{"id":"mirmir","kat":"balik","ad":"Mırmır","tip":"gram","kgFiyat":1450,"cev":{"en":"Sand Steenbras","de":"Marmorbrasse","fr":"Marbré"}},{"id":"izgaralik-patetes","kat":"etler","ad":"ızgaralık patetes","tip":"adet","fiyat":0},{"id":"piyaz","kat":"meze","ad":"piyaz","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}]},{"id":"kucuk-dil","kat":"balik","ad":"küçük dil","tip":"gram","kgFiyat":1400},{"id":"ceyrek-sardalya","kat":"balik","ad":"çeyrek ekmek sardalya","tip":"adet","fiyat":180},{"id":"kucuk-levrek","kat":"balik","ad":"küçük levrek","tip":"adet","fiyat":600},{"id":"semiz-otu-salatasi","kat":"meze","ad":"semiz otu salatası","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}]},{"id":"deniz-mahsulleri-salatasi","kat":"meze","ad":"deniz mahsulleri salatası","tip":"boy","boylar":[{"ad":"Küçük","fiyat":200},{"ad":"Büyük","fiyat":400}]},{"id":"feslegenli-izgara-peynir","kat":"meze","ad":"fesleğenli ızgara peynir","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}]},{"id":"kavurmali-yumurta","kat":"kahvalti","ad":"kavurmalı yumurta","tip":"porsiyon","fiyat":350},{"id":"deniz-cupra","kat":"balik","ad":"deniz çupra","tip":"gram","kgFiyat":2300},{"id":"hamsi-marin","kat":"meze","ad":"hamsi marin","tip":"boy","boylar":[{"ad":"Küçük","fiyat":200},{"ad":"Büyük","fiyat":400}],"yok":true},{"id":"pasta","kat":"tatli","ad":"pasta","tip":"adet","fiyat":900},{"id":"kofte-ekmek-ceyrek","kat":"kahvalti","ad":"köfte ekmek çeyrek","tip":"adet","fiyat":225},{"id":"ciftlik-cupra","kat":"balik","ad":"çiftlik çupra","tip":"gram","kgFiyat":1500},{"id":"sadece-beyaz-peynir","kat":"kahvalti","ad":"sadece beyaz peynir","tip":"adet","fiyat":75},{"id":"palamut","kat":"balik","ad":"palamut","tip":"adet","fiyat":400,"cev":{"en":"Bonito","de":"Bonito","fr":"Bonite"}},{"id":"subye-yumurtasi","kat":"meze","ad":"sübye yumurtası","tip":"boy","boylar":[{"ad":"Küçük","fiyat":200},{"ad":"Büyük","fiyat":400}]},{"id":"koz-biber","kat":"meze","ad":"köz biber","tip":"boy","boylar":[{"ad":"Küçük","fiyat":140},{"ad":"Büyük","fiyat":280}]},{"id":"gielo","kat":"sarap","ad":"gielo","tip":"adet","fiyat":1500},{"id":"izgara-sardalya-yarim-ekmek","kat":"balik","ad":"ızgara sardalya yarım ekmek","tip":"adet","fiyat":300,"icerikler":["marul","domates","soğan"]},{"id":"levrek-marin","kat":"meze","ad":"levrek marin","tip":"boy","boylar":[{"ad":"Küçük","fiyat":200},{"ad":"Büyük","fiyat":400}]},{"id":"palamut-buglama","kat":"balik","ad":"palamut buğlama","tip":"porsiyon","fiyat":500}],"boyCev":{"Küçük":{"en":"Small","de":"Klein","fr":"Petit"},"Büyük":{"en":"Large","de":"Groß","fr":"Grand"},"Kadeh":{"en":"Glass","de":"Glas","fr":"Verre"},"Yarım":{"en":"Half","de":"Halb","fr":"Demi"},"Üç Çeyrek":{"en":"3/4","de":"3/4","fr":"3/4"},"Tam":{"en":"Full","de":"Ganz","fr":"Entier"}}}
+{
+ "guncellendi": 1789935077959,
+ "kategoriler": [
+  {
+   "id": "kahvalti",
+   "ad": "Kahvaltı",
+   "cev": {
+    "en": "Breakfast",
+    "de": "Frühstück",
+    "fr": "Petit-déjeuner"
+   }
+  },
+  {
+   "id": "balik",
+   "ad": "Balık",
+   "cev": {
+    "en": "Fish",
+    "de": "Fisch",
+    "fr": "Poissons"
+   }
+  },
+  {
+   "id": "arasicak",
+   "ad": "Ara Sıcak",
+   "cev": {
+    "en": "Hot Starters",
+    "de": "Warme Vorspeisen",
+    "fr": "Entrées chaudes"
+   }
+  },
+  {
+   "id": "meze",
+   "ad": "Meze",
+   "cev": {
+    "en": "Meze",
+    "de": "Meze",
+    "fr": "Mezzés"
+   }
+  },
+  {
+   "id": "etler",
+   "ad": "Etler",
+   "cev": {
+    "en": "Grilled Meats",
+    "de": "Grillgerichte",
+    "fr": "Viandes grillées"
+   }
+  },
+  {
+   "id": "salata",
+   "ad": "Salatalar",
+   "cev": {
+    "en": "Salads",
+    "de": "Salate",
+    "fr": "Salades"
+   }
+  },
+  {
+   "id": "yanci",
+   "ad": "Yancılar",
+   "cev": {
+    "en": "Nuts & Snacks",
+    "de": "Nüsse & Snacks",
+    "fr": "Fruits secs"
+   }
+  },
+  {
+   "id": "icecek",
+   "ad": "İçecekler",
+   "cev": {
+    "en": "Beverages",
+    "de": "Getränke",
+    "fr": "Boissons"
+   }
+  },
+  {
+   "id": "bira",
+   "ad": "Bira",
+   "ust": "alkol",
+   "cev": {
+    "en": "Beer",
+    "de": "Bier",
+    "fr": "Bières"
+   }
+  },
+  {
+   "id": "sarap",
+   "ad": "Şarap",
+   "ust": "alkol",
+   "cev": {
+    "en": "Wine",
+    "de": "Wein",
+    "fr": "Vins"
+   }
+  },
+  {
+   "id": "raki",
+   "ad": "Rakı",
+   "ust": "alkol",
+   "cev": {
+    "en": "Rakı",
+    "de": "Rakı",
+    "fr": "Rakı"
+   }
+  },
+  {
+   "id": "tatli",
+   "ad": "Tatlılar"
+  }
+ ],
+ "urunler": [
+  {
+   "id": "kahvalti",
+   "kat": "kahvalti",
+   "ad": "Kahvaltı",
+   "tip": "kisi",
+   "fiyat": 650,
+   "cev": {
+    "en": "Breakfast (per person)",
+    "de": "Frühstück (pro Person)",
+    "fr": "Petit-déjeuner (par pers.)"
+   },
+   "yok": true
+  },
+  {
+   "id": "fark",
+   "kat": "kahvalti",
+   "ad": "Fark",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Extra Person",
+    "de": "Zusatzperson",
+    "fr": "Personne supplémentaire"
+   },
+   "yok": true
+  },
+  {
+   "id": "sogus",
+   "kat": "kahvalti",
+   "ad": "Söğüş",
+   "tip": "kisi",
+   "fiyat": 100,
+   "cev": {
+    "en": "Fresh Vegetables",
+    "de": "Frisches Gemüse",
+    "fr": "Crudités"
+   }
+  },
+  {
+   "id": "peynir-kahvalti",
+   "kat": "kahvalti",
+   "ad": "Peynir (Tulum+Beyaz)",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Cheese Plate",
+    "de": "Käseteller",
+    "fr": "Assiette de fromages"
+   }
+  },
+  {
+   "id": "bal-kaymak",
+   "kat": "kahvalti",
+   "ad": "Bal Kaymak",
+   "tip": "adet",
+   "fiyat": 150,
+   "cev": {
+    "en": "Honey & Clotted Cream",
+    "de": "Honig & Kaymak",
+    "fr": "Miel et crème kaymak"
+   }
+  },
+  {
+   "id": "recel",
+   "kat": "kahvalti",
+   "ad": "Reçel (4 Çeşit)",
+   "tip": "adet",
+   "fiyat": 150,
+   "cev": {
+    "en": "Jams (4 kinds)",
+    "de": "Marmeladen (4 Sorten)",
+    "fr": "Confitures (4 sortes)"
+   }
+  },
+  {
+   "id": "suzme-yogurt-k",
+   "kat": "kahvalti",
+   "ad": "Süzme Yoğurt",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Strained Yogurt",
+    "de": "Abgetropfter Joghurt",
+    "fr": "Yaourt égoutté"
+   }
+  },
+  {
+   "id": "tortu-k",
+   "kat": "kahvalti",
+   "ad": "Tortu",
+   "tip": "adet",
+   "fiyat": 150,
+   "aciklamaCev": {
+    "en": "Made only by slow-cooking milk cream over a wood fire.",
+    "de": "Entsteht ausschließlich durch das langsame Kochen von Milchrahm auf Holzfeuer.",
+    "fr": "Obtenue uniquement en cuisant la crème du lait au feu de bois."
+   }
+  },
+  {
+   "id": "salca",
+   "kat": "kahvalti",
+   "ad": "Salça",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Tomato Paste",
+    "de": "Tomatenmark",
+    "fr": "Concentré de tomate"
+   }
+  },
+  {
+   "id": "yag",
+   "kat": "kahvalti",
+   "ad": "tereyağ",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Butter",
+    "de": "Butter",
+    "fr": "Beurre"
+   }
+  },
+  {
+   "id": "zeytin",
+   "kat": "kahvalti",
+   "ad": "Zeytin (3 Çeşit)",
+   "tip": "adet",
+   "fiyat": 150,
+   "cev": {
+    "en": "Olives (3 kinds)",
+    "de": "Oliven (3 Sorten)",
+    "fr": "Olives (3 sortes)"
+   }
+  },
+  {
+   "id": "termos-cay",
+   "kat": "kahvalti",
+   "ad": "Termos Çay",
+   "tip": "adet",
+   "fiyat": 150,
+   "cev": {
+    "en": "Tea Pot",
+    "de": "Teekanne",
+    "fr": "Théière"
+   }
+  },
+  {
+   "id": "tortulu-yumurta",
+   "kat": "kahvalti",
+   "ad": "Tortulu Yumurta",
+   "tip": "porsiyon",
+   "fiyat": 400,
+   "cev": {
+    "en": "Eggs with Tortu",
+    "de": "Eier mit Tortu",
+    "fr": "Œufs au tortu"
+   }
+  },
+  {
+   "id": "sucuklu-yumurta",
+   "kat": "kahvalti",
+   "ad": "Sucuklu Yumurta",
+   "tip": "porsiyon",
+   "fiyat": 350,
+   "cev": {
+    "en": "Eggs with Sucuk",
+    "de": "Eier mit Sucuk",
+    "fr": "Œufs au sucuk"
+   }
+  },
+  {
+   "id": "pastirmali-yumurta",
+   "kat": "kahvalti",
+   "ad": "Pastırmalı Yumurta",
+   "tip": "porsiyon",
+   "fiyat": 350,
+   "cev": {
+    "en": "Eggs with Pastirma",
+    "de": "Eier mit Pastirma",
+    "fr": "Œufs au pastirma"
+   }
+  },
+  {
+   "id": "peynirli-yumurta",
+   "kat": "kahvalti",
+   "ad": "Peynirli Yumurta",
+   "tip": "porsiyon",
+   "fiyat": 270,
+   "cev": {
+    "en": "Eggs with Cheese",
+    "de": "Eier mit Käse",
+    "fr": "Œufs au fromage"
+   }
+  },
+  {
+   "id": "sade-yumurta",
+   "kat": "kahvalti",
+   "ad": "Sade Yumurta",
+   "tip": "porsiyon",
+   "fiyat": 150,
+   "cev": {
+    "en": "Plain Eggs",
+    "de": "Spiegeleier",
+    "fr": "Œufs nature"
+   }
+  },
+  {
+   "id": "menemen",
+   "kat": "kahvalti",
+   "ad": "Menemen",
+   "tip": "porsiyon",
+   "fiyat": 300,
+   "cev": {
+    "en": "Menemen (Turkish scrambled eggs)",
+    "de": "Menemen (türk. Rührei)",
+    "fr": "Menemen (œufs brouillés turcs)"
+   }
+  },
+  {
+   "id": "sigara-boregi",
+   "kat": "kahvalti",
+   "ad": "Sigara Böreği",
+   "tip": "porsiyon",
+   "fiyat": 200,
+   "cev": {
+    "en": "Crispy Cheese Rolls",
+    "de": "Knusprige Käseröllchen",
+    "fr": "Cigares croustillants au fromage"
+   }
+  },
+  {
+   "id": "gozleme",
+   "kat": "kahvalti",
+   "ad": "Gözleme",
+   "tip": "adet",
+   "fiyat": 250,
+   "cev": {
+    "en": "Gözleme (stuffed flatbread)",
+    "de": "Gözleme (gefülltes Fladenbrot)",
+    "fr": "Gözleme (galette farcie)"
+   }
+  },
+  {
+   "id": "dil",
+   "kat": "balik",
+   "ad": "büyük dil",
+   "tip": "gram",
+   "kgFiyat": 3000,
+   "cev": {
+    "en": "Sole",
+    "de": "Seezunge",
+    "fr": "Sole"
+   }
+  },
+  {
+   "id": "sardalya",
+   "kat": "balik",
+   "ad": "Sardalya",
+   "tip": "porsiyon",
+   "fiyat": 400,
+   "cev": {
+    "en": "Sardines",
+    "de": "Sardinen",
+    "fr": "Sardines"
+   }
+  },
+  {
+   "id": "yaprak-sardalya",
+   "kat": "balik",
+   "ad": "Yaprak Sardalya (Sarma)",
+   "tip": "porsiyon",
+   "fiyat": 450,
+   "cev": {
+    "en": "Sardines in Vine Leaves",
+    "de": "Sardinen in Weinblättern",
+    "fr": "Sardines en feuilles de vigne"
+   }
+  },
+  {
+   "id": "sardalya-ekmek",
+   "kat": "balik",
+   "ad": "Sardalya Ekmek",
+   "tip": "adet",
+   "fiyat": 300,
+   "cev": {
+    "en": "Sardine Sandwich",
+    "de": "Sardinen-Sandwich",
+    "fr": "Sandwich aux sardines"
+   }
+  },
+  {
+   "id": "kalamar",
+   "kat": "arasicak",
+   "ad": "Kalamar",
+   "tip": "porsiyon",
+   "fiyat": 850,
+   "cev": {
+    "en": "Calamari",
+    "de": "Calamari",
+    "fr": "Calamars"
+   }
+  },
+  {
+   "id": "karides",
+   "kat": "arasicak",
+   "ad": "Karides",
+   "tip": "porsiyon",
+   "fiyat": 900,
+   "icerikler": [
+    "Kaşarlı",
+    "Acılı"
+   ],
+   "cev": {
+    "en": "Shrimp",
+    "de": "Garnelen",
+    "fr": "Crevettes"
+   }
+  },
+  {
+   "id": "subye",
+   "kat": "arasicak",
+   "ad": "Sübye",
+   "tip": "porsiyon",
+   "fiyat": 700,
+   "cev": {
+    "en": "Cuttlefish",
+    "de": "Sepia",
+    "fr": "Seiche"
+   }
+  },
+  {
+   "id": "cimcim",
+   "kat": "arasicak",
+   "ad": "Çimçim",
+   "tip": "porsiyon",
+   "fiyat": 700,
+   "icerikler": [
+    "Kaşarlı",
+    "Acılı"
+   ],
+   "cev": {
+    "en": "Çimçim Shrimp",
+    "de": "Çimçim-Garnelen",
+    "fr": "Crevettes çimçim"
+   }
+  },
+  {
+   "id": "mantar-guvec",
+   "kat": "arasicak",
+   "ad": "Mantar Güveç",
+   "tip": "porsiyon",
+   "fiyat": 400,
+   "cev": {
+    "en": "Mushroom Casserole",
+    "de": "Pilz-Cassolette",
+    "fr": "Cassolette de champignons"
+   },
+   "yok": true
+  },
+  {
+   "id": "patlican-guvec",
+   "kat": "arasicak",
+   "ad": "kaşarlı Patlıcan Güveç",
+   "tip": "porsiyon",
+   "fiyat": 400,
+   "cev": {
+    "en": "Eggplant Casserole",
+    "de": "Auberginen-Cassolette",
+    "fr": "Cassolette d'aubergines"
+   }
+  },
+  {
+   "id": "ahtapot-guvec",
+   "kat": "arasicak",
+   "ad": "Ahtapot Güveç",
+   "tip": "porsiyon",
+   "fiyat": 900,
+   "cev": {
+    "en": "Octopus Casserole",
+    "de": "Oktopus-Cassolette",
+    "fr": "Cassolette de poulpe"
+   }
+  },
+  {
+   "id": "patates",
+   "kat": "arasicak",
+   "ad": "Patates",
+   "tip": "porsiyon",
+   "fiyat": 250,
+   "cev": {
+    "en": "French Fries",
+    "de": "Pommes Frites",
+    "fr": "Frites"
+   }
+  },
+  {
+   "id": "ev-patatesi",
+   "kat": "arasicak",
+   "ad": "Ev Patatesi",
+   "tip": "porsiyon",
+   "fiyat": 250,
+   "cev": {
+    "en": "Home-style Potatoes",
+    "de": "Hausgemachte Kartoffeln",
+    "fr": "Pommes de terre maison"
+   }
+  },
+  {
+   "id": "kunefe",
+   "kat": "tatli",
+   "ad": "Künefe",
+   "tip": "adet",
+   "fiyat": 250,
+   "cev": {
+    "en": "Künefe",
+    "de": "Künefe",
+    "fr": "Künefe"
+   }
+  },
+  {
+   "id": "yogurtlu-patlican",
+   "kat": "meze",
+   "ad": "Yoğurtlu Patlıcan",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Eggplant with Yogurt",
+    "de": "Aubergine mit Joghurt",
+    "fr": "Aubergine au yaourt"
+   }
+  },
+  {
+   "id": "tursulu-haydari",
+   "kat": "meze",
+   "ad": "Turşulu Haydari",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Haydari with Pickles",
+    "de": "Haydari mit Essiggemüse",
+    "fr": "Haydari aux légumes marinés"
+   }
+  },
+  {
+   "id": "fava",
+   "kat": "meze",
+   "ad": "Fava",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Fava (broad bean purée)",
+    "de": "Fava (Bohnenpüree)",
+    "fr": "Fava (purée de fèves)"
+   }
+  },
+  {
+   "id": "tarator",
+   "kat": "meze",
+   "ad": "Tarator",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Tarator",
+    "de": "Tarator",
+    "fr": "Tarator"
+   }
+  },
+  {
+   "id": "saksuka",
+   "kat": "meze",
+   "ad": "Şakşuka",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Şakşuka (fried veg. in tomato)",
+    "de": "Şakşuka (Gemüse in Tomate)",
+    "fr": "Şakşuka (légumes à la tomate)"
+   }
+  },
+  {
+   "id": "atom",
+   "kat": "meze",
+   "ad": "Atom",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Atom (spicy yogurt dip)",
+    "de": "Atom (scharfer Joghurt-Dip)",
+    "fr": "Atom (yaourt épicé)"
+   }
+  },
+  {
+   "id": "gelincik",
+   "kat": "meze",
+   "ad": "Gelincik",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ]
+  },
+  {
+   "id": "peynir-meze",
+   "kat": "meze",
+   "ad": "Peynir",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Cheese",
+    "de": "Käse",
+    "fr": "Fromage"
+   }
+  },
+  {
+   "id": "kavun",
+   "kat": "meze",
+   "ad": "Kavun",
+   "tip": "kisi",
+   "fiyat": 75,
+   "cev": {
+    "en": "Melon",
+    "de": "Melone",
+    "fr": "Melon"
+   }
+  },
+  {
+   "id": "karpuz",
+   "kat": "meze",
+   "ad": "Karpuz",
+   "tip": "kisi",
+   "fiyat": 75,
+   "cev": {
+    "en": "Watermelon",
+    "de": "Wassermelone",
+    "fr": "Pastèque"
+   }
+  },
+  {
+   "id": "antep",
+   "kat": "meze",
+   "ad": "Antep",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Antep (pistachio dip)",
+    "de": "Antep (Pistazien-Creme)",
+    "fr": "Antep (crème de pistache)"
+   }
+  },
+  {
+   "id": "bamya",
+   "kat": "meze",
+   "ad": "Bamya",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Okra",
+    "de": "Okra",
+    "fr": "Gombo"
+   }
+  },
+  {
+   "id": "pancar-tursusu",
+   "kat": "meze",
+   "ad": "Pancar Turşusu",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Pickled Beets",
+    "de": "Eingelegte Rote Bete",
+    "fr": "Betteraves marinées"
+   }
+  },
+  {
+   "id": "biber-tursusu",
+   "kat": "meze",
+   "ad": "Biber Turşusu",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Pickled Peppers",
+    "de": "Eingelegte Paprika",
+    "fr": "Piments marinés"
+   }
+  },
+  {
+   "id": "deniz-borulcesi",
+   "kat": "meze",
+   "ad": "Deniz Börülcesi",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Samphire",
+    "de": "Queller",
+    "fr": "Salicorne"
+   },
+   "yok": true
+  },
+  {
+   "id": "tarla-borulcesi",
+   "kat": "meze",
+   "ad": "Tarla Börülcesi",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Black-eyed Peas",
+    "de": "Augenbohnen",
+    "fr": "Haricots cornille"
+   }
+  },
+  {
+   "id": "sade-haydari",
+   "kat": "meze",
+   "ad": "Sade Haydari",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Haydari (yogurt dip)",
+    "de": "Haydari (Joghurt-Dip)",
+    "fr": "Haydari (yaourt aux herbes)"
+   }
+  },
+  {
+   "id": "kuru-cacik",
+   "kat": "meze",
+   "ad": "Kuru Cacık",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Thick Tzatziki",
+    "de": "Fester Tsatsiki",
+    "fr": "Tzatziki épais"
+   }
+  },
+  {
+   "id": "sultan",
+   "kat": "meze",
+   "ad": "Sultan",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "yok": true
+  },
+  {
+   "id": "patlican-salatasi",
+   "kat": "meze",
+   "ad": "Patlıcan Salatası",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Eggplant Salad",
+    "de": "Auberginensalat",
+    "fr": "Salade d'aubergines"
+   }
+  },
+  {
+   "id": "kabak-siyirma",
+   "kat": "meze",
+   "ad": "Kabak Sıyırma",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Zucchini Spread",
+    "de": "Zucchini-Aufstrich",
+    "fr": "Tartinade de courgettes"
+   }
+  },
+  {
+   "id": "girit",
+   "kat": "meze",
+   "ad": "Girit",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Girit (herbed cheese dip)",
+    "de": "Girit (Kräuterkäse)",
+    "fr": "Girit (fromage aux herbes)"
+   },
+   "yok": true
+  },
+  {
+   "id": "eksili-girit-kabak",
+   "kat": "meze",
+   "ad": "Ekşili Girit Kabak",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Sour Girit Zucchini",
+    "de": "Saure Girit-Zucchini",
+    "fr": "Courgette girit aigre"
+   }
+  },
+  {
+   "id": "koz-patlican",
+   "kat": "meze",
+   "ad": "Köz Patlıcan",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Roasted Eggplant",
+    "de": "Geröstete Aubergine",
+    "fr": "Aubergine grillée"
+   }
+  },
+  {
+   "id": "halepeno",
+   "kat": "meze",
+   "ad": "Halepeno",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Jalapeño",
+    "de": "Jalapeño",
+    "fr": "Jalapeño"
+   },
+   "yok": true
+  },
+  {
+   "id": "sogan-ruyasi",
+   "kat": "meze",
+   "ad": "Soğan Rüyası",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Onion Dream",
+    "de": "Zwiebeltraum",
+    "fr": "Rêve d'oignon"
+   }
+  },
+  {
+   "id": "humus",
+   "kat": "meze",
+   "ad": "Humus",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Hummus",
+    "de": "Hummus",
+    "fr": "Houmous"
+   },
+   "yok": true
+  },
+  {
+   "id": "yogurtlu-patlican-atom",
+   "kat": "meze",
+   "ad": "Yoğurtlu Patlıcan Üstü Atom",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 160
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 320
+    }
+   ],
+   "cev": {
+    "en": "Eggplant-Yogurt with Atom",
+    "de": "Aubergine-Joghurt mit Atom",
+    "fr": "Aubergine-yaourt et atom"
+   }
+  },
+  {
+   "id": "ot-tabagi",
+   "kat": "meze",
+   "ad": "Ot Tabağı",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Wild Herb Plate",
+    "de": "Wildkräuterteller",
+    "fr": "Assiette d'herbes sauvages"
+   },
+   "yok": true
+  },
+  {
+   "id": "suzme-yogurt",
+   "kat": "meze",
+   "ad": "Süzme Yoğurt",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Strained Yogurt",
+    "de": "Abgetropfter Joghurt",
+    "fr": "Yaourt égoutté"
+   }
+  },
+  {
+   "id": "tortu",
+   "kat": "meze",
+   "ad": "Tortu",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 170
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 340
+    }
+   ],
+   "aciklamaCev": {
+    "en": "Made only by slow-cooking milk cream over a wood fire.",
+    "de": "Entsteht ausschließlich durch das langsame Kochen von Milchrahm auf Holzfeuer.",
+    "fr": "Obtenue uniquement en cuisant la crème du lait au feu de bois."
+   }
+  },
+  {
+   "id": "meyve",
+   "kat": "tatli",
+   "ad": "Meyve",
+   "tip": "kisi",
+   "fiyat": 100,
+   "cev": {
+    "en": "Fruit Plate",
+    "de": "Obstteller",
+    "fr": "Assiette de fruits"
+   }
+  },
+  {
+   "id": "pirzola",
+   "kat": "etler",
+   "ad": "Pirzola",
+   "tip": "porsiyon",
+   "fiyat": 950,
+   "adetFiyat": 230,
+   "cev": {
+    "en": "Lamb Chops",
+    "de": "Lammkoteletts",
+    "fr": "Côtelettes d'agneau"
+   }
+  },
+  {
+   "id": "kuzu-sis",
+   "kat": "etler",
+   "ad": "Kuzu Şiş",
+   "tip": "porsiyon",
+   "fiyat": 750,
+   "adetFiyat": 190,
+   "cev": {
+    "en": "Lamb Skewer",
+    "de": "Lammspieß",
+    "fr": "Brochette d'agneau"
+   }
+  },
+  {
+   "id": "tavuk-sis",
+   "kat": "etler",
+   "ad": "Tavuk Şiş",
+   "tip": "porsiyon",
+   "fiyat": 500,
+   "adetFiyat": 125,
+   "cev": {
+    "en": "Chicken Skewer",
+    "de": "Hähnchenspieß",
+    "fr": "Brochette de poulet"
+   }
+  },
+  {
+   "id": "kofte",
+   "kat": "etler",
+   "ad": "Köfte",
+   "tip": "porsiyon",
+   "fiyat": 550,
+   "adetFiyat": 80,
+   "cev": {
+    "en": "Meatballs",
+    "de": "Frikadellen",
+    "fr": "Boulettes de viande"
+   }
+  },
+  {
+   "id": "kanat",
+   "kat": "etler",
+   "ad": "Kanat",
+   "tip": "porsiyon",
+   "fiyat": 500,
+   "adetFiyat": 65,
+   "cev": {
+    "en": "Chicken Wings",
+    "de": "Hähnchenflügel",
+    "fr": "Ailes de poulet"
+   }
+  },
+  {
+   "id": "kofte-tavuk-karisik",
+   "kat": "etler",
+   "ad": "Köfte-Tavuk Karışık",
+   "tip": "porsiyon",
+   "fiyat": 550,
+   "cev": {
+    "en": "Meatball-Chicken Mix",
+    "de": "Frikadellen-Hähnchen-Mix",
+    "fr": "Mixte boulettes-poulet"
+   }
+  },
+  {
+   "id": "full-karisik",
+   "kat": "etler",
+   "ad": "Full Karışık",
+   "tip": "porsiyon",
+   "fiyat": 850,
+   "aciklama": "1 Pirzola + 1 Tavuk Şiş + 1 Kuzu Şiş + 2 Köfte",
+   "cev": {
+    "en": "Full Mixed Grill",
+    "de": "Großer Grillteller",
+    "fr": "Grillades mixtes complètes"
+   }
+  },
+  {
+   "id": "ekmek-arasi-tavuk",
+   "kat": "etler",
+   "ad": "Ekmek Arası Tavuk",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Yarım",
+     "fiyat": 400
+    },
+    {
+     "ad": "Üç Çeyrek",
+     "fiyat": 550
+    },
+    {
+     "ad": "Tam",
+     "fiyat": 0
+    }
+   ],
+   "cev": {
+    "en": "Chicken Sandwich",
+    "de": "Hähnchen-Sandwich",
+    "fr": "Sandwich au poulet"
+   }
+  },
+  {
+   "id": "ekmek-arasi-kofte",
+   "kat": "etler",
+   "ad": "Ekmek Arası Köfte",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Yarım",
+     "fiyat": 450
+    },
+    {
+     "ad": "Üç Çeyrek",
+     "fiyat": 550
+    },
+    {
+     "ad": "Tam",
+     "fiyat": 0
+    }
+   ],
+   "cev": {
+    "en": "Meatball Sandwich",
+    "de": "Frikadellen-Sandwich",
+    "fr": "Sandwich aux boulettes"
+   }
+  },
+  {
+   "id": "salata",
+   "kat": "salata",
+   "ad": "Salata",
+   "tip": "kisi",
+   "fiyat": 160,
+   "icerikler": [
+    "Roka",
+    "Maydanoz",
+    "Soğan",
+    "Domates",
+    "Mor Lahana",
+    "Salatalık",
+    "Nar Ekşisi",
+    "Zeytinyağı"
+   ],
+   "cev": {
+    "en": "Salad",
+    "de": "Salat",
+    "fr": "Salade"
+   }
+  },
+  {
+   "id": "kasik-salata",
+   "kat": "salata",
+   "ad": "Kaşık Salata",
+   "tip": "kisi",
+   "fiyat": 160,
+   "icerikler": [
+    "Roka",
+    "Maydanoz",
+    "Soğan",
+    "Domates",
+    "Mor Lahana",
+    "Salatalık",
+    "Nar Ekşisi",
+    "Zeytinyağı"
+   ],
+   "cev": {
+    "en": "Chopped Salad",
+    "de": "Gehackter Salat",
+    "fr": "Salade hachée"
+   }
+  },
+  {
+   "id": "coban-salata",
+   "kat": "salata",
+   "ad": "Çoban Salata",
+   "tip": "kisi",
+   "fiyat": 160,
+   "icerikler": [
+    "Roka",
+    "Maydanoz",
+    "Soğan",
+    "Domates",
+    "Mor Lahana",
+    "Salatalık",
+    "Nar Ekşisi",
+    "Zeytinyağı"
+   ],
+   "cev": {
+    "en": "Shepherd's Salad",
+    "de": "Hirtensalat",
+    "fr": "Salade du berger"
+   }
+  },
+  {
+   "id": "gavurdagi-salata",
+   "kat": "salata",
+   "ad": "Gavurdağı Salata",
+   "tip": "kisi",
+   "fiyat": 200,
+   "icerikler": [
+    "Roka",
+    "Maydanoz",
+    "Soğan",
+    "Domates",
+    "Mor Lahana",
+    "Salatalık",
+    "Nar Ekşisi",
+    "Zeytinyağı"
+   ],
+   "cev": {
+    "en": "Gavurdağı Salad",
+    "de": "Gavurdağı-Salat",
+    "fr": "Salade gavurdağı"
+   }
+  },
+  {
+   "id": "tursu",
+   "kat": "yanci",
+   "ad": "Turşu",
+   "tip": "adet",
+   "fiyat": 150,
+   "cev": {
+    "en": "Pickles",
+    "de": "Essiggemüse",
+    "fr": "Légumes marinés"
+   }
+  },
+  {
+   "id": "karisik-kuruyemis",
+   "kat": "yanci",
+   "ad": "Karışık Kuruyemiş",
+   "tip": "adet",
+   "fiyat": 250,
+   "cev": {
+    "en": "Mixed Nuts",
+    "de": "Gemischte Nüsse",
+    "fr": "Mélange de fruits secs"
+   }
+  },
+  {
+   "id": "fistik",
+   "kat": "yanci",
+   "ad": "Fıstık",
+   "tip": "adet",
+   "fiyat": 150,
+   "cev": {
+    "en": "Peanuts",
+    "de": "Erdnüsse",
+    "fr": "Cacahuètes"
+   }
+  },
+  {
+   "id": "badem",
+   "kat": "yanci",
+   "ad": "Badem",
+   "tip": "adet",
+   "fiyat": 250,
+   "cev": {
+    "en": "Almonds",
+    "de": "Mandeln",
+    "fr": "Amandes"
+   }
+  },
+  {
+   "id": "kaju",
+   "kat": "yanci",
+   "ad": "Kaju",
+   "tip": "adet",
+   "fiyat": 250,
+   "cev": {
+    "en": "Cashews",
+    "de": "Cashews",
+    "fr": "Noix de cajou"
+   }
+  },
+  {
+   "id": "antep-yanci",
+   "kat": "yanci",
+   "ad": "Antep",
+   "tip": "adet",
+   "fiyat": 350,
+   "cev": {
+    "en": "Pistachios",
+    "de": "Pistazien",
+    "fr": "Pistaches"
+   }
+  },
+  {
+   "id": "findik",
+   "kat": "yanci",
+   "ad": "Fındık",
+   "tip": "adet",
+   "fiyat": 200,
+   "cev": {
+    "en": "Hazelnuts",
+    "de": "Haselnüsse",
+    "fr": "Noisettes"
+   }
+  },
+  {
+   "id": "leblebi",
+   "kat": "yanci",
+   "ad": "Leblebi",
+   "tip": "adet",
+   "fiyat": 0,
+   "cev": {
+    "en": "Roasted Chickpeas",
+    "de": "Geröstete Kichererbsen",
+    "fr": "Pois chiches grillés"
+   }
+  },
+  {
+   "id": "cay",
+   "kat": "icecek",
+   "ad": "Çay",
+   "tip": "adet",
+   "fiyat": 25,
+   "cev": {
+    "en": "Tea",
+    "de": "Tee",
+    "fr": "Thé"
+   }
+  },
+  {
+   "id": "kahve",
+   "kat": "icecek",
+   "ad": "Kahve",
+   "tip": "adet",
+   "fiyat": 100,
+   "cev": {
+    "en": "Turkish Coffee",
+    "de": "Türkischer Kaffee",
+    "fr": "Café turc"
+   }
+  },
+  {
+   "id": "churchill",
+   "kat": "icecek",
+   "ad": "Churchill",
+   "tip": "adet",
+   "fiyat": 100,
+   "cev": {
+    "en": "Churchill",
+    "de": "Churchill",
+    "fr": "Churchill"
+   }
+  },
+  {
+   "id": "ayran",
+   "kat": "icecek",
+   "ad": "Ayran",
+   "tip": "adet",
+   "fiyat": 60,
+   "cev": {
+    "en": "Ayran",
+    "de": "Ayran",
+    "fr": "Ayran"
+   }
+  },
+  {
+   "id": "soda",
+   "kat": "icecek",
+   "ad": "Soda",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Sparkling Mineral Water",
+    "de": "Mineralwasser",
+    "fr": "Eau gazeuse"
+   }
+  },
+  {
+   "id": "elmali-soda",
+   "kat": "icecek",
+   "ad": "Elmalı Soda",
+   "tip": "adet",
+   "fiyat": 60,
+   "cev": {
+    "en": "Apple Soda",
+    "de": "Apfel-Soda",
+    "fr": "Soda à la pomme"
+   }
+  },
+  {
+   "id": "limonlu-soda",
+   "kat": "icecek",
+   "ad": "Limonlu Soda",
+   "tip": "adet",
+   "fiyat": 60,
+   "cev": {
+    "en": "Lemon Soda",
+    "de": "Zitronen-Soda",
+    "fr": "Soda au citron"
+   }
+  },
+  {
+   "id": "limonlu-icetea",
+   "kat": "icecek",
+   "ad": "Limonlu Ice Tea",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Lemon Ice Tea",
+    "de": "Zitronen-Eistee",
+    "fr": "Thé glacé citron"
+   }
+  },
+  {
+   "id": "seftalili-icetea",
+   "kat": "icecek",
+   "ad": "Şeftalili Ice Tea",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Peach Ice Tea",
+    "de": "Pfirsich-Eistee",
+    "fr": "Thé glacé pêche"
+   }
+  },
+  {
+   "id": "karpuzlu",
+   "kat": "icecek",
+   "ad": "Karpuzlu Ice Tea",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Watermelon Drink",
+    "de": "Wassermelonen-Getränk",
+    "fr": "Boisson pastèque"
+   }
+  },
+  {
+   "id": "mangolu",
+   "kat": "icecek",
+   "ad": "Mangolu Ice Tea",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Mango Drink",
+    "de": "Mango-Getränk",
+    "fr": "Boisson mangue"
+   }
+  },
+  {
+   "id": "cilekli",
+   "kat": "icecek",
+   "ad": "Çilekli Ice Tea",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Strawberry Drink",
+    "de": "Erdbeer-Getränk",
+    "fr": "Boisson fraise"
+   }
+  },
+  {
+   "id": "ahududulu",
+   "kat": "icecek",
+   "ad": "Ahududulu Ice Tea",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Raspberry Drink",
+    "de": "Himbeer-Getränk",
+    "fr": "Boisson framboise"
+   }
+  },
+  {
+   "id": "cola",
+   "kat": "icecek",
+   "ad": "Cola",
+   "tip": "adet",
+   "fiyat": 120
+  },
+  {
+   "id": "zero-cola",
+   "kat": "icecek",
+   "ad": "Zero Cola",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Zero Cola",
+    "de": "Cola Zero",
+    "fr": "Cola zéro"
+   }
+  },
+  {
+   "id": "fanta",
+   "kat": "icecek",
+   "ad": "Fanta",
+   "tip": "adet",
+   "fiyat": 120
+  },
+  {
+   "id": "sprite",
+   "kat": "icecek",
+   "ad": "Sprite",
+   "tip": "adet",
+   "fiyat": 120
+  },
+  {
+   "id": "uludag-gazoz",
+   "kat": "icecek",
+   "ad": "Uludağ Gazoz",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Uludağ Soda",
+    "de": "Uludağ Limonade",
+    "fr": "Limonade Uludağ"
+   }
+  },
+  {
+   "id": "karisik-meyve-suyu",
+   "kat": "icecek",
+   "ad": "Karışık Meyve Suyu",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Mixed Fruit Juice",
+    "de": "Multivitaminsaft",
+    "fr": "Jus multifruits"
+   }
+  },
+  {
+   "id": "visneli",
+   "kat": "icecek",
+   "ad": "Vişneli Meyve Suyu",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Sour Cherry Juice",
+    "de": "Sauerkirschsaft",
+    "fr": "Jus de griotte"
+   }
+  },
+  {
+   "id": "seftali",
+   "kat": "icecek",
+   "ad": "Şeftalili Meyve Suyu",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Peach Juice",
+    "de": "Pfirsichsaft",
+    "fr": "Jus de pêche"
+   }
+  },
+  {
+   "id": "kayisi",
+   "kat": "icecek",
+   "ad": "Kayısılı Meyve Suyu",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Apricot Juice",
+    "de": "Aprikosensaft",
+    "fr": "Jus d'abricot"
+   }
+  },
+  {
+   "id": "kucuk-salgam",
+   "kat": "icecek",
+   "ad": "Küçük Şalgam",
+   "tip": "adet",
+   "fiyat": 120,
+   "cev": {
+    "en": "Şalgam (small)",
+    "de": "Şalgam (klein)",
+    "fr": "Şalgam (petit)"
+   }
+  },
+  {
+   "id": "buyuk-salgam",
+   "kat": "icecek",
+   "ad": "Büyük Şalgam",
+   "tip": "adet",
+   "fiyat": 230,
+   "cev": {
+    "en": "Şalgam (large)",
+    "de": "Şalgam (groß)",
+    "fr": "Şalgam (grand)"
+   }
+  },
+  {
+   "id": "kucuk-su",
+   "kat": "icecek",
+   "ad": "Küçük Su",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Water (small)",
+    "de": "Wasser (klein)",
+    "fr": "Eau (petite)"
+   }
+  },
+  {
+   "id": "buyuk-su",
+   "kat": "icecek",
+   "ad": "Büyük Su",
+   "tip": "adet",
+   "fiyat": 100,
+   "cev": {
+    "en": "Water (large)",
+    "de": "Wasser (groß)",
+    "fr": "Eau (grande)"
+   }
+  },
+  {
+   "id": "tuborg",
+   "kat": "bira",
+   "ad": "Tuborg",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "carlsberg",
+   "kat": "bira",
+   "ad": "Carlsberg",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "carlsberg-luna",
+   "kat": "bira",
+   "ad": "Carlsberg Luna",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "efes-malt",
+   "kat": "bira",
+   "ad": "Efes Malt",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "bud",
+   "kat": "bira",
+   "ad": "Bud",
+   "tip": "adet",
+   "fiyat": 300
+  },
+  {
+   "id": "corona",
+   "kat": "bira",
+   "ad": "Corona",
+   "tip": "adet",
+   "fiyat": 320
+  },
+  {
+   "id": "miller",
+   "kat": "bira",
+   "ad": "Miller",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "stella",
+   "kat": "bira",
+   "ad": "Stella",
+   "tip": "adet",
+   "fiyat": 290
+  },
+  {
+   "id": "becks",
+   "kat": "bira",
+   "ad": "Becks",
+   "tip": "adet",
+   "fiyat": 290
+  },
+  {
+   "id": "bomonti",
+   "kat": "bira",
+   "ad": "Bomonti",
+   "tip": "adet",
+   "fiyat": 280
+  },
+  {
+   "id": "efes-tombul",
+   "kat": "bira",
+   "ad": "Efes Tombul",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "serce",
+   "kat": "bira",
+   "ad": "Serçe (Efes Ufak)",
+   "tip": "adet",
+   "fiyat": 220
+  },
+  {
+   "id": "blanc",
+   "kat": "bira",
+   "ad": "Blanc",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "desperados",
+   "kat": "bira",
+   "ad": "Desperados",
+   "tip": "adet",
+   "fiyat": 350
+  },
+  {
+   "id": "sol",
+   "kat": "bira",
+   "ad": "Sol",
+   "tip": "adet",
+   "fiyat": 310
+  },
+  {
+   "id": "tuborg-smooth",
+   "kat": "bira",
+   "ad": "Tuborg Smooth",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "tuborg-ice",
+   "kat": "bira",
+   "ad": "Tuborg Ice",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "weihenstephaner",
+   "kat": "bira",
+   "ad": "Weihenstephaner",
+   "tip": "adet",
+   "fiyat": 320
+  },
+  {
+   "id": "vitus",
+   "kat": "bira",
+   "ad": "Vitus",
+   "tip": "adet",
+   "fiyat": 380
+  },
+  {
+   "id": "budweiser",
+   "kat": "bira",
+   "ad": "Budweiser",
+   "tip": "adet",
+   "fiyat": 300
+  },
+  {
+   "id": "daura-glutensiz",
+   "kat": "bira",
+   "ad": "Daura Glutensiz",
+   "tip": "adet",
+   "fiyat": 320
+  },
+  {
+   "id": "efes-glutensiz",
+   "kat": "bira",
+   "ad": "Efes Glutensiz",
+   "tip": "adet",
+   "fiyat": 320
+  },
+  {
+   "id": "blue-moon",
+   "kat": "bira",
+   "ad": "Blue Moon",
+   "tip": "adet",
+   "fiyat": 310
+  },
+  {
+   "id": "bitburger-alkolsuz",
+   "kat": "bira",
+   "ad": "Bitburger Alkolsüz",
+   "tip": "adet",
+   "fiyat": 230
+  },
+  {
+   "id": "efes-arti1",
+   "kat": "bira",
+   "ad": "Efes +1",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "efes-ozel-seri",
+   "kat": "bira",
+   "ad": "Efes Özel Seri",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "belfast",
+   "kat": "bira",
+   "ad": "Belfast",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "amber",
+   "kat": "bira",
+   "ad": "Amber",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "tuborg-gold",
+   "kat": "bira",
+   "ad": "Tuborg Gold",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "tuborg-filtresiz",
+   "kat": "bira",
+   "ad": "Tuborg Filtresiz",
+   "tip": "adet",
+   "fiyat": 275
+  },
+  {
+   "id": "selection-kirmizi",
+   "kat": "sarap",
+   "ad": "Selection Kırmızı",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "50cl",
+     "fiyat": 1800
+    },
+    {
+     "ad": "75cl",
+     "fiyat": 2700
+    }
+   ]
+  },
+  {
+   "id": "selection-beyaz",
+   "kat": "sarap",
+   "ad": "Selection Beyaz",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "50cl",
+     "fiyat": 1750
+    },
+    {
+     "ad": "75cl",
+     "fiyat": 2500
+    }
+   ]
+  },
+  {
+   "id": "buzbag",
+   "kat": "sarap",
+   "ad": "Buzbağ Kırmızı-Beyaz",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "37.5cl",
+     "fiyat": 800
+    },
+    {
+     "ad": "75cl",
+     "fiyat": 1150
+    }
+   ]
+  },
+  {
+   "id": "cankaya",
+   "kat": "sarap",
+   "ad": "Çankaya",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "37.5cl",
+     "fiyat": 900
+    },
+    {
+     "ad": "75cl",
+     "fiyat": 1550
+    },
+    {
+     "ad": "Kadeh",
+     "fiyat": 450
+    }
+   ]
+  },
+  {
+   "id": "yakut",
+   "kat": "sarap",
+   "ad": "Yakut",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "37.5cl",
+     "fiyat": 1000
+    },
+    {
+     "ad": "Kadeh",
+     "fiyat": 500
+    }
+   ]
+  },
+  {
+   "id": "raki-servisi",
+   "kat": "raki",
+   "ad": "Rakı Servisi",
+   "tip": "kisi",
+   "fiyat": 250,
+   "cev": {
+    "en": "Rakı Service (per person)",
+    "de": "Rakı-Service (p.P.)",
+    "fr": "Service rakı (par pers.)"
+   }
+  },
+  {
+   "id": "duble-raki",
+   "kat": "raki",
+   "ad": "Duble Rakı",
+   "tip": "adet",
+   "fiyat": 450,
+   "cev": {
+    "en": "Double Rakı",
+    "de": "Doppelter Rakı",
+    "fr": "Rakı double"
+   }
+  },
+  {
+   "id": "tek-raki",
+   "kat": "raki",
+   "ad": "Tek Rakı",
+   "tip": "adet",
+   "fiyat": 300,
+   "cev": {
+    "en": "Single Rakı",
+    "de": "Einfacher Rakı",
+    "fr": "Rakı simple"
+   }
+  },
+  {
+   "id": "karar-raki",
+   "kat": "raki",
+   "ad": "Karar Rakı",
+   "tip": "adet",
+   "fiyat": 350,
+   "cev": {
+    "en": "Medium Rakı",
+    "de": "Mittlerer Rakı",
+    "fr": "Rakı moyen"
+   }
+  },
+  {
+   "id": "yeni-raki",
+   "kat": "raki",
+   "ad": "Yeni Rakı",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1100
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1450
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 1935
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 2475
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 3200
+    }
+   ]
+  },
+  {
+   "id": "yeni-seri",
+   "kat": "raki",
+   "ad": "Yeni Rakı Yeni Seri",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1200
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1550
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 2150
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 2750
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 3575
+    }
+   ]
+  },
+  {
+   "id": "altin-seri",
+   "kat": "raki",
+   "ad": "Tekirdağ Altın Seri",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1300
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1800
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 2475
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3185
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 4100
+    }
+   ]
+  },
+  {
+   "id": "kulup-deluxe",
+   "kat": "raki",
+   "ad": "Kulüp Deluxe",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 1865
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3215
+    }
+   ]
+  },
+  {
+   "id": "kulup",
+   "kat": "raki",
+   "ad": "Kulüp",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 1800
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3250
+    }
+   ]
+  },
+  {
+   "id": "tekirdag-gobek",
+   "kat": "raki",
+   "ad": "Tekirdağ Göbek",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 1935
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3410
+    }
+   ]
+  },
+  {
+   "id": "tekirdag-rezerve",
+   "kat": "raki",
+   "ad": "Tekirdağ Rezerve",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 2060
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3650
+    }
+   ]
+  },
+  {
+   "id": "beylerbeyi-gobek",
+   "kat": "raki",
+   "ad": "Beylerbeyi Göbek",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1450
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 2100
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 2830
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3600
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 4550
+    },
+    {
+     "ad": "150cl",
+     "fiyat": 0
+    }
+   ]
+  },
+  {
+   "id": "mavi-gobek",
+   "kat": "raki",
+   "ad": "Mavi Göbek",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1000
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1580
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 2170
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 2760
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 3350
+    }
+   ]
+  },
+  {
+   "id": "efe-yas-uzum",
+   "kat": "raki",
+   "ad": "Efe Yaş Üzüm",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1200
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1700
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 2200
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 2850
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 3500
+    }
+   ]
+  },
+  {
+   "id": "efe-gold",
+   "kat": "raki",
+   "ad": "Efe Gold",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1300
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1800
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 2475
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3185
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 4100
+    }
+   ]
+  },
+  {
+   "id": "sari-zeybek",
+   "kat": "raki",
+   "ad": "Sarı Zeybek 3 Meşe",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1500
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 2500
+    },
+    {
+     "ad": "50cl",
+     "fiyat": 3465
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 4455
+    },
+    {
+     "ad": "100cl",
+     "fiyat": 5750
+    }
+   ]
+  },
+  {
+   "id": "barbayanni",
+   "kat": "raki",
+   "ad": "Barbayanni",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1350
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 0
+    }
+   ]
+  },
+  {
+   "id": "ouzo",
+   "kat": "raki",
+   "ad": "Ouzo",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "70cl",
+     "fiyat": 3450
+    }
+   ]
+  },
+  {
+   "id": "protatip",
+   "kat": "raki",
+   "ad": "Protatip",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 0
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 0
+    }
+   ]
+  },
+  {
+   "id": "ala",
+   "kat": "raki",
+   "ad": "Ala",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1400
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1850
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3210
+    }
+   ]
+  },
+  {
+   "id": "incirden",
+   "kat": "raki",
+   "ad": "İncirden",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 2000
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 4100
+    }
+   ]
+  },
+  {
+   "id": "levrek-2",
+   "kat": "balik",
+   "ad": "parça levrek",
+   "tip": "adet",
+   "fiyat": 700,
+   "cev": {
+    "en": "Sea Bass (Half Portion)",
+    "de": "Wolfsbarsch (halbe Portion)",
+    "fr": "Bar (demi-portion)"
+   },
+   "aciklamaCev": {
+    "en": "This is half of one sea bass (approx. 750-800 g).",
+    "de": "Dies ist die Hälfte eines Wolfsbarschs (ca. 750-800 g).",
+    "fr": "C'est la moitié d'un bar (env. 750-800 g)."
+   }
+  },
+  {
+   "id": "cupra",
+   "kat": "balik",
+   "ad": "çupra",
+   "tip": "adet",
+   "fiyat": 700,
+   "cev": {
+    "en": "Sea Bream",
+    "de": "Dorade",
+    "fr": "Daurade"
+   }
+  },
+  {
+   "id": "tavada-tortu",
+   "kat": "kahvalti",
+   "ad": "tavada tortu",
+   "tip": "porsiyon",
+   "fiyat": 350,
+   "cev": {
+    "en": "Tortu (Pan-Fried)",
+    "de": "Tortu (in der Pfanne gebraten)",
+    "fr": "Tortu poêlé"
+   }
+  },
+  {
+   "id": "pisirme-tava",
+   "kat": "balik",
+   "ad": "pişirme( tava)",
+   "tip": "porsiyon",
+   "fiyat": 200,
+   "cev": {
+    "en": "Cooking Service (Pan-Fried)",
+    "de": "Zubereitung (in der Pfanne)",
+    "fr": "Cuisson (à la poêle)"
+   }
+  },
+  {
+   "id": "pisirme-izgara",
+   "kat": "balik",
+   "ad": "pişirme( ızgara)",
+   "tip": "porsiyon",
+   "fiyat": 150,
+   "cev": {
+    "en": "Cooking Service (Grilled)",
+    "de": "Zubereitung (gegrillt)",
+    "fr": "Cuisson (grillé)"
+   }
+  },
+  {
+   "id": "urla-chardonnay",
+   "kat": "sarap",
+   "ad": "urla chardonnay",
+   "tip": "adet",
+   "fiyat": 2700
+  },
+  {
+   "id": "urla-sauvignon-blanc",
+   "kat": "sarap",
+   "ad": "urla sauvignon blanc",
+   "tip": "adet",
+   "fiyat": 2700
+  },
+  {
+   "id": "urla-tempus",
+   "kat": "sarap",
+   "ad": "urla tempus",
+   "tip": "adet",
+   "fiyat": 2700
+  },
+  {
+   "id": "urla-bogazkere",
+   "kat": "sarap",
+   "ad": "urla boğazkere",
+   "tip": "adet",
+   "fiyat": 2700
+  },
+  {
+   "id": "urla-vourla",
+   "kat": "sarap",
+   "ad": "urla vourla",
+   "tip": "adet",
+   "fiyat": 2700
+  },
+  {
+   "id": "sac-kavurma",
+   "kat": "etler",
+   "ad": "saç kavurma",
+   "tip": "porsiyon",
+   "fiyat": 850,
+   "icerikler": [
+    "soğan",
+    "domates"
+   ],
+   "cev": {
+    "en": "Sautéed Lamb (sac)",
+    "de": "Lamm-Sautée (Sac)",
+    "fr": "Sauté d'agneau (sac)"
+   }
+  },
+  {
+   "id": "semiz-otu",
+   "kat": "meze",
+   "ad": "semiz otu",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Purslane",
+    "de": "Portulak",
+    "fr": "Pourpier"
+   }
+  },
+  {
+   "id": "kizartma",
+   "kat": "arasicak",
+   "ad": "kızartma",
+   "tip": "porsiyon",
+   "fiyat": 250,
+   "cev": {
+    "en": "Fried Vegetables (Zucchini & Eggplant)",
+    "de": "Frittiertes Gemüse (Zucchini & Aubergine)",
+    "fr": "Légumes frits (courgette et aubergine)"
+   }
+  },
+  {
+   "id": "istavrit-2",
+   "kat": "balik",
+   "ad": "istavrit",
+   "tip": "gram",
+   "kgFiyat": 1400,
+   "cev": {
+    "en": "Horse Mackerel",
+    "de": "Bastardmakrele",
+    "fr": "Chinchard"
+   }
+  },
+  {
+   "id": "roka-domates-sogan-peynir",
+   "kat": "salata",
+   "ad": "Greek Salata",
+   "tip": "porsiyon",
+   "fiyat": 200,
+   "icerikler": [
+    "roka",
+    "domates",
+    "soğan",
+    "peynir"
+   ],
+   "cev": {
+    "en": "Greek Salad",
+    "de": "Griechischer Salat",
+    "fr": "Salade grecque"
+   }
+  },
+  {
+   "id": "20-lik-teragold",
+   "kat": "raki",
+   "ad": "Teragold",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 1800
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3200
+    }
+   ]
+  },
+  {
+   "id": "35-lik-teragold",
+   "kat": "raki",
+   "ad": "20 lik teragold",
+   "tip": "adet",
+   "fiyat": 1200
+  },
+  {
+   "id": "50-lik-teragold",
+   "kat": "raki",
+   "ad": "50 lik teragold",
+   "tip": "adet",
+   "fiyat": 2450
+  },
+  {
+   "id": "70-lik-teragold",
+   "kat": "raki",
+   "ad": "70 lik teragold",
+   "tip": "adet",
+   "fiyat": 3100
+  },
+  {
+   "id": "100-luk-teragold",
+   "kat": "raki",
+   "ad": "100 lük teragold",
+   "tip": "adet",
+   "fiyat": 3900
+  },
+  {
+   "id": "ordovr-tabagi",
+   "kat": "meze",
+   "ad": "Ordövr Tabağı",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 300
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 600
+    }
+   ],
+   "cev": {
+    "en": "Hors d'Oeuvre Platter",
+    "de": "Vorspeisenteller",
+    "fr": "Assiette d'hors-d'œuvre"
+   }
+  },
+  {
+   "id": "omlet",
+   "kat": "kahvalti",
+   "ad": "omlet",
+   "tip": "porsiyon",
+   "fiyat": 300,
+   "cev": {
+    "en": "Omelette",
+    "de": "Omelett",
+    "fr": "Omelette"
+   }
+  },
+  {
+   "id": "kalamar-izgara",
+   "kat": "arasicak",
+   "ad": "kalamar ızgara",
+   "tip": "porsiyon",
+   "fiyat": 850,
+   "cev": {
+    "en": "Grilled Calamari",
+    "de": "Gegrillter Calamari",
+    "fr": "Calamars grillés"
+   }
+  },
+  {
+   "id": "levrek-kg",
+   "kat": "balik",
+   "ad": "Deniz levrek (kg)",
+   "tip": "gram",
+   "kgFiyat": 2200,
+   "cev": {
+    "en": "Sea Bass (per kg)",
+    "de": "Wolfsbarsch (pro kg)",
+    "fr": "Bar (au kg)"
+   }
+  },
+  {
+   "id": "kopeoglu",
+   "kat": "meze",
+   "ad": "köpeoğlu",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Köpoğlu (grilled eggplant & pepper with garlic yogurt)",
+    "de": "Köpoğlu (gegrillte Aubergine & Paprika mit Knoblauchjoghurt)",
+    "fr": "Köpoğlu (aubergine et poivron grillés au yaourt à l'ail)"
+   }
+  },
+  {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
+   "id": "sardalya-pilaki-2",
+   "kat": "balik",
+   "ad": "sardalya pilaki",
+   "tip": "porsiyon",
+   "fiyat": 425,
+   "cev": {
+    "en": "Sardine Pilaki (cooked in olive oil)",
+    "de": "Sardinen-Pilaki (in Olivenöl gegart)",
+    "fr": "Sardines pilaki (cuites à l'huile d'olive)"
+   }
+  },
+  {
+   "id": "sardalya-buglama",
+   "kat": "balik",
+   "ad": "sardalya buğlama",
+   "tip": "porsiyon",
+   "fiyat": 425,
+   "cev": {
+    "en": "Sardines Buğlama (poached with vegetables)",
+    "de": "Sardinen Buğlama (mit Gemüse gedünstet)",
+    "fr": "Sardines buğlama (mijotées aux légumes)"
+   }
+  },
+  {
+   "id": "barbun",
+   "kat": "balik",
+   "ad": "Barbun",
+   "tip": "gram",
+   "kgFiyat": 3800,
+   "cev": {
+    "en": "Red Mullet",
+    "de": "Rotbarbe",
+    "fr": "Rouget"
+   }
+  },
+  {
+   "id": "duble-ev-patatesi",
+   "kat": "arasicak",
+   "ad": "Duble Ev Patatesi",
+   "tip": "porsiyon",
+   "fiyat": 500,
+   "cev": {
+    "en": "Home-style Potatoes (Double Portion)",
+    "de": "Hausgemachte Kartoffeln (doppelte Portion)",
+    "fr": "Pommes de terre maison (portion double)"
+   }
+  },
+  {
+   "id": "sade-sucuk",
+   "kat": "kahvalti",
+   "ad": "sade sucuk",
+   "tip": "porsiyon",
+   "fiyat": 300,
+   "cev": {
+    "en": "Sucuk (Plain)",
+    "de": "Sucuk (pur)",
+    "fr": "Sucuk nature"
+   }
+  },
+  {
+   "id": "eksili-biber",
+   "kat": "meze",
+   "ad": "ekşili biber",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Peppers in Sour Sauce",
+    "de": "Paprika in saurer Soße",
+    "fr": "Poivrons à la sauce aigre"
+   }
+  },
+  {
+   "id": "angora-37-5",
+   "kat": "sarap",
+   "ad": "angora 37,5",
+   "tip": "adet",
+   "fiyat": 950
+  },
+  {
+   "id": "bamya-kizartma",
+   "kat": "meze",
+   "ad": "bamya kızartma",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Fried Okra",
+    "de": "Frittierte Okra",
+    "fr": "Gombo frit"
+   },
+   "yok": true
+  },
+  {
+   "id": "zeytin-yagli-bamya",
+   "kat": "meze",
+   "ad": "zeytin yağlı bamya",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Okra in Olive Oil",
+    "de": "Okra in Olivenöl",
+    "fr": "Gombo à l'huile d'olive"
+   }
+  },
+  {
+   "id": "salatalik-bavyera",
+   "kat": "meze",
+   "ad": "salatalık bavyera",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Bavarian-style Cucumber Salad",
+    "de": "Bayerischer Gurkensalat",
+    "fr": "Salade de concombre à la bavaroise"
+   },
+   "yok": true
+  },
+  {
+   "id": "lidaki",
+   "kat": "balik",
+   "ad": "lidaki",
+   "tip": "gram",
+   "kgFiyat": 1400,
+   "cev": {
+    "en": "Lidaki (small local Aegean fish)",
+    "de": "Lidaki (kleiner Fisch aus der Ägäis)",
+    "fr": "Lidaki (petit poisson égéen)"
+   }
+  },
+  {
+   "id": "levrek-lokum",
+   "kat": "balik",
+   "ad": "Levrek lokum",
+   "tip": "gram",
+   "kgFiyat": 1700,
+   "cev": {
+    "en": "Sea Bass Bites",
+    "de": "Wolfsbarsch-Häppchen",
+    "fr": "Bouchées de bar"
+   }
+  },
+  {
+   "id": "duble-kizartma",
+   "kat": "arasicak",
+   "ad": "Duble kızartma",
+   "tip": "porsiyon",
+   "fiyat": 500,
+   "icerikler": [
+    "Yoğurdu sarimsakli"
+   ],
+   "cev": {
+    "en": "Fried Vegetables (Double Portion)",
+    "de": "Frittiertes Gemüse (doppelte Portion)",
+    "fr": "Légumes frits (portion double)"
+   }
+  },
+  {
+   "id": "firin-helva",
+   "kat": "tatli",
+   "ad": "Fırın helva",
+   "tip": "porsiyon",
+   "fiyat": 100,
+   "cev": {
+    "en": "Oven-Baked Halva",
+    "de": "Ofen-Halva",
+    "fr": "Halva au four"
+   }
+  },
+  {
+   "id": "dilim-helva",
+   "kat": "tatli",
+   "ad": "Dilim helva",
+   "tip": "porsiyon",
+   "fiyat": 100,
+   "cev": {
+    "en": "Halva Slice",
+    "de": "Halva-Scheibe",
+    "fr": "Tranche de halva"
+   }
+  },
+  {
+   "id": "midye-dolma",
+   "kat": "meze",
+   "ad": "Midye Dolma",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Stuffed Mussels",
+    "de": "Gefüllte Miesmuscheln",
+    "fr": "Moules farcies"
+   }
+  },
+  {
+   "id": "mutebbel",
+   "kat": "meze",
+   "ad": "Mütebbel",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
+    }
+   ],
+   "cev": {
+    "en": "Mutabal (smoky eggplant & yogurt dip)",
+    "de": "Mutabal (Auberginen-Joghurt-Dip)",
+    "fr": "Moutabal (purée d'aubergine fumée au yaourt)"
+   }
+  },
+  {
+   "id": "mantar-pilaki-2",
+   "kat": "meze",
+   "ad": "Mantar pilaki",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Mushroom Pilaki (cooked in olive oil)",
+    "de": "Pilz-Pilaki (in Olivenöl gegart)",
+    "fr": "Champignons pilaki (cuits à l'huile d'olive)"
+   }
+  },
+  {
+   "id": "granyoz",
+   "kat": "balik",
+   "ad": "Granyoz",
+   "tip": "gram",
+   "kgFiyat": 2300,
+   "icerikler": [
+    "Tava pilaki"
+   ],
+   "cev": {
+    "en": "Brown Meagre",
+    "de": "Adlerfisch",
+    "fr": "Corb"
+   }
+  },
+  {
+   "id": "aci-frik-biber",
+   "kat": "meze",
+   "ad": "acı frik biber",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ],
+   "cev": {
+    "en": "Spicy Peppers",
+    "de": "Scharfe Paprika",
+    "fr": "Piments épicés"
+   }
+  },
+  {
+   "id": "35-mercan",
+   "kat": "raki",
+   "ad": "35 lik Mercan",
+   "tip": "adet",
+   "fiyat": 1800
+  },
+  {
+   "id": "haslanmis-yumurta",
+   "kat": "kahvalti",
+   "ad": "haslanmis yumurta",
+   "tip": "adet",
+   "fiyat": 50,
+   "cev": {
+    "en": "Boiled Egg",
+    "de": "Gekochtes Ei",
+    "fr": "Œuf dur"
+   }
+  },
+  {
+   "id": "ali-duman-sogusu",
+   "kat": "meze",
+   "ad": "Ali Duman Söğüşü",
+   "tip": "kisi",
+   "fiyat": 200,
+   "icerikler": [
+    "Domates",
+    "Salatalık",
+    "Zeytin",
+    "Peynir"
+   ],
+   "cev": {
+    "en": "Ali Duman Fresh Vegetable Platter",
+    "de": "Ali Duman Frisches Gemüse",
+    "fr": "Crudités Ali Duman"
+   }
+  },
+  {
+   "id": "sardalya-pilaki",
+   "kat": "balik",
+   "ad": "sardalya pilaki",
+   "tip": "porsiyon",
+   "fiyat": 400,
+   "cev": {
+    "en": "Sardine Pilaki (cooked in olive oil)",
+    "de": "Sardinen-Pilaki (in Olivenöl gegart)",
+    "fr": "Sardines pilaki (cuites à l'huile d'olive)"
+   }
+  },
+  {
+   "id": "yarim-ekmek-kalamar",
+   "kat": "balik",
+   "ad": "yarım ekmek kalamar",
+   "tip": "adet",
+   "fiyat": 0,
+   "cev": {
+    "en": "Calamari Half Sandwich",
+    "de": "Kalamari im halben Brot",
+    "fr": "Sandwich calamars (demi-pain)"
+   }
+  },
+  {
+   "id": "sucuk-ekmek",
+   "kat": "etler",
+   "ad": "sucuk ekmek",
+   "tip": "adet",
+   "fiyat": 250,
+   "cev": {
+    "en": "Sucuk Sandwich",
+    "de": "Sucuk-Sandwich",
+    "fr": "Sandwich au sucuk"
+   }
+  },
+  {
+   "id": "kiymali-gozleme",
+   "kat": "kahvalti",
+   "ad": "Kıymalı gözleme",
+   "tip": "adet",
+   "fiyat": 300,
+   "cev": {
+    "en": "Gözleme with Minced Meat",
+    "de": "Gözleme mit Hackfleisch",
+    "fr": "Gözleme à la viande hachée"
+   }
+  },
+  {
+   "id": "baliklar-mars",
+   "kat": "balik",
+   "ad": "balıklar marş",
+   "tip": "adet",
+   "fiyat": 0,
+   "cev": {
+    "en": "Fish – Start Grilling",
+    "de": "Fisch – Grillstart",
+    "fr": "Poissons – Démarrer la cuisson"
+   }
+  },
+  {
+   "id": "mirmir",
+   "kat": "balik",
+   "ad": "Mırmır",
+   "tip": "gram",
+   "kgFiyat": 1450,
+   "cev": {
+    "en": "Sand Steenbras",
+    "de": "Marmorbrasse",
+    "fr": "Marbré"
+   }
+  },
+  {
+   "id": "izgaralik-patetes",
+   "kat": "etler",
+   "ad": "ızgaralık patetes",
+   "tip": "adet",
+   "fiyat": 0
+  },
+  {
+   "id": "piyaz",
+   "kat": "meze",
+   "ad": "piyaz",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "kucuk-dil",
+   "kat": "balik",
+   "ad": "küçük dil",
+   "tip": "gram",
+   "kgFiyat": 1400
+  },
+  {
+   "id": "ceyrek-sardalya",
+   "kat": "balik",
+   "ad": "çeyrek ekmek sardalya",
+   "tip": "adet",
+   "fiyat": 180
+  },
+  {
+   "id": "kucuk-levrek",
+   "kat": "balik",
+   "ad": "küçük levrek",
+   "tip": "adet",
+   "fiyat": 600
+  },
+  {
+   "id": "semiz-otu-salatasi",
+   "kat": "meze",
+   "ad": "semiz otu salatası",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "deniz-mahsulleri-salatasi",
+   "kat": "meze",
+   "ad": "deniz mahsulleri salatası",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 200
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 400
+    }
+   ]
+  },
+  {
+   "id": "feslegenli-izgara-peynir",
+   "kat": "meze",
+   "ad": "fesleğenli ızgara peynir",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "kavurmali-yumurta",
+   "kat": "kahvalti",
+   "ad": "kavurmalı yumurta",
+   "tip": "porsiyon",
+   "fiyat": 350
+  },
+  {
+   "id": "deniz-cupra",
+   "kat": "balik",
+   "ad": "deniz çupra",
+   "tip": "gram",
+   "kgFiyat": 2300
+  },
+  {
+   "id": "hamsi-marin",
+   "kat": "meze",
+   "ad": "hamsi marin",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 200
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 400
+    }
+   ],
+   "yok": true
+  },
+  {
+   "id": "pasta",
+   "kat": "tatli",
+   "ad": "pasta",
+   "tip": "adet",
+   "fiyat": 900
+  },
+  {
+   "id": "kofte-ekmek-ceyrek",
+   "kat": "kahvalti",
+   "ad": "köfte ekmek çeyrek",
+   "tip": "adet",
+   "fiyat": 225
+  },
+  {
+   "id": "ciftlik-cupra",
+   "kat": "balik",
+   "ad": "çiftlik çupra",
+   "tip": "gram",
+   "kgFiyat": 1500
+  },
+  {
+   "id": "sadece-beyaz-peynir",
+   "kat": "kahvalti",
+   "ad": "sadece beyaz peynir",
+   "tip": "adet",
+   "fiyat": 75
+  },
+  {
+   "id": "palamut",
+   "kat": "balik",
+   "ad": "palamut",
+   "tip": "adet",
+   "fiyat": 400,
+   "cev": {
+    "en": "Bonito",
+    "de": "Bonito",
+    "fr": "Bonite"
+   }
+  },
+  {
+   "id": "subye-yumurtasi",
+   "kat": "meze",
+   "ad": "sübye yumurtası",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 200
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 400
+    }
+   ]
+  },
+  {
+   "id": "koz-biber",
+   "kat": "meze",
+   "ad": "köz biber",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "gielo",
+   "kat": "sarap",
+   "ad": "gielo",
+   "tip": "adet",
+   "fiyat": 1500
+  },
+  {
+   "id": "izgara-sardalya-yarim-ekmek",
+   "kat": "balik",
+   "ad": "ızgara sardalya yarım ekmek",
+   "tip": "adet",
+   "fiyat": 300,
+   "icerikler": [
+    "marul",
+    "domates",
+    "soğan"
+   ]
+  },
+  {
+   "id": "levrek-marin",
+   "kat": "meze",
+   "ad": "levrek marin",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 200
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 400
+    }
+   ]
+  },
+  {
+   "id": "palamut-buglama",
+   "kat": "balik",
+   "ad": "palamut buğlama",
+   "tip": "porsiyon",
+   "fiyat": 500
+  }
+ ],
+ "boyCev": {
+  "Küçük": {
+   "en": "Small",
+   "de": "Klein",
+   "fr": "Petit"
+  },
+  "Büyük": {
+   "en": "Large",
+   "de": "Groß",
+   "fr": "Grand"
+  },
+  "Kadeh": {
+   "en": "Glass",
+   "de": "Glas",
+   "fr": "Verre"
+  },
+  "Yarım": {
+   "en": "Half",
+   "de": "Halb",
+   "fr": "Demi"
+  },
+  "Üç Çeyrek": {
+   "en": "3/4",
+   "de": "3/4",
+   "fr": "3/4"
+  },
+  "Tam": {
+   "en": "Full",
+   "de": "Ganz",
+   "fr": "Entier"
+  }
+ }
+}
