@@ -1,5 +1,5 @@
 {
- "guncellendi": 1789935338064,
+ "guncellendi": 1789935345574,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -359,8 +359,7 @@
     "en": "Sole",
     "de": "Seezunge",
     "fr": "Sole"
-   },
-   "yok": true
+   }
   },
   {
    "id": "sardalya",
@@ -372,8 +371,7 @@
     "en": "Sardines",
     "de": "Sardinen",
     "fr": "Sardines"
-   },
-   "yok": true
+   }
   },
   {
    "id": "yaprak-sardalya",
@@ -385,8 +383,7 @@
     "en": "Sardines in Vine Leaves",
     "de": "Sardinen in Weinblättern",
     "fr": "Sardines en feuilles de vigne"
-   },
-   "yok": true
+   }
   },
   {
    "id": "sardalya-ekmek",
