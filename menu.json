@@ -1,5 +1,5 @@
 {
- "guncellendi": 1789935252936,
+ "guncellendi": 1789935281646,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -359,7 +359,8 @@
     "en": "Sole",
     "de": "Seezunge",
     "fr": "Sole"
-   }
+   },
+   "yok": true
   },
   {
    "id": "sardalya",
@@ -371,7 +372,8 @@
     "en": "Sardines",
     "de": "Sardinen",
     "fr": "Sardines"
-   }
+   },
+   "yok": true
   },
   {
    "id": "yaprak-sardalya",
@@ -383,7 +385,8 @@
     "en": "Sardines in Vine Leaves",
     "de": "Sardinen in Weinblättern",
     "fr": "Sardines en feuilles de vigne"
-   }
+   },
+   "yok": true
   },
   {
    "id": "sardalya-ekmek",
@@ -395,7 +398,8 @@
     "en": "Sardine Sandwich",
     "de": "Sardinen-Sandwich",
     "fr": "Sandwich aux sardines"
-   }
+   },
+   "yok": true
   },
   {
    "id": "kalamar",
@@ -2508,7 +2512,8 @@
     "en": "This is half of one sea bass (approx. 750-800 g).",
     "de": "Dies ist die Hälfte eines Wolfsbarschs (ca. 750-800 g).",
     "fr": "C'est la moitié d'un bar (env. 750-800 g)."
-   }
+   },
+   "yok": true
   },
   {
    "id": "cupra",
