@@ -1,5 +1,5 @@
 {
- "guncellendi": 1789935782150,
+ "guncellendi": 1790009762230,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3053,7 +3053,8 @@
     "en": "Mutabal (smoky eggplant & yogurt dip)",
     "de": "Mutabal (Auberginen-Joghurt-Dip)",
     "fr": "Moutabal (purée d'aubergine fumée au yaourt)"
-   }
+   },
+   "yok": true
   },
   {
    "id": "mantar-pilaki-2",
