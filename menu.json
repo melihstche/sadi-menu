@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790092750128,
+ "guncellendi": 1790092780201,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -666,7 +666,8 @@
      "ad": "Büyük",
      "fiyat": 290
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "peynir-meze",
