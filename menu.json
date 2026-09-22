@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790094496353,
+ "guncellendi": 1790094511743,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3466,13 +3466,6 @@
    "ad": "palamut buğlama",
    "tip": "porsiyon",
    "fiyat": 500
-  },
-  {
-   "id": "brokoli",
-   "kat": "meze",
-   "ad": "Brokoli",
-   "tip": "porsiyon",
-   "fiyat": 280
   },
   {
    "id": "brokoli-2",
