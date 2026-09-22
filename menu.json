@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790092601470,
+ "guncellendi": 1790092606750,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3034,7 +3034,8 @@
     "en": "Stuffed Mussels",
     "de": "Gefüllte Miesmuscheln",
     "fr": "Moules farcies"
-   }
+   },
+   "yok": true
   },
   {
    "id": "mutebbel",
