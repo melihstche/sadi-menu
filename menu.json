@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790098755975,
+ "guncellendi": 1790098860105,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3469,6 +3469,22 @@
    "id": "brokoli-2",
    "kat": "meze",
    "ad": "Brokoli",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "muhrudar",
+   "kat": "meze",
+   "ad": "Mührüdar",
    "tip": "boy",
    "boylar": [
     {
