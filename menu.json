@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790092564886,
+ "guncellendi": 1790092587610,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2915,8 +2915,7 @@
     "en": "Fried Okra",
     "de": "Frittierte Okra",
     "fr": "Gombo frit"
-   },
-   "yok": true
+   }
   },
   {
    "id": "zeytin-yagli-bamya",
