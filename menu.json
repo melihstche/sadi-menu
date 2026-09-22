@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790009762230,
+ "guncellendi": 1790092559494,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2628,7 +2628,8 @@
     "en": "Purslane",
     "de": "Portulak",
     "fr": "Pourpier"
-   }
+   },
+   "yok": true
   },
   {
    "id": "kizartma",
