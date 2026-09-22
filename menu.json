@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790092713514,
+ "guncellendi": 1790092750128,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -744,7 +744,8 @@
     "en": "Okra",
     "de": "Okra",
     "fr": "Gombo"
-   }
+   },
+   "yok": true
   },
   {
    "id": "pancar-tursusu",
