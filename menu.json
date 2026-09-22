@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790092559494,
+ "guncellendi": 1790092564886,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2793,7 +2793,8 @@
     "en": "Köpoğlu (grilled eggplant & pepper with garlic yogurt)",
     "de": "Köpoğlu (gegrillte Aubergine & Paprika mit Knoblauchjoghurt)",
     "fr": "Köpoğlu (aubergine et poivron grillés au yaourt à l'ail)"
-   }
+   },
+   "yok": true
   },
   {
    "id": "ogrenci-raki-servisi",
