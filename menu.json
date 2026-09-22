@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790093082780,
+ "guncellendi": 1790094496353,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3473,6 +3473,22 @@
    "ad": "Brokoli",
    "tip": "porsiyon",
    "fiyat": 280
+  },
+  {
+   "id": "brokoli-2",
+   "kat": "meze",
+   "ad": "Brokoli",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
   }
  ],
  "boyCev": {
