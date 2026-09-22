@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790092683444,
+ "guncellendi": 1790092713514,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -829,7 +829,8 @@
     "en": "Black-eyed Peas",
     "de": "Augenbohnen",
     "fr": "Haricots cornille"
-   }
+   },
+   "yok": true
   },
   {
    "id": "sade-haydari",
