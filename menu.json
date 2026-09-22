@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790094511743,
+ "guncellendi": 1790098755975,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -745,8 +745,7 @@
     "en": "Okra",
     "de": "Okra",
     "fr": "Gombo"
-   },
-   "yok": true
+   }
   },
   {
    "id": "pancar-tursusu",
@@ -831,8 +830,7 @@
     "en": "Black-eyed Peas",
     "de": "Augenbohnen",
     "fr": "Haricots cornille"
-   },
-   "yok": true
+   }
   },
   {
    "id": "sade-haydari",
