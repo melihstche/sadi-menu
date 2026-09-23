@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790098860105,
+ "guncellendi": 1790155407259,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -359,7 +359,8 @@
     "en": "Sole",
     "de": "Seezunge",
     "fr": "Sole"
-   }
+   },
+   "yok": true
   },
   {
    "id": "sardalya",
