@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790155430827,
+ "guncellendi": 1790155435153,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3098,7 +3098,8 @@
     "en": "Brown Meagre",
     "de": "Adlerfisch",
     "fr": "Corb"
-   }
+   },
+   "yok": true
   },
   {
    "id": "aci-frik-biber",
