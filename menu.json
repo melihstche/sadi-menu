@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790155451919,
+ "guncellendi": 1790155489302,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3260,7 +3260,8 @@
    "kat": "balik",
    "ad": "küçük dil",
    "tip": "gram",
-   "kgFiyat": 1400
+   "kgFiyat": 1400,
+   "yok": true
   },
   {
    "id": "ceyrek-sardalya",
