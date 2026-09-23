@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790155407259,
+ "guncellendi": 1790155420912,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2656,7 +2656,8 @@
     "en": "Horse Mackerel",
     "de": "Bastardmakrele",
     "fr": "Chinchard"
-   }
+   },
+   "yok": true
   },
   {
    "id": "roka-domates-sogan-peynir",
