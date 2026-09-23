@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790155435153,
+ "guncellendi": 1790155451919,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3229,7 +3229,8 @@
     "en": "Sand Steenbras",
     "de": "Marmorbrasse",
     "fr": "Marbré"
-   }
+   },
+   "yok": true
   },
   {
    "id": "izgaralik-patetes",
