@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790155420912,
+ "guncellendi": 1790155430827,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2975,7 +2975,8 @@
     "en": "Lidaki (small local Aegean fish)",
     "de": "Lidaki (kleiner Fisch aus der Ägäis)",
     "fr": "Lidaki (petit poisson égéen)"
-   }
+   },
+   "yok": true
   },
   {
    "id": "levrek-lokum",
