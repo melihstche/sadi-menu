@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790347650532,
+ "guncellendi": 1790347665064,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3255,7 +3255,8 @@
      "ad": "Büyük",
      "fiyat": 280
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "kucuk-dil",
