@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790162371564,
+ "guncellendi": 1790347479489,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3499,6 +3499,22 @@
     {
      "ad": "Büyük",
      "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "kereviz-tarator",
+   "kat": "meze",
+   "ad": "Kereviz tarator",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
     }
    ]
   }
