@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790347665064,
+ "guncellendi": 1790347671671,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3311,7 +3311,8 @@
      "ad": "Büyük",
      "fiyat": 400
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "feslegenli-izgara-peynir",
@@ -3327,7 +3328,8 @@
      "ad": "Büyük",
      "fiyat": 280
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "kavurmali-yumurta",
