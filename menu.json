@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790347509417,
+ "guncellendi": 1790347530494,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -1250,7 +1250,8 @@
     "en": "Full Mixed Grill",
     "de": "Großer Grillteller",
     "fr": "Grillades mixtes complètes"
-   }
+   },
+   "yok": true
   },
   {
    "id": "ekmek-arasi-tavuk",
