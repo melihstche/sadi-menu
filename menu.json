@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790347671671,
+ "guncellendi": 1790347678224,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3359,8 +3359,7 @@
      "ad": "Büyük",
      "fiyat": 400
     }
-   ],
-   "yok": true
+   ]
   },
   {
    "id": "pasta",
