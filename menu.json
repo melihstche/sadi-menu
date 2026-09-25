@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790347530494,
+ "guncellendi": 1790347605784,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -911,7 +911,8 @@
     "en": "Eggplant Salad",
     "de": "Auberginensalat",
     "fr": "Salade d'aubergines"
-   }
+   },
+   "yok": true
   },
   {
    "id": "kabak-siyirma",
