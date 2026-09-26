@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790436014464,
+ "guncellendi": 1790436040484,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -1163,19 +1163,6 @@
    }
   },
   {
-   "id": "kuzu-sis",
-   "kat": "etler",
-   "ad": "Kuzu Şiş",
-   "tip": "porsiyon",
-   "fiyat": 750,
-   "adetFiyat": 190,
-   "cev": {
-    "en": "Lamb Skewer",
-    "de": "Lammspieß",
-    "fr": "Brochette d'agneau"
-   }
-  },
-  {
    "id": "pirzola",
    "kat": "etler",
    "ad": "Pirzola",
@@ -1186,6 +1173,19 @@
     "en": "Lamb Chops",
     "de": "Lammkoteletts",
     "fr": "Côtelettes d'agneau"
+   }
+  },
+  {
+   "id": "kuzu-sis",
+   "kat": "etler",
+   "ad": "Kuzu Şiş",
+   "tip": "porsiyon",
+   "fiyat": 750,
+   "adetFiyat": 190,
+   "cev": {
+    "en": "Lamb Skewer",
+    "de": "Lammspieß",
+    "fr": "Brochette d'agneau"
    }
   },
   {
@@ -1250,8 +1250,7 @@
     "en": "Full Mixed Grill",
     "de": "Großer Grillteller",
     "fr": "Grillades mixtes complètes"
-   },
-   "yok": true
+   }
   },
   {
    "id": "ekmek-arasi-tavuk",
