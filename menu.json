@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790434752604,
+ "guncellendi": 1790436014464,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -1163,19 +1163,6 @@
    }
   },
   {
-   "id": "pirzola",
-   "kat": "etler",
-   "ad": "Pirzola",
-   "tip": "porsiyon",
-   "fiyat": 950,
-   "adetFiyat": 230,
-   "cev": {
-    "en": "Lamb Chops",
-    "de": "Lammkoteletts",
-    "fr": "Côtelettes d'agneau"
-   }
-  },
-  {
    "id": "kuzu-sis",
    "kat": "etler",
    "ad": "Kuzu Şiş",
@@ -1186,6 +1173,19 @@
     "en": "Lamb Skewer",
     "de": "Lammspieß",
     "fr": "Brochette d'agneau"
+   }
+  },
+  {
+   "id": "pirzola",
+   "kat": "etler",
+   "ad": "Pirzola",
+   "tip": "porsiyon",
+   "fiyat": 950,
+   "adetFiyat": 230,
+   "cev": {
+    "en": "Lamb Chops",
+    "de": "Lammkoteletts",
+    "fr": "Côtelettes d'agneau"
    }
   },
   {
