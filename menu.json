@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790347685308,
+ "guncellendi": 1790434752604,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -1173,8 +1173,7 @@
     "en": "Lamb Chops",
     "de": "Lammkoteletts",
     "fr": "Côtelettes d'agneau"
-   },
-   "yok": true
+   }
   },
   {
    "id": "kuzu-sis",
