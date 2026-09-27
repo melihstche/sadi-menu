@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790517019514,
+ "guncellendi": 1790517034299,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3101,27 +3101,6 @@
     "fr": "Corb"
    },
    "yok": true
-  },
-  {
-   "id": "aci-frik-biber",
-   "kat": "meze",
-   "ad": "acı frik biber",
-   "tip": "boy",
-   "boylar": [
-    {
-     "ad": "Küçük",
-     "fiyat": 140
-    },
-    {
-     "ad": "Büyük",
-     "fiyat": 280
-    }
-   ],
-   "cev": {
-    "en": "Spicy Peppers",
-    "de": "Scharfe Paprika",
-    "fr": "Piments épicés"
-   }
   },
   {
    "id": "35-mercan",
