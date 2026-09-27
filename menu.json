@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790516989361,
+ "guncellendi": 1790517019514,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3083,7 +3083,8 @@
     "en": "Mushroom Pilaki (cooked in olive oil)",
     "de": "Pilz-Pilaki (in Olivenöl gegart)",
     "fr": "Champignons pilaki (cuits à l'huile d'olive)"
-   }
+   },
+   "yok": true
   },
   {
    "id": "granyoz",
