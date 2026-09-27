@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790517034299,
+ "guncellendi": 1790517048078,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2900,28 +2900,6 @@
    "ad": "angora 37,5",
    "tip": "adet",
    "fiyat": 950
-  },
-  {
-   "id": "bamya-kizartma",
-   "kat": "meze",
-   "ad": "bamya kızartma",
-   "tip": "boy",
-   "boylar": [
-    {
-     "ad": "Küçük",
-     "fiyat": 140
-    },
-    {
-     "ad": "Büyük",
-     "fiyat": 290
-    }
-   ],
-   "cev": {
-    "en": "Fried Okra",
-    "de": "Frittierte Okra",
-    "fr": "Gombo frit"
-   },
-   "yok": true
   },
   {
    "id": "zeytin-yagli-bamya",
