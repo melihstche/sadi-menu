@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790864217233,
+ "guncellendi": 1790864222348,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -725,28 +725,6 @@
     "de": "Antep (Pistazien-Creme)",
     "fr": "Antep (crème de pistache)"
    }
-  },
-  {
-   "id": "bamya",
-   "kat": "meze",
-   "ad": "Bamya",
-   "tip": "boy",
-   "boylar": [
-    {
-     "ad": "Küçük",
-     "fiyat": 145
-    },
-    {
-     "ad": "Büyük",
-     "fiyat": 290
-    }
-   ],
-   "cev": {
-    "en": "Okra",
-    "de": "Okra",
-    "fr": "Gombo"
-   },
-   "yok": true
   },
   {
    "id": "pancar-tursusu",
