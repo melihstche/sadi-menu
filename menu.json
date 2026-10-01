@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790864248650,
+ "guncellendi": 1790864268673,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2901,8 +2901,7 @@
     "en": "Bavarian-style Cucumber Salad",
     "de": "Bayerischer Gurkensalat",
     "fr": "Salade de concombre à la bavaroise"
-   },
-   "yok": true
+   }
   },
   {
    "id": "lidaki",
