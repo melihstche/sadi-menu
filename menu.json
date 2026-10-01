@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790864222348,
+ "guncellendi": 1790864248650,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -1002,8 +1002,7 @@
     "en": "Onion Dream",
     "de": "Zwiebeltraum",
     "fr": "Rêve d'oignon"
-   },
-   "yok": true
+   }
   },
   {
    "id": "humus",
