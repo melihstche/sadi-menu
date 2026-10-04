@@ -1,5 +1,5 @@
 {
- "guncellendi": 1790939027772,
+ "guncellendi": 1791126052213,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3438,6 +3438,13 @@
      "fiyat": 290
     }
    ]
+  },
+  {
+   "id": "tekir",
+   "kat": "balik",
+   "ad": "Tekir",
+   "tip": "gram",
+   "kgFiyat": 1800
   }
  ],
  "boyCev": {
