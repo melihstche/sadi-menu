@@ -1,5 +1,5 @@
 {
- "guncellendi": 1791138045906,
+ "guncellendi": 1791394057306,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3446,6 +3446,13 @@
    "ad": "Tekir",
    "tip": "gram",
    "kgFiyat": 1800
+  },
+  {
+   "id": "angora-70-cl",
+   "kat": "sarap",
+   "ad": "angora 70 cl",
+   "tip": "adet",
+   "fiyat": 1750
   }
  ],
  "boyCev": {
