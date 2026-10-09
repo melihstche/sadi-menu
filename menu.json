@@ -1,5 +1,5 @@
 {
- "guncellendi": 1791557118705,
+ "guncellendi": 1791557144672,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -766,7 +766,8 @@
     "en": "Pickled Peppers",
     "de": "Eingelegte Paprika",
     "fr": "Piments marinés"
-   }
+   },
+   "yok": true
   },
   {
    "id": "deniz-borulcesi",
