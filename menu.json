@@ -1,5 +1,5 @@
 {
- "guncellendi": 1791557020942,
+ "guncellendi": 1791557028429,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2880,7 +2880,8 @@
     "en": "Okra in Olive Oil",
     "de": "Okra in Olivenöl",
     "fr": "Gombo à l'huile d'olive"
-   }
+   },
+   "yok": true
   },
   {
    "id": "salatalik-bavyera",
