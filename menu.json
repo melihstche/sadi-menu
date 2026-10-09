@@ -1,5 +1,5 @@
 {
- "guncellendi": 1791557028429,
+ "guncellendi": 1791557041538,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2852,7 +2852,8 @@
     "en": "Peppers in Sour Sauce",
     "de": "Paprika in saurer Soße",
     "fr": "Poivrons à la sauce aigre"
-   }
+   },
+   "yok": true
   },
   {
    "id": "angora-37-5",
