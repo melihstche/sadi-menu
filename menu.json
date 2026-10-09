@@ -1,5 +1,5 @@
 {
- "guncellendi": 1791394057306,
+ "guncellendi": 1791556891015,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3453,6 +3453,13 @@
    "ad": "angora 70 cl",
    "tip": "adet",
    "fiyat": 1750
+  },
+  {
+   "id": "karnibahar-salatasi",
+   "kat": "meze",
+   "ad": "Karnıbahar salatası",
+   "tip": "porsiyon",
+   "fiyat": 280
   }
  ],
  "boyCev": {
