@@ -1,5 +1,5 @@
 {
- "guncellendi": 1791639070307,
+ "guncellendi": 1791653855385,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3464,6 +3464,23 @@
    "ad": "Karnıbahar salatası",
    "tip": "porsiyon",
    "fiyat": 280
+  },
+  {
+   "id": "istanbul-salata",
+   "kat": "salata",
+   "ad": "İstanbul salata",
+   "tip": "adet",
+   "fiyat": 180,
+   "icerikler": [
+    "Domates",
+    "soğan",
+    "roka",
+    "soya sos",
+    "nar ekşisi",
+    "zeytinyagı",
+    "isot",
+    "sumak"
+   ]
   }
  ],
  "boyCev": {
