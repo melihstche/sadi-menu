@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792263559078,
+ "guncellendi": 1792518873036,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3333,8 +3333,7 @@
      "ad": "Büyük",
      "fiyat": 400
     }
-   ],
-   "yok": true
+   ]
   },
   {
    "id": "koz-biber",
