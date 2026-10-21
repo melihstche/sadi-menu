@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599941661,
+ "guncellendi": 1792599952478,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2086,6 +2086,18 @@
    }
   },
   {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
    "id": "yeni-raki",
    "kat": "raki",
    "ad": "Yeni Rakı",
@@ -2191,18 +2203,6 @@
    "ad": "şarap servisi",
    "tip": "porsiyon",
    "fiyat": 100
-  },
-  {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
   },
   {
    "id": "kulup",
