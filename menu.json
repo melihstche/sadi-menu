@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599770463,
+ "guncellendi": 1792599778555,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2661,6 +2661,13 @@
    "fiyat": 1200
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "50-lik-teragold",
    "kat": "raki",
    "ad": "50 lik teragold",
@@ -2673,13 +2680,6 @@
    "ad": "70 lik teragold",
    "tip": "adet",
    "fiyat": 3100
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "ordovr-tabagi",
