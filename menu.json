@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599791971,
+ "guncellendi": 1792599798322,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2638,22 +2638,6 @@
    }
   },
   {
-   "id": "20-lik-teragold",
-   "kat": "raki",
-   "ad": "Teragold",
-   "tip": "sise",
-   "boylar": [
-    {
-     "ad": "35cl",
-     "fiyat": 1800
-    },
-    {
-     "ad": "70cl",
-     "fiyat": 3200
-    }
-   ]
-  },
-  {
    "id": "sarap-servisi",
    "kat": "raki",
    "ad": "şarap servisi",
@@ -2671,6 +2655,22 @@
     "de": "Studenten-Rakı-Service",
     "fr": "Service rakı étudiant"
    }
+  },
+  {
+   "id": "20-lik-teragold",
+   "kat": "raki",
+   "ad": "Teragold",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 1800
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3200
+    }
+   ]
   },
   {
    "id": "35-lik-teragold",
