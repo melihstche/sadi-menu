@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599981277,
+ "guncellendi": 1792599988685,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2074,6 +2074,13 @@
    }
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "tek-raki",
    "kat": "raki",
    "ad": "Tek Rakı",
@@ -2096,13 +2103,6 @@
     "de": "Mittlerer Rakı",
     "fr": "Rakı moyen"
    }
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "yeni-raki",
