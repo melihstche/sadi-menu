@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599798322,
+ "guncellendi": 1792599806786,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2422,6 +2422,13 @@
    ]
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "ala",
    "kat": "raki",
    "ad": "Ala",
@@ -2438,22 +2445,6 @@
     {
      "ad": "70cl",
      "fiyat": 3210
-    }
-   ]
-  },
-  {
-   "id": "incirden",
-   "kat": "raki",
-   "ad": "İncirden",
-   "tip": "sise",
-   "boylar": [
-    {
-     "ad": "35cl",
-     "fiyat": 2000
-    },
-    {
-     "ad": "70cl",
-     "fiyat": 4100
     }
    ]
   },
@@ -2638,11 +2629,20 @@
    }
   },
   {
-   "id": "sarap-servisi",
+   "id": "incirden",
    "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
+   "ad": "İncirden",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 2000
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 4100
+    }
+   ]
   },
   {
    "id": "ogrenci-raki-servisi",
