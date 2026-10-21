@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599806786,
+ "guncellendi": 1792599811971,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2429,24 +2429,16 @@
    "fiyat": 100
   },
   {
-   "id": "ala",
+   "id": "ogrenci-raki-servisi",
    "kat": "raki",
-   "ad": "Ala",
-   "tip": "sise",
-   "boylar": [
-    {
-     "ad": "20cl",
-     "fiyat": 1400
-    },
-    {
-     "ad": "35cl",
-     "fiyat": 1850
-    },
-    {
-     "ad": "70cl",
-     "fiyat": 3210
-    }
-   ]
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
   },
   {
    "id": "levrek-2",
@@ -2629,6 +2621,26 @@
    }
   },
   {
+   "id": "ala",
+   "kat": "raki",
+   "ad": "Ala",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "20cl",
+     "fiyat": 1400
+    },
+    {
+     "ad": "35cl",
+     "fiyat": 1850
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 3210
+    }
+   ]
+  },
+  {
    "id": "incirden",
    "kat": "raki",
    "ad": "İncirden",
@@ -2643,18 +2655,6 @@
      "fiyat": 4100
     }
    ]
-  },
-  {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
   },
   {
    "id": "20-lik-teragold",
