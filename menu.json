@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599881359,
+ "guncellendi": 1792599891069,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2294,6 +2294,13 @@
    ]
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "efe-yas-uzum",
    "kat": "raki",
    "ad": "Efe Yaş Üzüm",
@@ -2348,13 +2355,6 @@
      "fiyat": 4100
     }
    ]
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "ogrenci-raki-servisi",
