@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792518873036,
+ "guncellendi": 1792599712575,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3480,6 +3480,13 @@
     "isot",
     "sumak"
    ]
+  },
+  {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
   }
  ],
  "boyCev": {
