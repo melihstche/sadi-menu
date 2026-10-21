@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599988685,
+ "guncellendi": 1792600000527,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2062,6 +2062,13 @@
    }
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "duble-raki",
    "kat": "raki",
    "ad": "Duble Rakı",
@@ -2072,13 +2079,6 @@
     "de": "Doppelter Rakı",
     "fr": "Rakı double"
    }
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "tek-raki",
