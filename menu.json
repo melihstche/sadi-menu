@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599874582,
+ "guncellendi": 1792599881359,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2350,6 +2350,25 @@
    ]
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
    "id": "sari-zeybek",
    "kat": "raki",
    "ad": "Sarı Zeybek 3 Meşe",
@@ -2376,25 +2395,6 @@
      "fiyat": 5750
     }
    ]
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
-  },
-  {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
   },
   {
    "id": "barbayanni",
