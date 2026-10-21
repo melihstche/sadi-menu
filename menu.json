@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599960154,
+ "guncellendi": 1792599965584,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2038,6 +2038,18 @@
    ]
   },
   {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
    "id": "raki-servisi",
    "kat": "raki",
    "ad": "Rakı Servisi",
@@ -2059,18 +2071,6 @@
     "en": "Double Rakı",
     "de": "Doppelter Rakı",
     "fr": "Rakı double"
-   }
-  },
-  {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
    }
   },
   {
