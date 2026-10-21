@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599965584,
+ "guncellendi": 1792599975959,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2038,18 +2038,6 @@
    ]
   },
   {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
-  },
-  {
    "id": "raki-servisi",
    "kat": "raki",
    "ad": "Rakı Servisi",
@@ -2059,6 +2047,18 @@
     "en": "Rakı Service (per person)",
     "de": "Rakı-Service (p.P.)",
     "fr": "Service rakı (par pers.)"
+   }
+  },
+  {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
    }
   },
   {
@@ -2124,6 +2124,13 @@
      "fiyat": 3200
     }
    ]
+  },
+  {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
   },
   {
    "id": "yeni-seri",
@@ -2196,13 +2203,6 @@
      "fiyat": 3215
     }
    ]
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "kulup",
