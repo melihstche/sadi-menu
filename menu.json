@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599778555,
+ "guncellendi": 1792599785293,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2668,18 +2668,23 @@
    "fiyat": 100
   },
   {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
    "id": "50-lik-teragold",
    "kat": "raki",
    "ad": "50 lik teragold",
    "tip": "adet",
    "fiyat": 2450
-  },
-  {
-   "id": "70-lik-teragold",
-   "kat": "raki",
-   "ad": "70 lik teragold",
-   "tip": "adet",
-   "fiyat": 3100
   },
   {
    "id": "ordovr-tabagi",
@@ -2761,16 +2766,11 @@
    "yok": true
   },
   {
-   "id": "ogrenci-raki-servisi",
+   "id": "70-lik-teragold",
    "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
+   "ad": "70 lik teragold",
+   "tip": "adet",
+   "fiyat": 3100
   },
   {
    "id": "sardalya-pilaki-2",
