@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599759408,
+ "guncellendi": 1792599770463,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2675,11 +2675,11 @@
    "fiyat": 3100
   },
   {
-   "id": "100-luk-teragold",
+   "id": "sarap-servisi",
    "kat": "raki",
-   "ad": "100 lük teragold",
-   "tip": "adet",
-   "fiyat": 3900
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
   },
   {
    "id": "ordovr-tabagi",
@@ -3042,11 +3042,11 @@
    "yok": true
   },
   {
-   "id": "sarap-servisi",
+   "id": "100-luk-teragold",
    "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
+   "ad": "100 lük teragold",
+   "tip": "adet",
+   "fiyat": 3900
   },
   {
    "id": "haslanmis-yumurta",
