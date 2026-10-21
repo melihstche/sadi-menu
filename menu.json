@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599933069,
+ "guncellendi": 1792599941661,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2186,6 +2186,13 @@
    ]
   },
   {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "ogrenci-raki-servisi",
    "kat": "raki",
    "ad": "öğrenci rakı servisi",
@@ -2212,13 +2219,6 @@
      "fiyat": 3250
     }
    ]
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "tekirdag-gobek",
