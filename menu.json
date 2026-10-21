@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599891069,
+ "guncellendi": 1792599896304,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2294,6 +2294,18 @@
    ]
   },
   {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
    "id": "sarap-servisi",
    "kat": "raki",
    "ad": "şarap servisi",
@@ -2355,18 +2367,6 @@
      "fiyat": 4100
     }
    ]
-  },
-  {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
   },
   {
    "id": "sari-zeybek",
