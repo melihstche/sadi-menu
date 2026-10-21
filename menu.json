@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599811971,
+ "guncellendi": 1792599818204,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2406,22 +2406,6 @@
    ]
   },
   {
-   "id": "protatip",
-   "kat": "raki",
-   "ad": "Protatip",
-   "tip": "sise",
-   "boylar": [
-    {
-     "ad": "35cl",
-     "fiyat": 0
-    },
-    {
-     "ad": "70cl",
-     "fiyat": 0
-    }
-   ]
-  },
-  {
    "id": "sarap-servisi",
    "kat": "raki",
    "ad": "şarap servisi",
@@ -2439,6 +2423,22 @@
     "de": "Studenten-Rakı-Service",
     "fr": "Service rakı étudiant"
    }
+  },
+  {
+   "id": "protatip",
+   "kat": "raki",
+   "ad": "Protatip",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "35cl",
+     "fiyat": 0
+    },
+    {
+     "ad": "70cl",
+     "fiyat": 0
+    }
+   ]
   },
   {
    "id": "levrek-2",
