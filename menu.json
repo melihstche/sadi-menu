@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599818204,
+ "guncellendi": 1792599861050,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2394,18 +2394,6 @@
    ]
   },
   {
-   "id": "ouzo",
-   "kat": "raki",
-   "ad": "Ouzo",
-   "tip": "sise",
-   "boylar": [
-    {
-     "ad": "70cl",
-     "fiyat": 3450
-    }
-   ]
-  },
-  {
    "id": "sarap-servisi",
    "kat": "raki",
    "ad": "şarap servisi",
@@ -2423,6 +2411,18 @@
     "de": "Studenten-Rakı-Service",
     "fr": "Service rakı étudiant"
    }
+  },
+  {
+   "id": "ouzo",
+   "kat": "raki",
+   "ad": "Ouzo",
+   "tip": "sise",
+   "boylar": [
+    {
+     "ad": "70cl",
+     "fiyat": 3450
+    }
+   ]
   },
   {
    "id": "protatip",
