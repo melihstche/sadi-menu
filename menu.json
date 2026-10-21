@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792599896304,
+ "guncellendi": 1792599905412,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2266,6 +2266,25 @@
    ]
   },
   {
+   "id": "ogrenci-raki-servisi",
+   "kat": "raki",
+   "ad": "öğrenci rakı servisi",
+   "tip": "kisi",
+   "fiyat": 150,
+   "cev": {
+    "en": "Student Rakı Service",
+    "de": "Studenten-Rakı-Service",
+    "fr": "Service rakı étudiant"
+   }
+  },
+  {
+   "id": "sarap-servisi",
+   "kat": "raki",
+   "ad": "şarap servisi",
+   "tip": "porsiyon",
+   "fiyat": 100
+  },
+  {
    "id": "mavi-gobek",
    "kat": "raki",
    "ad": "Mavi Göbek",
@@ -2292,25 +2311,6 @@
      "fiyat": 3350
     }
    ]
-  },
-  {
-   "id": "ogrenci-raki-servisi",
-   "kat": "raki",
-   "ad": "öğrenci rakı servisi",
-   "tip": "kisi",
-   "fiyat": 150,
-   "cev": {
-    "en": "Student Rakı Service",
-    "de": "Studenten-Rakı-Service",
-    "fr": "Service rakı étudiant"
-   }
-  },
-  {
-   "id": "sarap-servisi",
-   "kat": "raki",
-   "ad": "şarap servisi",
-   "tip": "porsiyon",
-   "fiyat": 100
   },
   {
    "id": "efe-yas-uzum",
