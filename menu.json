@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792770948639,
+ "guncellendi": 1792774264084,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3487,6 +3487,13 @@
    "ad": "35 lik Mercan",
    "tip": "adet",
    "fiyat": 1800
+  },
+  {
+   "id": "tekirdag-gobek-20cl",
+   "kat": "raki",
+   "ad": "Tekirdağ göbek 20cl",
+   "tip": "porsiyon",
+   "fiyat": 1400
   }
  ],
  "boyCev": {
