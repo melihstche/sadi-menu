@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792854179831,
+ "guncellendi": 1792857386757,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3464,6 +3464,25 @@
    "ad": "Kaşık ayva",
    "tip": "porsiyon",
    "fiyat": 150
+  },
+  {
+   "id": "kereviz-tarator-2",
+   "kat": "meze",
+   "ad": "Kereviz tarator",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 280
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 140
+    }
+   ],
+   "icerikler": [
+    "Süzme yoğurt kereviz sarimsak"
+   ]
   }
  ],
  "boyCev": {
