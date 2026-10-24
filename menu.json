@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792853981207,
+ "guncellendi": 1792854179831,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3424,7 +3424,8 @@
    "kat": "meze",
    "ad": "Karnıbahar salatası",
    "tip": "porsiyon",
-   "fiyat": 280
+   "fiyat": 280,
+   "yok": true
   },
   {
    "id": "istanbul-salata",
@@ -3456,6 +3457,13 @@
    "ad": "Tekirdağ göbek 20cl",
    "tip": "porsiyon",
    "fiyat": 1400
+  },
+  {
+   "id": "kasik-ayva",
+   "kat": "tatli",
+   "ad": "Kaşık ayva",
+   "tip": "porsiyon",
+   "fiyat": 150
   }
  ],
  "boyCev": {
