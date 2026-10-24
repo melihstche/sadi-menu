@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792857386757,
+ "guncellendi": 1792859342576,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3482,6 +3482,21 @@
    ],
    "icerikler": [
     "Süzme yoğurt kereviz sarimsak"
+   ]
+  },
+  {
+   "id": "mevsim-salata",
+   "kat": "salata",
+   "ad": "Mevsim salata",
+   "tip": "porsiyon",
+   "fiyat": 170,
+   "icerikler": [
+    "Marul",
+    "roka",
+    "maydanoz",
+    "havuç",
+    "kırmızı lahana",
+    "kırmızı soğan"
    ]
   }
  ],
