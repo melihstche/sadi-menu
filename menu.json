@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792853937508,
+ "guncellendi": 1792853960728,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3188,23 +3188,6 @@
     {
      "ad": "Büyük",
      "fiyat": 280
-    }
-   ],
-   "yok": true
-  },
-  {
-   "id": "deniz-mahsulleri-salatasi",
-   "kat": "meze",
-   "ad": "deniz mahsulleri salatası",
-   "tip": "boy",
-   "boylar": [
-    {
-     "ad": "Küçük",
-     "fiyat": 200
-    },
-    {
-     "ad": "Büyük",
-     "fiyat": 400
     }
    ],
    "yok": true
