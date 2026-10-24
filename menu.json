@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792853971501,
+ "guncellendi": 1792853981207,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3402,7 +3402,8 @@
      "ad": "Büyük",
      "fiyat": 290
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "tekir",
