@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792853925402,
+ "guncellendi": 1792853937508,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2860,28 +2860,6 @@
    "ad": "angora 37,5",
    "tip": "adet",
    "fiyat": 950
-  },
-  {
-   "id": "zeytin-yagli-bamya",
-   "kat": "meze",
-   "ad": "zeytin yağlı bamya",
-   "tip": "boy",
-   "boylar": [
-    {
-     "ad": "Küçük",
-     "fiyat": 140
-    },
-    {
-     "ad": "Büyük",
-     "fiyat": 280
-    }
-   ],
-   "cev": {
-    "en": "Okra in Olive Oil",
-    "de": "Okra in Olivenöl",
-    "fr": "Gombo à l'huile d'olive"
-   },
-   "yok": true
   },
   {
    "id": "salatalik-bavyera",
