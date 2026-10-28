@@ -1,5 +1,5 @@
 {
- "guncellendi": 1792859342576,
+ "guncellendi": 1793201908212,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -703,7 +703,8 @@
     "en": "Watermelon",
     "de": "Wassermelone",
     "fr": "Pastèque"
-   }
+   },
+   "yok": true
   },
   {
    "id": "antep",
@@ -810,7 +811,8 @@
     "en": "Black-eyed Peas",
     "de": "Augenbohnen",
     "fr": "Haricots cornille"
-   }
+   },
+   "yok": true
   },
   {
    "id": "sade-haydari",
@@ -894,7 +896,8 @@
     "en": "Zucchini Spread",
     "de": "Zucchini-Aufstrich",
     "fr": "Tartinade de courgettes"
-   }
+   },
+   "yok": true
   },
   {
    "id": "girit",
