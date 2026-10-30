@@ -1,5 +1,5 @@
 {
- "guncellendi": 1793201915540,
+ "guncellendi": 1793365476345,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3486,7 +3486,8 @@
    ],
    "icerikler": [
     "Süzme yoğurt kereviz sarimsak"
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "mevsim-salata",
