@@ -1,5 +1,5 @@
 {
- "guncellendi": 1793365476345,
+ "guncellendi": 1793365516311,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3249,13 +3249,6 @@
    "ad": "pasta",
    "tip": "adet",
    "fiyat": 900
-  },
-  {
-   "id": "kofte-ekmek-ceyrek",
-   "kat": "kahvalti",
-   "ad": "köfte ekmek çeyrek",
-   "tip": "adet",
-   "fiyat": 225
   },
   {
    "id": "ciftlik-cupra",
