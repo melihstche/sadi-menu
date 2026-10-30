@@ -1,5 +1,5 @@
 {
- "guncellendi": 1793365516311,
+ "guncellendi": 1793365859409,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3177,7 +3177,8 @@
    "kat": "balik",
    "ad": "küçük levrek",
    "tip": "adet",
-   "fiyat": 600
+   "fiyat": 600,
+   "yok": true
   },
   {
    "id": "semiz-otu-salatasi",
