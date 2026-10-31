@@ -1,5 +1,5 @@
 {
- "guncellendi": 1793462092678,
+ "guncellendi": 1793462223934,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -384,8 +384,7 @@
     "en": "Sardines in Vine Leaves",
     "de": "Sardinen in Weinblättern",
     "fr": "Sardines en feuilles de vigne"
-   },
-   "yok": true
+   }
   },
   {
    "id": "sardalya-ekmek",
