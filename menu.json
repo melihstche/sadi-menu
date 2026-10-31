@@ -1,5 +1,5 @@
 {
- "guncellendi": 1793459427714,
+ "guncellendi": 1793462092678,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -372,8 +372,7 @@
     "en": "Sardines",
     "de": "Sardinen",
     "fr": "Sardines"
-   },
-   "yok": true
+   }
   },
   {
    "id": "yaprak-sardalya",
