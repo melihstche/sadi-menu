@@ -1,5 +1,5 @@
 {
- "guncellendi": 1794152801240,
+ "guncellendi": 1794323783784,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2810,8 +2810,7 @@
     "en": "Red Mullet",
     "de": "Rotbarbe",
     "fr": "Rouget"
-   },
-   "yok": true
+   }
   },
   {
    "id": "duble-ev-patatesi",
