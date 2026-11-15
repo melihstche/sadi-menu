@@ -1,5 +1,5 @@
 {
- "guncellendi": 1794667168153,
+ "guncellendi": 1794755139725,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -2556,7 +2556,8 @@
     "en": "Sautéed Lamb (sac)",
     "de": "Lamm-Sautée (Sac)",
     "fr": "Sauté d'agneau (sac)"
-   }
+   },
+   "yok": true
   },
   {
    "id": "semiz-otu",
