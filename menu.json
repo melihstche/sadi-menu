@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795013768698,
+ "guncellendi": 1795013821519,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -917,8 +917,7 @@
     "en": "Girit (herbed cheese dip)",
     "de": "Girit (Kräuterkäse)",
     "fr": "Girit (fromage aux herbes)"
-   },
-   "yok": true
+   }
   },
   {
    "id": "eksili-girit-kabak",
