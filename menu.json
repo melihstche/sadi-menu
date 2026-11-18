@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795013848616,
+ "guncellendi": 1795013867189,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3508,6 +3508,22 @@
     {
      "ad": "Büyük",
      "fiyat": 280
+    }
+   ]
+  },
+  {
+   "id": "cerkez-ezmesi",
+   "kat": "meze",
+   "ad": "çerkez ezmesi",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 145
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 290
     }
    ]
   }
