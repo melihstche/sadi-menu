@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795013833868,
+ "guncellendi": 1795013848616,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3493,6 +3493,22 @@
     "havuç",
     "kırmızı lahana",
     "kırmızı soğan"
+   ]
+  },
+  {
+   "id": "yaprak-sarma",
+   "kat": "meze",
+   "ad": "yaprak sarma",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
    ]
   }
  ],
