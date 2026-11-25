@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795616315945,
+ "guncellendi": 1795616332157,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -896,7 +896,8 @@
     "en": "Zucchini Spread",
     "de": "Zucchini-Aufstrich",
     "fr": "Tartinade de courgettes"
-   }
+   },
+   "yok": true
   },
   {
    "id": "girit",
