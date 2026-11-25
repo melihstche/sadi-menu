@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795616402599,
+ "guncellendi": 1795616411675,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3515,7 +3515,8 @@
      "ad": "Büyük",
      "fiyat": 280
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "cerkez-ezmesi",
@@ -3531,7 +3532,8 @@
      "ad": "Büyük",
      "fiyat": 290
     }
-   ]
+   ],
+   "yok": true
   }
  ],
  "boyCev": {
