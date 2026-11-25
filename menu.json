@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795616411675,
+ "guncellendi": 1795616462306,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -703,8 +703,7 @@
     "en": "Watermelon",
     "de": "Wassermelone",
     "fr": "Pastèque"
-   },
-   "yok": true
+   }
   },
   {
    "id": "antep",
