@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795616381070,
+ "guncellendi": 1795616395450,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3368,7 +3368,8 @@
      "ad": "Büyük",
      "fiyat": 280
     }
-   ]
+   ],
+   "yok": true
   },
   {
    "id": "muhrudar",
