@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795616395450,
+ "guncellendi": 1795616402599,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3425,7 +3425,8 @@
    "kat": "meze",
    "ad": "Karnıbahar salatası",
    "tip": "porsiyon",
-   "fiyat": 280
+   "fiyat": 280,
+   "yok": true
   },
   {
    "id": "istanbul-salata",
