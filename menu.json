@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795882820022,
+ "guncellendi": 1795883087442,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -3530,6 +3530,22 @@
     }
    ],
    "yok": true
+  },
+  {
+   "id": "turkmen-dudugu",
+   "kat": "meze",
+   "ad": "türkmen düdüğü",
+   "tip": "boy",
+   "boylar": [
+    {
+     "ad": "Küçük",
+     "fiyat": 140
+    },
+    {
+     "ad": "Büyük",
+     "fiyat": 280
+    }
+   ]
   }
  ],
  "boyCev": {
