@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795630281639,
+ "guncellendi": 1795879671856,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -724,8 +724,7 @@
     "en": "Antep (pistachio dip)",
     "de": "Antep (Pistazien-Creme)",
     "fr": "Antep (crème de pistache)"
-   },
-   "yok": true
+   }
   },
   {
    "id": "pancar-tursusu",
