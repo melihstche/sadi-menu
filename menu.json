@@ -1,5 +1,5 @@
 {
- "guncellendi": 1795879671856,
+ "guncellendi": 1795882820022,
  "kategoriler": [
   {
    "id": "kahvalti",
@@ -1065,8 +1065,7 @@
     "en": "Wild Herb Plate",
     "de": "Wildkräuterteller",
     "fr": "Assiette d'herbes sauvages"
-   },
-   "yok": true
+   }
   },
   {
    "id": "suzme-yogurt",
